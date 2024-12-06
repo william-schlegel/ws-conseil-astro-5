@@ -1,0 +1,20 @@
+---
+const { moreClass } = Astro.props;
+---
+
+<a
+  href="/about"
+  class:list={[
+    "bg-secondary rounded-full p-1 pl-3 flex items-center gap-1 outline outline-primary outline-0 transition-[outline] duration-100 ease-in-out hover:outline-[3px]",
+    moreClass,
+  ]}
+>
+  <p class="text-primary">About Me</p>
+  <img
+    src="/site/me.jpg"
+    alt="me"
+    width="30"
+    height="30"
+    class="rounded-full"
+  />
+</a>

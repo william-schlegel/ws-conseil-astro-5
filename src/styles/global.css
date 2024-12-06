@@ -7,7 +7,7 @@
     @apply text-primary font-textes;
   }
   body {
-    @apply min-h-screen grid grid-rows-[auto_1fr_auto] bg-bg-primary;
+    @apply min-h-screen grid grid-rows-[auto_1fr_auto] bg-primary text-white font-textes;
   }
   main {
     @apply container px-4 mx-auto mb-8;

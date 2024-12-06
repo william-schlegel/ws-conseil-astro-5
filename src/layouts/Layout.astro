@@ -18,3 +18,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <Footer />
   </body>
 </html>
+
+<style lang="scss">
+  $sizes: 752, 887, 1044, 1185, 1295, 1397, 1491, 1581, 1668, 1751, 1825, 1894,
+    1968, 2036, 2098, 2161, 2224, 2236, 2240;
+
+  body {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("/site/sage-friedman-TT2J5t1QaMw-unsplash_p0xcmt_c_scale,w_480.jpg");
+    background-size: auto, cover;
+    background-origin: content-box;
+    background-position: center center;
+    overflow-x: hidden;
+    @each $size in $sizes {
+      @media screen and (min-width: #{$size}px) {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url("/site/sage-friedman-TT2J5t1QaMw-unsplash_p0xcmt_c_scale,w_#{$size}.jpg");
+      }
+    }
+  }
+</style>

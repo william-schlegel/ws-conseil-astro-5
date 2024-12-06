@@ -6,16 +6,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#003055",
-        secondary: "#00bfac",
-        bg: {
-          primary: "#f4f4f4",
-          secondary: "#ffffff",
-        },
+        primary: "#00467c",
+        "primary-dark": "#00213a",
+        secondary: "#2cdd9b",
+        "secondary-dark": "#1dc8cd",
+        lightgrey: "#8d97ad",
+        bgwhite: "white",
+        bgdark: "#343a40",
+        bglight: "#f5f7fa",
       },
       fontFamily: {
-        titres: ['"Kumbh Sans"', ...defaultTheme.fontFamily.sans],
-        textes: ['"Philosopher"', ...defaultTheme.fontFamily.serif],
+        titres: ['"Philosopher"', ...defaultTheme.fontFamily.sans],
+        textes: ['"Kumbh Sans"', ...defaultTheme.fontFamily.serif],
       },
     },
   },
