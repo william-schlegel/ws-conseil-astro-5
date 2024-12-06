@@ -1,0 +1,9 @@
+---
+import { getEntry } from "astro:content";
+
+const { id } = Astro.props;
+
+const role = await getEntry("roleCollection", id);
+---
+
+<div>{role?.data.name}</div>

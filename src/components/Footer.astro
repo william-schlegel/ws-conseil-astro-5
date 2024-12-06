@@ -1,0 +1,12 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+
+const today = new Date();
+---
+
+<footer
+  class="p-8 mt-auto bg-bg-primary border-t border-accent flex items-center justify-between"
+>
+  <p>&copy; {today.getFullYear()} Ironeec. All rights reserved.</p>
+  <SocialLinks />
+</footer>

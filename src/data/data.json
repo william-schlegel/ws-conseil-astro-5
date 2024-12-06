@@ -1,0 +1,5424 @@
+[
+  {
+    "_createdAt": "2020-11-12T15:36:27Z",
+    "_id": "fd1b054d-9467-41cf-932c-054aacd97d20",
+    "_rev": "BjrwWumcCZ1MIr5dVNBZZ2",
+    "_type": "projet",
+    "_updatedAt": "2020-12-22T17:25:55Z",
+    "brief": "IglooSpirit est un studio de développement VR et AR cofondé en 2017 avec Fabienne Giezendanner",
+    "categories": [
+      {
+        "_key": "ed23503e9587",
+        "_ref": "771155ba-cf57-49a2-8189-4d2dee2f137b",
+        "_type": "reference"
+      },
+      {
+        "_key": "8eff8f5afbe7",
+        "_ref": "a38f323b-370b-4694-be5a-28e652685f16",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2bc66de3-167e-4fd1-a689-d5c8f014186e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/cb2d8d227838129ce8c440b7a5637be0c5588966-5000x3333.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Logo IglooSpirit",
+    "heroImage.caption": "Logo IglooSpirit",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "042dc80d6d60",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "34a2ed28c5a1",
+            "_type": "span",
+            "marks": [],
+            "text": "Le projet de ce studio est le suivant :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4bf734667c0c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1caf3767a27d0",
+            "_type": "span",
+            "marks": [],
+            "text": "Créez une expérience unique avec notre concept de film élastique qui s’adaptent au comportement de votre public."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "05af6d5b7b20",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7b8f168d429c0",
+            "_type": "span",
+            "marks": [],
+            "text": "Découvrez une nouvelle façon de raconter des histoires"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7d9d7204e555",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fcd2ebc9d45b0",
+            "_type": "span",
+            "marks": [],
+            "text": "Immergez -vous au centre de point d’intérêts"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b550e4b03a56",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f652b3a4dc3f0",
+            "_type": "span",
+            "marks": [],
+            "text": "Nous pouvons vous accompagner de la conception à la postproduction."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "017abd84728d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "02ff9f8343a10",
+            "_type": "span",
+            "marks": [],
+            "text": "Nous sommes prêts à relever vos défis"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e9f5e37c7dbf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7a943f557a8e0",
+            "_type": "span",
+            "marks": [],
+            "text": "Nous avons réalisé toutes sortes de développement depuis la création dont :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "65641dc79574",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "bdb4b55c16430",
+            "_type": "span",
+            "marks": [],
+            "text": "Des jeux vidéo VR et AR"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4cd51c49af7d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "34052f0c03fa0",
+            "_type": "span",
+            "marks": [],
+            "text": "Des applications d'aide à la vente pour le retail en VR et en 3D"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f8ee880df5fc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a5208426c2f40",
+            "_type": "span",
+            "marks": [],
+            "text": "Des histoires racontées en immersion (VR)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4d53102870a9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a87fb272d71d0",
+            "_type": "span",
+            "marks": [],
+            "text": "Des applications pour la communication sur des séries animées ou des magazines (AR et AR interactive)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "23ab53985b2e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e9f409c03ee10",
+            "_type": "span",
+            "marks": [],
+            "text": "Un projet de formation médicale (AR et iot)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "IglooSpirit",
+    "order": 20,
+    "roles": [
+      {
+        "_key": "8bd8fd925288",
+        "_ref": "613b8da0-fd20-4b5a-8e7d-5592ee97dade",
+        "_type": "reference"
+      },
+      {
+        "_key": "2516be82a603",
+        "_ref": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "igloospirit",
+    "startDate": "2017-03-13"
+  },
+  {
+    "_createdAt": "2020-12-23T10:31:49Z",
+    "_id": "f6e486fd-8f1f-43df-837d-a7e02883e559",
+    "_rev": "GvctuvIXYTB4bUgp3jbPlS",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:31:49Z",
+    "brief": "IglooSpirit is a VR and AR development studio co-founded in 2017 with Fabienne Giezendanner",
+    "categories": [
+      {
+        "_key": "2e0ec41e7519",
+        "_ref": "9c828e68-a394-4483-a99e-f5b3c9917a81",
+        "_type": "reference"
+      },
+      {
+        "_key": "d682aa04543a",
+        "_ref": "b387594e-1ab2-40af-b5a4-2e89702aec99",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2bc66de3-167e-4fd1-a689-d5c8f014186e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/e0cc619e26c51cb77449eba966ce25c444c676e9-5000x3333.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "a woman wearing a VR headset",
+    "heroImage.caption": "Virtual reality",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "11528a49440c",
+        "_type": "link",
+        "title": "Igloospirit website",
+        "url": "http://igloospir.it"
+      }
+    ],
+    "main": [
+      {
+        "_key": "be35f4031c6a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "82768c5b5dd4",
+            "_type": "span",
+            "marks": [],
+            "text": "The project of this studio is the following:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "25204421b19b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7ccc5b3062bd0",
+            "_type": "span",
+            "marks": [],
+            "text": "Create a unique experience with our concept of elastic films that adapt to the behavior of your audience."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "068c68e02189",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cfee6ba7bca90",
+            "_type": "span",
+            "marks": [],
+            "text": "Discover a new way to tell stories"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "73517dca1c55",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d881d6bac9b10",
+            "_type": "span",
+            "marks": [],
+            "text": "Immerse yourself in the center of interest"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b862263161b4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "55c963579fee0",
+            "_type": "span",
+            "marks": [],
+            "text": "We can accompany you from conception to post-production."
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6e4140b4e742",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e2dd937ed4530",
+            "_type": "span",
+            "marks": [],
+            "text": "We are ready to meet your challenges"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b25135064ae1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e0d155ad8b300",
+            "_type": "span",
+            "marks": [],
+            "text": "We have realized all kinds of developments since the creation including :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0d76c74daa62",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3260989779ec0",
+            "_type": "span",
+            "marks": [],
+            "text": "RV and AR video games"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d2bd96caecb1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "44d2285020390",
+            "_type": "span",
+            "marks": [],
+            "text": "Sales support applications for RV and 3D retailing"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9803794b7c04",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aaeaa6dbb6350",
+            "_type": "span",
+            "marks": [],
+            "text": "Stories told in immersion (RV)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a4d57526d632",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "44f79d47aa010",
+            "_type": "span",
+            "marks": [],
+            "text": "Applications for communication on animated series or magazines (AR and interactive AR)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "45f76e4f84db",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0ad9e0b885d80",
+            "_type": "span",
+            "marks": [],
+            "text": "A medical training project (AR and iot)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "13b2df6adb1b",
+        "_type": "block",
+        "children": [
+          { "_key": "13f9773972d80", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "IglooSpirit",
+    "roles": [
+      {
+        "_key": "cec2971d3836",
+        "_ref": "c585f3d3-c487-4137-9adb-c88eb54671d3",
+        "_type": "reference"
+      },
+      {
+        "_key": "aa6322846116",
+        "_ref": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "igloospirit-en",
+    "startDate": "2017-03-13"
+  },
+  {
+    "_createdAt": "2021-12-01T11:39:19Z",
+    "_id": "1fd9b6fc-300f-4f96-ad2b-18c8eb960016",
+    "_rev": "FASuICS91Q6CRSjpdBc7sQ",
+    "_type": "projet",
+    "_updatedAt": "2023-01-19T15:36:52Z",
+    "brief": "Application mobile développée pour Stimshop et son client Orano permettant de gérer les boitiers de mesure d'épaisseur UMIT",
+    "categories": [
+      {
+        "_key": "69ae6f207f4c",
+        "_ref": "8b280da5-8b00-43a1-b2af-f951c56abe76",
+        "_type": "reference"
+      },
+      {
+        "_key": "82a374766740",
+        "_ref": "56fe6dc9-ece0-425d-af19-2c02565f4916",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "endDate": "2021-02-15",
+    "heroImage._sanityAsset": "image@file://./images/72bbaa5afc4f5a1a243862f73719b84e13dc4601-1440x2960.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Copie d'écran du menu principal de l'application",
+    "heroImage.caption": "Menu principal de l'application",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "df576ce59762",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ed1b41acf957",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette application a été développée en React Native et permet de se connecter à des boitiers de mesure d'épaisseur UMIT."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fbb9a764e7a8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "29ff99bfb0e6",
+            "_type": "span",
+            "marks": [],
+            "text": "Ces boitiers se connectent en bluetooth et effectuent une mesure d'épaisseur d'un tuyau ou d'un réservoir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "09931a458360",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4968506740e0",
+            "_type": "span",
+            "marks": [],
+            "text": "Les données de mesure sont envoyées à l'application qui exécute un algorithme A-Scan pour déterminer l'épaisseur mesurée."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2857895f617b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a2e3cc10c945",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette mesure et les données sont ensuite synchronisables avec le serveur UCheckIn que j'ai également développé."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/72bbaa5afc4f5a1a243862f73719b84e13dc4601-1440x2960.jpg",
+        "_key": "c55c48730664",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/a51fc2c09f8527f6fcc6530aeefdcb5c72ec2f47-1440x2960.jpg",
+        "_key": "1abc3c9bfc88",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/ce9708ea214ea7d4bf7717c98e9c4c5906563aef-1440x2960.jpg",
+        "_key": "cb4b625e4524",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/2d2c9d863c1f1116cb4566d955eb94e73c558eb9-1440x2960.jpg",
+        "_key": "8258f1ee34a7",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/d969eb9b41b88b1f20b0bd03111da6cb7ce9e66a-1440x2960.jpg",
+        "_key": "27eda2389ae6",
+        "_type": "image"
+      }
+    ],
+    "name": "Application mobile UMIT",
+    "roles": [
+      {
+        "_key": "3748423bd75e",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      },
+      {
+        "_key": "46b98932d652",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "2a7b8c0caac7",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "application-mobile-umit",
+    "startDate": "2020-09-10",
+    "technos": [
+      {
+        "_key": "68f027bcd58d",
+        "_ref": "a06c4c2e-0f37-4585-a97f-8272afcfae0b",
+        "_type": "reference"
+      },
+      {
+        "_key": "49985b38ca56",
+        "_ref": "d36adfe8-0dd2-4941-9299-8dbbe693ba5c",
+        "_type": "reference"
+      },
+      {
+        "_key": "69fc6880da09",
+        "_ref": "03ff92c2-88d4-4737-a6fe-1441cd65da86",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:47:08Z",
+    "_id": "1c4df5ce-1b55-4213-bd29-3553cae73538",
+    "_rev": "ci2ZRbwi00FFSJDJgEgHOU",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:20:24Z",
+    "brief": "Search engine dedicated to the circular economy and the reusability of building materials",
+    "categories": [
+      {
+        "_key": "7606560d08b8",
+        "_ref": "095a97dd-5d8a-43c6-b6ae-55a169f30950",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2aef1d2c-d504-4459-bd26-7a3a073be16d",
+    "client._type": "reference",
+    "endDate": "2019-10-01",
+    "heroImage._sanityAsset": "image@file://./images/f934558c3452a0735d27acd8743a49d23d66c6be-1000x496.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "circolab home page",
+    "heroImage.caption": "circolab home page",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "475b48c97fd8",
+        "_type": "link",
+        "title": "The website",
+        "url": "http://circolab.eu"
+      }
+    ],
+    "main": [
+      {
+        "_key": "7a53290646c7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c83a71884580",
+            "_type": "span",
+            "marks": [],
+            "text": "Circolab is an association whose aim is to promote the "
+          },
+          {
+            "_key": "fd76e4167d66",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "circular economy"
+          },
+          { "_key": "7c77e2bc8743", "_type": "span", "marks": [], "text": "." }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d502b57fb8e7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cb6bc2cc9b600",
+            "_type": "span",
+            "marks": [],
+            "text": "In particular, they are active on the "
+          },
+          {
+            "_key": "4412fe1f8ced",
+            "_type": "span",
+            "marks": ["underline"],
+            "text": "reusability of building materials"
+          },
+          { "_key": "5e420c7b0181", "_type": "span", "marks": [], "text": "." }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "dc3d5b2615bd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8c7c6ea356fe0",
+            "_type": "span",
+            "marks": [],
+            "text": "The project here is to develop a "
+          },
+          {
+            "_key": "14897146d039",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "search engine"
+          },
+          {
+            "_key": "b30a6d7c035e",
+            "_type": "span",
+            "marks": [],
+            "text": " dedicated to these materials in collaboration with existing sales platforms."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ed2c2a0d36d1",
+        "_type": "block",
+        "children": [
+          { "_key": "dbdd8f74201f0", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Circolab website",
+    "roles": [
+      {
+        "_key": "991c14babb52",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "circolab-website",
+    "startDate": "2019-04-01",
+    "technos": [
+      {
+        "_key": "817979f20c70",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "c92613136f4a",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      },
+      {
+        "_key": "9b371c0f777f",
+        "_ref": "160afaee-e897-404c-9341-ff11889cb34c",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-16T18:12:17Z",
+    "_id": "4dda549e-68c1-42e5-bd89-4eb5e2bddf34",
+    "_rev": "0Wvb6xUrfKPqRtSIs2s9Rg",
+    "_type": "projet",
+    "_updatedAt": "2020-12-22T17:25:41Z",
+    "brief": "Applications interactives pour la télévision avec HbbTV",
+    "categories": [
+      {
+        "_key": "ea63cacb6982",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "endDate": "2016-10-01",
+    "heroImage._sanityAsset": "image@file://./images/40576a36836caf9bf90b81564bb8642982d06edf-841x800.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "poster de présentation gamific.tv",
+    "heroImage.caption": "gamific.tv",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "7f737cf3d53b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "259c52b015fb",
+            "_type": "span",
+            "marks": [],
+            "text": "Projet de startup proposant des jeux interactifs sur la télévision."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "46841ed04ece",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ef16dfecf2b9",
+            "_type": "span",
+            "marks": [],
+            "text": "La technologie utilisée était HbbTV, un standard permettant d'afficher sur les écrans de télévision des contenus personnalisés. L'idée était de coupler cela à des applications mobiles pour utiliser son smartphone comme manette de jeu ou comme terminal pour piloter ce qui se passe à l'écran."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3c7daeab3c41",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b292ef80a823",
+            "_type": "span",
+            "marks": [],
+            "text": "L'application était embarquée avec le programme de télévision, et donc pilotée par la chaîne."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3d1d3c9a2d63",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7f0d7f082858",
+            "_type": "span",
+            "marks": [],
+            "text": "La complexité d'adoption avait été sous évaluée, et même si les chaînes de télévision étaient intéressées le déploiement de solutions était bien trop complexe."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Gamific.tv",
+    "roles": [
+      {
+        "_key": "b085e0eeb3fc",
+        "_ref": "613b8da0-fd20-4b5a-8e7d-5592ee97dade",
+        "_type": "reference"
+      },
+      {
+        "_key": "4701568c0f49",
+        "_ref": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "gamific-tv",
+    "startDate": "2012-03-01"
+  },
+  {
+    "_createdAt": "2020-12-23T10:54:09Z",
+    "_id": "3515f806-7e12-4012-8d80-d6f9aa34e113",
+    "_rev": "xj3PwrXoiuIDdPlPjLPuEL",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:19:03Z",
+    "brief": "Flexilims is a Saas software for laboratory management",
+    "categories": [
+      {
+        "_key": "695adf9a2fe8",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "46acc201-abbe-447c-9771-7c760ce73a2f",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/28a494f294267347a14b8411084f896881c19656-1280x673.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "A man behind some virtual icons",
+    "heroImage.caption": "LIMS alegory",
+    "langue": "en",
+    "main": [
+      {
+        "_key": "5db5a3510adc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "65f20211da63",
+            "_type": "span",
+            "marks": [],
+            "text": "Laboratory management is something complex, all of them have a different functioning depending on what is being tested."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ed9610a9a756",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c61283f996a70",
+            "_type": "span",
+            "marks": [],
+            "text": "Tests are based on standards, traceability is paramount, the allocation of machines or technicians with the required skills is always complex."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "08a7004e1468",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d96a98f718a30",
+            "_type": "span",
+            "marks": [],
+            "text": "The idea of this application is to offer something completely new based on infinite configuration capabilities while remaining simple to use."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "77d1adb9f1ac",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1432154f80cc0",
+            "_type": "span",
+            "marks": [],
+            "text": "I intervened very early on in the project to set up the entire architecture, define the tools and the way everything would be interconnected."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "99d94d2940d6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0cd50f602c060",
+            "_type": "span",
+            "marks": [],
+            "text": "It is a very international project, since my partners here are Saudi, Indian and Indonesian."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9c27976e2ffc",
+        "_type": "block",
+        "children": [
+          { "_key": "66e2fb32f7b50", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Flexilims",
+    "roles": [
+      {
+        "_key": "69766e18bc4b",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      },
+      {
+        "_key": "28423fe47a65",
+        "_ref": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "flexilims-en",
+    "startDate": "2017-08-01",
+    "technos": [
+      {
+        "_key": "732b32d67494",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "34427cd26134",
+        "_ref": "fb7d040a-cee9-442a-a710-bffec943bed6",
+        "_type": "reference"
+      },
+      {
+        "_key": "70dc16f33b1c",
+        "_ref": "411989a5-88dd-4044-a329-c191ec714d42",
+        "_type": "reference"
+      },
+      {
+        "_key": "4474b2f8b834",
+        "_ref": "9b565a61-f606-4ed2-82f1-dd48e9a86a5d",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2021-12-01T11:42:50Z",
+    "_id": "4d4c7695-eb10-4f27-ae0f-340470462570",
+    "_rev": "orxR2hjDplZfT7OVgmtJYJ",
+    "_type": "projet",
+    "_updatedAt": "2021-12-01T14:52:19Z",
+    "brief": "Mobile application developed for Stimshop and its customer Orano to manage UMIT thickness measurement devices",
+    "categories": [
+      {
+        "_key": "9079bc735656",
+        "_ref": "3436422d-9ab9-426f-b16d-3f1a7a99422f",
+        "_type": "reference"
+      },
+      {
+        "_key": "06a1d6e6b6bc",
+        "_ref": "e026c83e-1ae0-4f20-848c-0b5a9bcc8bd8",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/72bbaa5afc4f5a1a243862f73719b84e13dc4601-1440x2960.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Screen copy of the main menu",
+    "heroImage.caption": "Main menu of the application",
+    "langue": "en",
+    "main": [
+      {
+        "_key": "cff1a29c33e4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "41a1cc1e46e9",
+            "_type": "span",
+            "marks": [],
+            "text": "This application has been developed in React Native and allows to connect to UMIT thickness measurement devices."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "73b7713bf602",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ebf405cbd53f0",
+            "_type": "span",
+            "marks": [],
+            "text": "These devices connect via Bluetooth and perform a thickness measurement of a pipe or a tank."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1327c4f5ba68",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c9d8e9d8786a0",
+            "_type": "span",
+            "marks": [],
+            "text": "The measurement data is sent to the application which runs an A-Scan algorithm to determine the measured thickness."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cb487298b0d1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "59ce059918770",
+            "_type": "span",
+            "marks": [],
+            "text": "This measurement and the data are then synchronized with the UCheckIn server that I also developed."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cbd5ae7acdea",
+        "_type": "block",
+        "children": [
+          { "_key": "c15d5478cdb7", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/72bbaa5afc4f5a1a243862f73719b84e13dc4601-1440x2960.jpg",
+        "_key": "7d4c752559af",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/a51fc2c09f8527f6fcc6530aeefdcb5c72ec2f47-1440x2960.jpg",
+        "_key": "e9551d07a29d",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/ce9708ea214ea7d4bf7717c98e9c4c5906563aef-1440x2960.jpg",
+        "_key": "a6637f921f94",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/2d2c9d863c1f1116cb4566d955eb94e73c558eb9-1440x2960.jpg",
+        "_key": "fb10eabdd8c9",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/d969eb9b41b88b1f20b0bd03111da6cb7ce9e66a-1440x2960.jpg",
+        "_key": "6f24c63daf15",
+        "_type": "image"
+      }
+    ],
+    "name": "UMIT mobile application",
+    "roles": [
+      {
+        "_key": "eeef2d1ba068",
+        "_ref": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
+        "_type": "reference"
+      },
+      {
+        "_key": "b5dc19306367",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      },
+      {
+        "_key": "f32047dd6169",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "umit-mobile-application",
+    "startDate": "2020-09-10"
+  },
+  {
+    "_createdAt": "2020-12-15T14:31:05Z",
+    "_id": "531e3686-4951-4e80-b665-9d2c9b2ef277",
+    "_rev": "BjrwWumcCZ1MIr5dVNBc5o",
+    "_type": "projet",
+    "_updatedAt": "2020-12-22T17:26:04Z",
+    "brief": "Stimshop développe une technologie de communication par ultrasons",
+    "categories": [
+      {
+        "_key": "5df3230437fd",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      },
+      {
+        "_key": "c5f3dc9da453",
+        "_ref": "8b280da5-8b00-43a1-b2af-f951c56abe76",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/2555552324189d5d10821875597966fc594ff69a-782x714.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "téléphone mobile en interaction dans un magasin",
+    "heroImage.caption": "mobile interaction",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "d237c29c2713",
+        "_type": "link",
+        "title": "Site web de Stimshop",
+        "url": "http://www.stimshop.com"
+      },
+      {
+        "_key": "159d31e2079f",
+        "_type": "link",
+        "title": "Secumeter",
+        "url": "http://secumeter.me"
+      }
+    ],
+    "main": [
+      {
+        "_key": "8ffd36c52e10",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "59bbf38c04c7",
+            "_type": "span",
+            "marks": [],
+            "text": "Je suis entré chez Stimshop fin 2015 comme investisseur business angel. J'y ai rapidement pris un rôle opérationnel en tant que CTO."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8525b0e430d5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "194fdefdc38c0",
+            "_type": "span",
+            "marks": [],
+            "text": "J'ai accompagné puis redéfinis et pris en main le développement de la gamme de produits (logiciel et matériel) pour accompagner le pivot stratégique."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "06a4d1290278",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "01ed3d7eb1490",
+            "_type": "span",
+            "marks": [],
+            "text": "J'interviens également dans l'accompagnement stratégique, le recrutement et animation de l’équipe technique dont un doctorant."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Stimshop - Wi-Us",
+    "order": 60,
+    "roles": [
+      {
+        "_key": "a71a686e23c2",
+        "_ref": "2f2176de-890c-4da3-bc06-efa7d81f4b22",
+        "_type": "reference"
+      },
+      {
+        "_key": "949d7b08390e",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "4447f06c18e8",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      },
+      {
+        "_key": "d34f77f7cc5c",
+        "_ref": "51384c56-32eb-4e54-bcc0-0e448c3c6c13",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "stimshop-wi-us",
+    "startDate": "2015-10-01"
+  },
+  {
+    "_createdAt": "2023-01-19T15:33:39Z",
+    "_id": "493a1b7a-0fcf-442a-8e18-2cbd257e5f69",
+    "_rev": "asw408LOtjAZyLrgvY5djJ",
+    "_type": "projet",
+    "_updatedAt": "2023-03-12T14:23:46Z",
+    "brief": "Videoach est une application de gestion de club de sport à destination des managers de salles, des coachs et des membres des clubs",
+    "categories": [
+      {
+        "_key": "45b2cd1662a8",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "heroImage._sanityAsset": "image@file://./images/6043c4bc09b6f340080cf85d01808949afc5129a-1462x1280.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "présentation de videoach, avec une image de club de sport",
+    "heroImage.caption": "videoach home page",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "33cdebed7a42",
+        "_type": "link",
+        "title": "Application (beta)",
+        "url": "https://turbo-videoach-nextjs.vercel.app/videoach"
+      }
+    ],
+    "main": [
+      {
+        "_key": "e047ffd50988",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "77ba9e33cf46",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette application permet de gérer tous les aspects d'un club de sport et surtout apporte de la valeur à tous les intervenants."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3693d3b558fb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1a094dc02a1f",
+            "_type": "span",
+            "marks": [],
+            "text": "On peut rechercher une salle ou un coach pour des cours particuliers"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/08c1bce0a198e331527c16bc9310d3f75d547407-1299x1100.png",
+        "_key": "fd2b26cb29e4",
+        "_type": "image"
+      },
+      {
+        "_key": "f5ffef9dcd0b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2553d89dc90c",
+            "_type": "span",
+            "marks": [],
+            "text": "Pour les managers"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "88bf2a212157",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d7976d90708f",
+            "_type": "span",
+            "marks": [],
+            "text": "En tant que manager, on peut gérer son ou ses clubs avec les différents sutes d'activité, et les salles et les activités associées"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/b58d089aadc278c7440e6d476b8853255ae2fe81-1300x187.png",
+        "_key": "a73bb3a0156b",
+        "_type": "image"
+      },
+      {
+        "_sanityAsset": "image@file://./images/1f4f0e40ba0262b9184da8e1275861b0191b97d3-1302x983.png",
+        "_key": "f0252d5b49b8",
+        "_type": "image"
+      },
+      {
+        "_key": "b269b8d382ef",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5080fa646973",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion des offres d'abonnements"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/2720232d88279b3fc7665696cb3f2bcdcf05a6aa-1295x707.png",
+        "_key": "96885bb9161b",
+        "_type": "image"
+      },
+      {
+        "_key": "151bdb6d19dc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "92ddff0a7b9d",
+            "_type": "span",
+            "marks": [],
+            "text": "On peut également gérer les plannings pour les différentes activités"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/9c8ddc5d6d253174423f2ab8d4726e9b85f0089a-1308x955.png",
+        "_key": "3c5e03c59dcb",
+        "_type": "image"
+      },
+      {
+        "_key": "d81d8669843d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aff8d17ccae8",
+            "_type": "span",
+            "marks": [],
+            "text": "On peut également crééer son site vitrine pour présenter le club"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/ac9afca07d50a0ac72dc83eeb9b4896740084ab7-1560x962.png",
+        "_key": "9b491fac5161",
+        "_type": "image"
+      },
+      {
+        "_key": "aa6f185f4fa3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2494c250105e",
+            "_type": "span",
+            "marks": [],
+            "text": "Et bien d'autres choses encore..."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "59a81350f05e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4c8c20efcb72",
+            "_type": "span",
+            "marks": [],
+            "text": "Pour les coachs"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "ad7724718063",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "150fac2a22b1",
+            "_type": "span",
+            "marks": [],
+            "text": "Les coachs gèrent leur visibilité, leur planning \"club\" et les rendez-vous privés"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/e3eb14a2d5570d22b9071cd88fc4ab439bf80480-1547x185.png",
+        "_key": "d48a47131128",
+        "_type": "image"
+      },
+      {
+        "_key": "73308eccbee7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ca96803804fe",
+            "_type": "span",
+            "marks": [],
+            "text": "Les coachs peuvent également créer une page de présentation"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/c0e77de233b33f6f9ecb379f0e9f90a9a1eb1436-1560x1182.png",
+        "_key": "2cd8e0ba52e2",
+        "_type": "image"
+      },
+      {
+        "_key": "52fec910947a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "48c0de259d42",
+            "_type": "span",
+            "marks": [],
+            "text": "Ils gèrent aussi les offres pour les coaching privés (particuliers ou entreprises)"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/e6bfe841417dfdb5fb9bc8f5e6d283a31603f1b5-1556x1088.png",
+        "_key": "eee001b75486",
+        "_type": "image"
+      },
+      {
+        "_key": "21a1e60bf91f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5341829de208",
+            "_type": "span",
+            "marks": [],
+            "text": "Pour les membres"
+          }
+        ],
+        "markDefs": [],
+        "style": "h2"
+      },
+      {
+        "_key": "381587cc3901",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0fc8fd3af02b",
+            "_type": "span",
+            "marks": [],
+            "text": "Enfin, les membres peuvent avoir leur planning extrêmement personnalisé, en fonction des clubs ou ils sont inscrit et des abonnements qu'ils ont pris"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/7280979a752b88fa8dc83aba04f9be5486246637-1546x708.png",
+        "_key": "239060eafc1a",
+        "_type": "image"
+      },
+      {
+        "_key": "4334f4031d7f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "bc5b38a81588",
+            "_type": "span",
+            "marks": [],
+            "text": "Toute une section dédiée aux échanges, entre membres et clubs, membres et coachs, membres d'un même club ou d'une même activité est à développer, ainsi qu'un système de notation des cours et des coachs."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Videoach",
+    "roles": [
+      {
+        "_key": "ddb37269bba7",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      },
+      {
+        "_key": "67175957f131",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "videoach",
+    "startDate": "2022-11-15",
+    "technos": [
+      {
+        "_key": "aedd366c489f",
+        "_ref": "5bb33913-7343-4cb8-bd47-c47251c261ec",
+        "_type": "reference"
+      },
+      {
+        "_key": "3406402cd420",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "39697d598ebf",
+        "_ref": "eefbd7ef-4744-4330-b70c-8c664a86c622",
+        "_type": "reference"
+      },
+      {
+        "_key": "0ae465eae485",
+        "_ref": "acaafe97-50ad-4236-b0f6-6754848bf234",
+        "_type": "reference"
+      },
+      {
+        "_key": "81237e84245a",
+        "_ref": "56e5853d-dd06-4038-9574-10033398da4b",
+        "_type": "reference"
+      },
+      {
+        "_key": "6db8fb22eca4",
+        "_ref": "a2505f42-a8a9-44d3-83d7-d4878d36b030",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:23:52Z",
+    "_id": "f7a0db20-695e-4c79-934f-ac0377be9b0d",
+    "_rev": "J1fXxapZplmHpfqoaK2rnW",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:23:52Z",
+    "brief": "Stimshop is developing an ultrasound communication technology.",
+    "categories": [
+      {
+        "_key": "251c287564b9",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      },
+      {
+        "_key": "103a67e8f298",
+        "_ref": "e026c83e-1ae0-4f20-848c-0b5a9bcc8bd8",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/877a9b7ca112eb9237d5e787e0356779194a4434-782x714.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "A phone with an app to make interaction in a retail shop",
+    "heroImage.caption": "Stimshop retail interaction demo",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "ce6a3e7f4cc5",
+        "_type": "link",
+        "title": "Stimshop website",
+        "url": "http://stimshop.com"
+      },
+      {
+        "_key": "0359818f6e71",
+        "_type": "link",
+        "title": "Secumeter dedicated website",
+        "url": "http://secumeter.me"
+      }
+    ],
+    "main": [
+      {
+        "_key": "b8906953bb50",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b8620af16ae3",
+            "_type": "span",
+            "marks": [],
+            "text": "I joined Stimshop at the end of 2015 as a business angel investor. I quickly took on an operational role as CTO."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bead5ac23bee",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "615f0f3500ae0",
+            "_type": "span",
+            "marks": [],
+            "text": "I accompanied then redefined and took in hand the development of the product range (software and hardware) to accompany the strategic pivot."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "65e531e38eb9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8b31c25d08920",
+            "_type": "span",
+            "marks": [],
+            "text": "I am also involved in the strategic support, recruitment and management of the technical team, including a PhD student."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Stimshop - Wi-Us",
+    "roles": [
+      {
+        "_key": "d0f69e29c18d",
+        "_ref": "32ba11ce-6cff-46ea-88ca-898c6e025cdb",
+        "_type": "reference"
+      },
+      {
+        "_key": "9125562032ff",
+        "_ref": "4c918f55-ae25-40e8-a9e0-a1647dfa693a",
+        "_type": "reference"
+      },
+      {
+        "_key": "9a5b79d64551",
+        "_ref": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
+        "_type": "reference"
+      },
+      {
+        "_key": "3b579f4dcf58",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "stimshop-wi-us-en",
+    "startDate": "2015-10-01"
+  },
+  {
+    "_createdAt": "2020-12-15T14:24:38Z",
+    "_id": "e00f9339-c1a1-4447-b60e-89742dedf207",
+    "_rev": "caf5lD6ysIJ2RHxuNGapye",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:23:52Z",
+    "brief": "Moteur de recherche dédié à l'économie circulaire et la réemployabilité des matériaux de construction",
+    "categories": [
+      {
+        "_key": "e42c424ce1d4",
+        "_ref": "76335112-2ca2-4e76-937b-8f74d9062a75",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2aef1d2c-d504-4459-bd26-7a3a073be16d",
+    "client._type": "reference",
+    "endDate": "2019-10-01",
+    "heroImage._sanityAsset": "image@file://./images/2cab02bbcf4659b33b6afbd677bd980b2db9bc01-1698x842.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Schéma des acteurs de Circolab",
+    "heroImage.caption": "les acteurs de Circolab",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "df25061419c6",
+        "_type": "link",
+        "title": "Site live",
+        "url": "https://www.circolab.eu"
+      }
+    ],
+    "main": [
+      {
+        "_key": "c8736b715539",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8437f4a02782",
+            "_type": "span",
+            "marks": [],
+            "text": "Circolab est une association dont le but est de promouvoir "
+          },
+          {
+            "_key": "5721f0fe8883",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "l'économie circulaire"
+          },
+          { "_key": "8ae82e440567", "_type": "span", "marks": [], "text": "." }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "768928b68026",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f9c6c21ec19d0",
+            "_type": "span",
+            "marks": [],
+            "text": "Ils sont en particulier actifs sur la "
+          },
+          {
+            "_key": "4a37ece484fa",
+            "_type": "span",
+            "marks": ["underline"],
+            "text": "réemployabilité des matériaux de construction"
+          },
+          { "_key": "a1ec0d60bba7", "_type": "span", "marks": [], "text": "." }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ba20b4ef1fae",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dcdcce29a6d80",
+            "_type": "span",
+            "marks": [],
+            "text": "Le projet est ici de développer un "
+          },
+          {
+            "_key": "dcdcce29a6d81",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "moteur de recherche"
+          },
+          {
+            "_key": "dcdcce29a6d82",
+            "_type": "span",
+            "marks": [],
+            "text": " dédié à ces matériaux en collaboration avec les plateformes de vente existantes."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Site internet Circolab",
+    "order": 40,
+    "roles": [
+      {
+        "_key": "3445b4122475",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "site-internet-circolab",
+    "startDate": "2019-04-01",
+    "technos": [
+      {
+        "_key": "9b27c9101cba",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      },
+      {
+        "_key": "118cd722f08f",
+        "_ref": "160afaee-e897-404c-9341-ff11889cb34c",
+        "_type": "reference"
+      },
+      {
+        "_key": "70ebcce1930a",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "ad2a82d18294",
+        "_ref": "156dddc0-e91f-4a35-9ad9-7cf4fa950b47",
+        "_type": "reference"
+      },
+      {
+        "_key": "b2715ed38e1e",
+        "_ref": "5afaf72e-e8dd-4642-93dc-9150f0b5d451",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2022-04-29T09:26:49Z",
+    "_id": "8944f42a-ef0c-407a-890d-20a07ebe31bd",
+    "_rev": "dDz4n5esWDyatH9sWhissy",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:02:50Z",
+    "brief": "Analyse des données de pollution d'un terrain avec une représentation visuelle claire pour comprendre cette pollution et comment elle évolue en fonction de la profondeur",
+    "categories": [
+      {
+        "_key": "5fcbb1e37976",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2f7c6a0d-a26f-4350-b090-ed7de1599ae1",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/f8eab1216bc38bf2dfffb6a6597dbbe6adccc075-1359x1006.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Diagramme de Voronoi représentant les analyses par filière d'élimination",
+    "heroImage.caption": "analyse des filières d'élimination",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "ce8655c25b50",
+        "_type": "link",
+        "title": "vidéo de démonstration",
+        "url": "https://youtu.be/iMplt00im0M"
+      }
+    ],
+    "main": [
+      {
+        "_key": "b8d2624906ba",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1912f3be5c0a",
+            "_type": "span",
+            "marks": [],
+            "text": "Les données de pollution récupérées par l'application Aexdo sont exploitées dans cette page."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c5bfc4af9ad6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fda6764ae0a4",
+            "_type": "span",
+            "marks": [],
+            "text": "La représentation est entièrement dynamique, en fonction de multiples critères sélectionnés par l'utilisateur qui peut retrouver des informations sur"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1cfe5375c210",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9a103e539119",
+            "_type": "span",
+            "marks": [],
+            "text": "Les filières d'élimination"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "815f27a58713",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "71400d2294d9",
+            "_type": "span",
+            "marks": [],
+            "text": "la lithologie du terrain"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "14ef46d74e76",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a87581e1408d",
+            "_type": "span",
+            "marks": [],
+            "text": "la présence et la concentration des polluants"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/095ecf5da2a1e21f1ce80901c2fbb56730d2db34-1606x1229.jpg",
+        "_key": "1eb8615d7d43",
+        "_type": "image"
+      },
+      {
+        "_key": "753337294672",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "caac1c7e3bc9",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette représentation est visible dans des graphiques ou dans des tables pour avoir des données précises"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/0464890b09e2a0f63a985b5c08306c100cc6dab1-1619x1064.jpg",
+        "_key": "c2a5a3c89c88",
+        "_type": "image"
+      },
+      {
+        "_key": "c3188bf0ea4b",
+        "_type": "block",
+        "children": [
+          { "_key": "98bc47a0f939", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/099cdfb6ee3e8377b6ee551b4ee029e11ff7366a-1381x739.jpg",
+        "_key": "f65af7a6e9fd",
+        "_type": "image"
+      }
+    ],
+    "name": "Analyse des données de pollution",
+    "roles": [
+      {
+        "_key": "dc1e16c86d65",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "a7ab17cf396d",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "analyse-des-donnees-de-pollution",
+    "startDate": "2022-01-10",
+    "technos": [
+      {
+        "_key": "102c8a2aa184",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "8f93647257be",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2021-05-20T15:22:50Z",
+    "_id": "7c1b3012-a313-40f8-8337-026167372af2",
+    "_rev": "XIWqugM1OIZ7cwHKnZTeei",
+    "_type": "projet",
+    "_updatedAt": "2021-12-01T11:43:34Z",
+    "brief": "Accompanying game for children who follow the \"Les petits philosophes\" series",
+    "categories": [
+      {
+        "_key": "4a7e058db896",
+        "_ref": "3842e8dd-83e0-4c53-8fd8-c570f22e8fc5",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "7c39818d-e09c-475f-b680-3a6dfbd2c884",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/1583ddc23708bf75cd51ae79740abceca67f72e1-2194x1146.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Image of Raoul holding a balloon in which children slip eyes and a mouth to compose an expression",
+    "heroImage.caption": "Interactive \"drag & drop\" game",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "217cad1772bd",
+        "_type": "link",
+        "title": "Bayam application",
+        "url": "https://app.bayam.tv/"
+      }
+    ],
+    "main": [
+      {
+        "_key": "d57056b0be8a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "09c5da7d5f24",
+            "_type": "span",
+            "marks": [],
+            "text": "Season 2 of the series \"The little philosophers\" is accompanied by interactive games for children."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2b3da54135b9",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d37ad3f11d310",
+            "_type": "span",
+            "marks": [],
+            "text": "I was asked to develop these games which are mostly based on \"drag & drop\" actions."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3250cbe9b891",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ef8c9413915d0",
+            "_type": "span",
+            "marks": [],
+            "text": "It is a WEB game that takes place in the parent application \"BAYAM\". It has been developed in React js."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c5a0813a7891",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7fbe3a8ecca90",
+            "_type": "span",
+            "marks": [],
+            "text": "It is planned to make one game per episode of the series."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "The little philosophers",
+    "roles": [
+      {
+        "_key": "b3fa394756a9",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "the-little-philosophers",
+    "startDate": "2021-05-20"
+  },
+  {
+    "_createdAt": "2020-12-23T09:51:10Z",
+    "_id": "98ef3fe0-d099-426b-97a1-443026f3506a",
+    "_rev": "J1fXxapZplmHpfqoaK2Dng",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:15:49Z",
+    "brief": "Æxdo is a SaaS platform for the management of depollution data on construction sites.",
+    "categories": [
+      {
+        "_key": "7900ffed4269",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2f7c6a0d-a26f-4350-b090-ed7de1599ae1",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/a8bb86eddd7c0363775cb64839a3c2446abb5581-1682x949.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Site image with augmented reality information",
+    "heroImage.caption": "Augmented reality on site",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "d5b2badf648c",
+        "_type": "link",
+        "title": "Æxdo website",
+        "url": "http://www.aexdo.com"
+      },
+      {
+        "_key": "3feeebac4987",
+        "_type": "link",
+        "title": "Demo application",
+        "url": "http://app.aexdo.com"
+      }
+    ],
+    "main": [
+      {
+        "_key": "f3841f34403d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "de7841c6c75b",
+            "_type": "span",
+            "marks": [],
+            "text": "More and more buildings are being constructed in urban areas, on land formerly used for industrial activities."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8528c4e6d409",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d8b7bc56e2810",
+            "_type": "span",
+            "marks": [],
+            "text": "Regulations require extensive environmental studies that produce very voluminous and often complex reports that are difficult to read and use."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3e927533c333",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a919c1f379810",
+            "_type": "span",
+            "marks": [],
+            "text": "The exploitation of these reports requires many wasted hours to manage, exploit the data... The analysis, a very important part, is in fact drowned in the data flow."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1ff82537326b",
+        "_type": "block",
+        "children": [
+          { "_key": "82b10a41c6fa0", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Æxdo",
+    "roles": [
+      {
+        "_key": "01c18e0845b4",
+        "_ref": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
+        "_type": "reference"
+      },
+      {
+        "_key": "f8344feeb075",
+        "_ref": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
+        "_type": "reference"
+      },
+      {
+        "_key": "585922e297d6",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      },
+      {
+        "_key": "6ae48a1ad8a4",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "aexdo-en",
+    "startDate": "2019-03-01"
+  },
+  {
+    "_createdAt": "2020-11-08T14:57:12Z",
+    "_id": "6bb75617-6ff5-4573-a65d-b3e9136e6c5f",
+    "_rev": "ci2ZRbwi00FFSJDJgEhswk",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:27:29Z",
+    "brief": "Æxdo est une plateforme SaaS pour la gestion de données de depollution sur les chantiers",
+    "categories": [
+      {
+        "_key": "6e68cf10e0de",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2f7c6a0d-a26f-4350-b090-ed7de1599ae1",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/c7fa58e675510c2e77fea47363d78db01770851b-1682x949.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "image de terrain",
+    "heroImage.caption": "terrain avec vue en réalité augmentée",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "cea8c808d911",
+        "_type": "link",
+        "title": "Site Aexdo",
+        "url": "http://aexdo.com"
+      },
+      {
+        "_key": "2d9533c9b135",
+        "_type": "link",
+        "title": "Application de démonstration",
+        "url": "http://app.aexdo.com"
+      }
+    ],
+    "main": [
+      {
+        "_key": "06985a3839ae",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6441bbac2a61",
+            "_type": "span",
+            "marks": [],
+            "text": "De plus en plus de bâtiments sont construits en milieu urbain, sur des terrains anciennement utilisés par des activités industrielles"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1ede00af2cbf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e6662a5fc1910",
+            "_type": "span",
+            "marks": [],
+            "text": "La règlementation impose des études environnementales poussées qui produisent des rapports très volumineux et souvent complexes, difficiles à lire et exploiter"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8a9a5be61b89",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cf6f026524060",
+            "_type": "span",
+            "marks": [],
+            "text": "L’exploitation de ces rapports nécessite de nombreuses heures perdues à gérer, exploiter les données… L’analyse, partie très importante, est de fait noyée dans le flux des données"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Æxdo",
+    "order": 10,
+    "roles": [
+      {
+        "_key": "ed50ec6b733e",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      },
+      {
+        "_key": "d54113401fad",
+        "_ref": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+        "_type": "reference"
+      },
+      {
+        "_key": "39ecde602db8",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "a1ad21472d69",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "aexdo",
+    "startDate": "2019-03-01",
+    "technos": [
+      {
+        "_key": "2dcf5eba138b",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "2349c56fb3ae",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "83a85e5c405d",
+        "_ref": "8d9ea994-8e92-4c59-a0f3-0a7d6772500e",
+        "_type": "reference"
+      },
+      {
+        "_key": "1198e63acf2e",
+        "_ref": "87e4b452-0174-44b9-bbaf-edc51b1ba9c5",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:56:39Z",
+    "_id": "929c7d7a-4e2b-45a3-a111-9d6c6132bb2e",
+    "_rev": "GvctuvIXYTB4bUgp3jiA8K",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:56:39Z",
+    "brief": "Skrnz is a project of interactivity management in movie theaters.",
+    "categories": [
+      {
+        "_key": "84568d435d9d",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "03de97ea-01f7-4e5a-94d3-05545da3f53c",
+    "client._type": "reference",
+    "endDate": "2018-12-31",
+    "heroImage._sanityAsset": "image@file://./images/a4d5b89881f758bbf2f73c5dad3035ab65b708f7-1205x800.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "A movie theatre",
+    "heroImage.caption": "Movie theatre",
+    "langue": "en",
+    "main": [
+      {
+        "_key": "43e5bf057d68",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "48df5ffa5754",
+            "_type": "span",
+            "marks": [],
+            "text": "Project to create interactive games in movie theatres"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "404c696b8088",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "21f05dfdd70e0",
+            "_type": "span",
+            "marks": [],
+            "text": "After the defection of one of the founders, the project was abandoned."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Skrnz",
+    "roles": [
+      {
+        "_key": "93203f15349b",
+        "_ref": "c585f3d3-c487-4137-9adb-c88eb54671d3",
+        "_type": "reference"
+      },
+      {
+        "_key": "2d7d42cdcf91",
+        "_ref": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "skrnz-en",
+    "startDate": "2017-08-01"
+  },
+  {
+    "_createdAt": "2020-12-15T19:28:27Z",
+    "_id": "26177cce-09b3-4f89-b2c0-0a3303aba62a",
+    "_rev": "BjrwWumcCZ1MIr5dVNBaK4",
+    "_type": "projet",
+    "_updatedAt": "2020-12-22T17:25:59Z",
+    "brief": "Intervenant sur le thème \"Jeux vidéo et nouveaux média\" pour les étudiants en M1 et M2",
+    "categories": [
+      {
+        "_key": "6f6b9d85681b",
+        "_ref": "a08dec6d-a236-4a28-827c-eb3ed849ef25",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "1a4af0e8-a440-4094-ace9-995efa636242",
+    "client._type": "reference",
+    "endDate": "2017-06-30",
+    "heroImage._sanityAsset": "image@file://./images/ef0e036a333cab97278e313b1cbb6155e2e51b78-1280x710.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Une salle de cours avec des étudiants devant leurs ordinateurs",
+    "heroImage.caption": "Salle de cours",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "b949e7e2be4f",
+        "_type": "link",
+        "title": "Site de l'école",
+        "url": "https://efrei.fr"
+      }
+    ],
+    "main": [
+      {
+        "_key": "b632274d7bf0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cb4445afe356",
+            "_type": "span",
+            "marks": [],
+            "text": "J'ai pu donner des cours à des étudiants de M1 et M2 sur le game design et l'élaboration de jeux vidéos."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7b7af758f540",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "04ee3281c86b",
+            "_type": "span",
+            "marks": [],
+            "text": "Je garde toujours un lien assez fort avec mon école dans laquelle j'interviens régulièrement sur des sujets d'entrepreneuriat."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Enseignant jeux vidéo",
+    "order": 90,
+    "roles": [
+      {
+        "_key": "d1120088d331",
+        "_ref": "ea058c9d-1aad-4901-a3a7-4389aabb3260",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "enseignant-jeux-video",
+    "startDate": "2013-01-01"
+  },
+  {
+    "_createdAt": "2020-12-16T18:06:40Z",
+    "_id": "1bf5cbf3-4ef5-493b-a6fc-dfe48e605046",
+    "_rev": "CpdWPhQozFwTcwW2Z3PCvf",
+    "_type": "projet",
+    "_updatedAt": "2022-09-30T14:28:10Z",
+    "brief": "Divers sites internet pour des entreprises ou des associations",
+    "categories": [
+      {
+        "_key": "51c4bce40af6",
+        "_ref": "76335112-2ca2-4e76-937b-8f74d9062a75",
+        "_type": "reference"
+      }
+    ],
+    "heroImage._sanityAsset": "image@file://./images/b4eb67dcc1effa8fe6b5fa8ed4967ac7887993f8-1280x719.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "écrans présentant des sites web",
+    "heroImage.caption": "sites web",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "1551eb658e72",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a9a9d5a9bd62",
+            "_type": "span",
+            "marks": [],
+            "text": "Quelques exemples :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d045bc5d1c7f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "02ea80ad20310",
+            "_type": "span",
+            "marks": ["dc853fe6ff26"],
+            "text": "WSConseil"
+          },
+          {
+            "_key": "02ea80ad20311",
+            "_type": "span",
+            "marks": [],
+            "text": " (bien sûr)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "dc853fe6ff26",
+            "_type": "link",
+            "href": "http://wsconseil.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "1709cf717218",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1c3f9b0648f20",
+            "_type": "span",
+            "marks": ["92fdc83779a0"],
+            "text": "Igloospirit"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "92fdc83779a0",
+            "_type": "link",
+            "href": "http://igloospir.it/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "725d78027487",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "626cb5d811050",
+            "_type": "span",
+            "marks": ["2d428fdc896d"],
+            "text": "Stimshop/Wi-Us"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "2d428fdc896d",
+            "_type": "link",
+            "href": "http://wi-us.eu/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "11cc5e786f80",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4387b09a5ce70",
+            "_type": "span",
+            "marks": ["a9e52773a821"],
+            "text": "Sans-elle"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "a9e52773a821",
+            "_type": "link",
+            "href": "http://sans-elle.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "2690f341fa1f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "69060385bad70",
+            "_type": "span",
+            "marks": ["d3b563f8b5ff"],
+            "text": "Aexdo"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "d3b563f8b5ff",
+            "_type": "link",
+            "href": "http://aexdo.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "f14633b53648",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4f8c6fa422030",
+            "_type": "span",
+            "marks": ["d513244df83d"],
+            "text": "Lapstick"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "d513244df83d",
+            "_type": "link",
+            "href": "http://lapstick.io/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "8e63d1e918e2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9f180ffd34b5",
+            "_type": "span",
+            "marks": ["8dda6b9f8e7e"],
+            "text": "Circolab"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "8dda6b9f8e7e",
+            "_type": "link",
+            "href": "https://circolab.eu"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "877304a155f6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8994e7c6f5bd",
+            "_type": "span",
+            "marks": ["4c068f4797ba"],
+            "text": "CTO.paris"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "4c068f4797ba",
+            "_type": "link",
+            "href": "http://cto.paris"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "name": "Développement de sites web",
+    "roles": [
+      {
+        "_key": "7d66b5aa3364",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      },
+      {
+        "_key": "68b8caf8cba2",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "developpement-de-sites-web",
+    "startDate": "2016-06-01",
+    "technos": [
+      {
+        "_key": "181920d25578",
+        "_ref": "497dda34-021d-42f7-b1c2-a32268c6effb",
+        "_type": "reference"
+      },
+      {
+        "_key": "fd84b31d7de3",
+        "_ref": "156dddc0-e91f-4a35-9ad9-7cf4fa950b47",
+        "_type": "reference"
+      },
+      {
+        "_key": "d4b727f91d68",
+        "_ref": "5afaf72e-e8dd-4642-93dc-9150f0b5d451",
+        "_type": "reference"
+      },
+      {
+        "_key": "dc58332035ad",
+        "_ref": "a2505f42-a8a9-44d3-83d7-d4878d36b030",
+        "_type": "reference"
+      },
+      {
+        "_key": "d48eb38978c7",
+        "_ref": "eefbd7ef-4744-4330-b70c-8c664a86c622",
+        "_type": "reference"
+      },
+      {
+        "_key": "fb90422f25ef",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "62fe933a8d34",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      },
+      {
+        "_key": "c8923c5e7f92",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "d64fc0f9acd6",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "aab9aea9c086",
+        "_ref": "1a97b648-88ad-4ff9-87d1-2c0235cc6d4b",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:27:35Z",
+    "_id": "c57c3a53-7905-49f5-86d9-2f995c8795a1",
+    "_rev": "BjrwWumcCZ1MIr5dVQHdey",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:27:35Z",
+    "brief": "Lecturer on the theme \"Video games and new media\" for M1 and M2 students",
+    "categories": [
+      {
+        "_key": "210af5294648",
+        "_ref": "0afa54a4-33ee-47ca-9e7d-8407ff40556d",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "1a4af0e8-a440-4094-ace9-995efa636242",
+    "client._type": "reference",
+    "endDate": "2017-06-30",
+    "heroImage._sanityAsset": "image@file://./images/ef0e036a333cab97278e313b1cbb6155e2e51b78-1280x710.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "a classroom full of students with computers",
+    "heroImage.caption": "EFREI classroom",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "e45a22cc48b9",
+        "_type": "link",
+        "title": "Efrei website",
+        "url": "http://efrei.fr"
+      }
+    ],
+    "main": [
+      {
+        "_key": "38d5871eaf5e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a8253fa87b92",
+            "_type": "span",
+            "marks": [],
+            "text": "I was able to give classes to M1 and M2 students on game design and video game development."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "19c74215b8bc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5e27bb80bd840",
+            "_type": "span",
+            "marks": [],
+            "text": "I still keep a fairly strong link with my school where I regularly speak on entrepreneurship topics."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Video game lecturer",
+    "roles": [
+      {
+        "_key": "90993a971afe",
+        "_ref": "9a10a8c6-f953-4299-8bf6-9a3e728c6624",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "video-game-lecturer",
+    "startDate": "2013-01-01"
+  },
+  {
+    "_createdAt": "2022-04-29T09:33:16Z",
+    "_id": "da9fe5c3-2435-4092-950d-6e5b5f1fea81",
+    "_rev": "hUv61ySKHDfI0qVcQ7KZjq",
+    "_type": "projet",
+    "_updatedAt": "2022-04-29T09:34:31Z",
+    "brief": "Analysis of the pollution data of a terrain with a clear visual representation to understand this pollution and how it evolves according to the depth",
+    "categories": [
+      {
+        "_key": "72a7f10b419f",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2f7c6a0d-a26f-4350-b090-ed7de1599ae1",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/f8eab1216bc38bf2dfffb6a6597dbbe6adccc075-1359x1006.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Voronoi diagram showing analyses by disposal route",
+    "heroImage.caption": "Analysis of disposal",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "62a8d121a856",
+        "_type": "link",
+        "title": "Demo video",
+        "url": "https://youtu.be/iMplt00im0M"
+      }
+    ],
+    "main": [
+      {
+        "_key": "1eeede5955ee",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0420ad0a8502",
+            "_type": "span",
+            "marks": [],
+            "text": "The pollution data retrieved by the Aexdo application are used in this page."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "beba88f6346e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "95218bb27d1e0",
+            "_type": "span",
+            "marks": [],
+            "text": "The representation is entirely dynamic, according to multiple criteria selected by the user who can find information on"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "500cce5833a4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0052ef380e030",
+            "_type": "span",
+            "marks": [],
+            "text": "The disposal methods"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "bf38d0992643",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "959d8fd3803a0",
+            "_type": "span",
+            "marks": [],
+            "text": "the lithology of the land"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d6e9f71b8234",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4e0fd7b5a5400",
+            "_type": "span",
+            "marks": [],
+            "text": "the presence and concentration of pollutants"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/0464890b09e2a0f63a985b5c08306c100cc6dab1-1619x1064.jpg",
+        "_key": "9d63b936b20a",
+        "_type": "image"
+      },
+      {
+        "_key": "045a268fb91d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d4e9a6233b41",
+            "_type": "span",
+            "marks": [],
+            "text": "This representation is visible in graphs or in tables to have precise data"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/095ecf5da2a1e21f1ce80901c2fbb56730d2db34-1606x1229.jpg",
+        "_key": "063dd1978ba0",
+        "_type": "image"
+      },
+      {
+        "_key": "e6b77276a419",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "ff289826ece2",
+            "_type": "span",
+            "marks": [],
+            "text": "Pollution heat map"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/099cdfb6ee3e8377b6ee551b4ee029e11ff7366a-1381x739.jpg",
+        "_key": "ad75656fdb8a",
+        "_type": "image"
+      }
+    ],
+    "name": "Analysis of pollution data",
+    "roles": [
+      {
+        "_key": "90b7b28b1f54",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      },
+      {
+        "_key": "aeb919f55777",
+        "_ref": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "analysis-of-pollution-data",
+    "startDate": "2022-01-10"
+  },
+  {
+    "_createdAt": "2021-12-31T17:24:31Z",
+    "_id": "460c68e2-f075-45e5-b10f-5ad236bc4c4a",
+    "_rev": "WVFZwl5R2BJ9t0VuoyHW8K",
+    "_type": "projet",
+    "_updatedAt": "2021-12-31T17:46:45Z",
+    "brief": "Development of a management platform for Stimshop",
+    "categories": [
+      {
+        "_key": "9595a01ebffd",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/706d0f3798cb127e62995c42ddae30082dc3b027-2165x1338.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "UCheckIn dashboard",
+    "heroImage.caption": "UCheckIn dashboard",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "c449758fdc5b",
+        "_type": "link",
+        "title": "UCheckIn platform",
+        "url": "https://ucheck.in"
+      }
+    ],
+    "main": [
+      {
+        "_key": "54021e81d195",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f576b0647cbd",
+            "_type": "span",
+            "marks": [],
+            "text": "This platform allows customers who connect to it to manage all their products:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d3ce3b7173df",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3034b8a782390",
+            "_type": "span",
+            "marks": [],
+            "text": "Downloading SDKs"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e697b1fc9da1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1b210815da810",
+            "_type": "span",
+            "marks": [],
+            "text": "Creation of their applications with license management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "69187f3bd6b1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "31493cf46d070",
+            "_type": "span",
+            "marks": [],
+            "text": "Generation of ultrasonic signals to activate detections"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8b20d737e982",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "760e3c64bd670",
+            "_type": "span",
+            "marks": [],
+            "text": "Management of notifications"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "273b660e8c0a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "caedec857a4f0",
+            "_type": "span",
+            "marks": [],
+            "text": "Online payment"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "04dcbf71e4d5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "33f6232893070",
+            "_type": "span",
+            "marks": [],
+            "text": "Invitation of users to an application to manage associated content"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "e065d37397e8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58770ccc8fb60",
+            "_type": "span",
+            "marks": [],
+            "text": "Event management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "de8dbfaae30b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b6b556e5b4110",
+            "_type": "span",
+            "marks": [],
+            "text": "Management of UMIT devices (thickness measurement)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "90291dadf149",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7654e886ccc50",
+            "_type": "span",
+            "marks": [],
+            "text": "This platform replaces the previous version which was no longer adapted and lacked features"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f77623962e1e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "928cb5bac27a0",
+            "_type": "span",
+            "marks": [],
+            "text": "The development of this platform was carried out with the following technologies"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "557e86c6f1b5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e6531a7a57bd0",
+            "_type": "span",
+            "marks": [],
+            "text": "Keystone 6 for content management"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "942b78024da5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8234d38c74840",
+            "_type": "span",
+            "marks": [],
+            "text": "Next JS for the front office"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d9b6313d63a2",
+        "_type": "block",
+        "children": [
+          { "_key": "1ce2851084fb0", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "UCheckIn plateform",
+    "roles": [
+      {
+        "_key": "3fe6ce5f1b8d",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      },
+      {
+        "_key": "e9df5fa4c952",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "ucheckin-plateform",
+    "startDate": "2021-12-20"
+  },
+  {
+    "_createdAt": "2022-04-29T09:26:49Z",
+    "_id": "drafts.8944f42a-ef0c-407a-890d-20a07ebe31bd",
+    "_rev": "m2s35t-mze-y8q-br2-frsqjbokj",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:07:25Z",
+    "brief": "Analyse des données de pollution d'un terrain avec une représentation visuelle claire pour comprendre cette pollution et comment elle évolue en fonction de la profondeur",
+    "categories": [
+      {
+        "_key": "5fcbb1e37976",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "2f7c6a0d-a26f-4350-b090-ed7de1599ae1",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/f8eab1216bc38bf2dfffb6a6597dbbe6adccc075-1359x1006.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Diagramme de Voronoi représentant les analyses par filière d'élimination",
+    "heroImage.caption": "analyse des filières d'élimination",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "ce8655c25b50",
+        "_type": "link",
+        "title": "vidéo de démonstration",
+        "url": "https://youtu.be/iMplt00im0M"
+      }
+    ],
+    "main": [
+      {
+        "_key": "b8d2624906ba",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1912f3be5c0a",
+            "_type": "span",
+            "marks": [],
+            "text": "Les données de pollution récupérées par l'application Aexdo sont exploitées dans cette page."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c5bfc4af9ad6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fda6764ae0a4",
+            "_type": "span",
+            "marks": [],
+            "text": "La représentation est entièrement dynamique, en fonction de multiples critères sélectionnés par l'utilisateur qui peut retrouver des informations sur"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1cfe5375c210",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9a103e539119",
+            "_type": "span",
+            "marks": [],
+            "text": "Les filières d'élimination"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "815f27a58713",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "71400d2294d9",
+            "_type": "span",
+            "marks": [],
+            "text": "la lithologie du terrain"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "14ef46d74e76",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a87581e1408d",
+            "_type": "span",
+            "marks": [],
+            "text": "la présence et la concentration des polluants"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/095ecf5da2a1e21f1ce80901c2fbb56730d2db34-1606x1229.jpg",
+        "_key": "1eb8615d7d43",
+        "_type": "image"
+      },
+      {
+        "_key": "753337294672",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "caac1c7e3bc9",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette représentation est visible dans des graphiques ou dans des tables pour avoir des données précises"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/0464890b09e2a0f63a985b5c08306c100cc6dab1-1619x1064.jpg",
+        "_key": "c2a5a3c89c88",
+        "_type": "image"
+      },
+      {
+        "_key": "c3188bf0ea4b",
+        "_type": "block",
+        "children": [
+          { "_key": "98bc47a0f939", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_sanityAsset": "image@file://./images/099cdfb6ee3e8377b6ee551b4ee029e11ff7366a-1381x739.jpg",
+        "_key": "f65af7a6e9fd",
+        "_type": "image"
+      }
+    ],
+    "name": "Analyse des données de pollution",
+    "roles": [
+      {
+        "_key": "dc1e16c86d65",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "a7ab17cf396d",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "analyse-des-donnees-de-pollution",
+    "startDate": "2022-01-10",
+    "technos": [
+      {
+        "_key": "102c8a2aa184",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "8f93647257be",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "b51f2f7bd680",
+        "_ref": "d3ed42a6-aec4-437f-a9e9-9d528b1a9a97",
+        "_strengthenOnPublish": {
+          "template": { "id": "techno" },
+          "type": "techno"
+        },
+        "_type": "reference",
+        "_weak": true
+      },
+      {
+        "_key": "ecbfd0d95655",
+        "_ref": "8d9ea994-8e92-4c59-a0f3-0a7d6772500e",
+        "_strengthenOnPublish": {
+          "template": { "id": "techno" },
+          "type": "techno"
+        },
+        "_type": "reference",
+        "_weak": true
+      }
+    ]
+  },
+  {
+    "_createdAt": "2021-12-31T17:12:15Z",
+    "_id": "5afae649-effd-4936-9a86-702168f740e1",
+    "_rev": "dDz4n5esWDyatH9sWhjMXR",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:04:40Z",
+    "brief": "Développement d'une plateforme de gestion pour Stimshop",
+    "categories": [
+      {
+        "_key": "9198e0c470c9",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/706d0f3798cb127e62995c42ddae30082dc3b027-2165x1338.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Ucheck.in dashboard",
+    "heroImage.caption": "Ucheck.in dashboard",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "bbbe6fce4c48",
+        "_type": "link",
+        "title": "Accès à la plateforme",
+        "url": "https://ucheck.in"
+      }
+    ],
+    "main": [
+      {
+        "_key": "ddb774288316",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7500c26045d8",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette plateforme permet aux clients qui s'y connectent de gérer l'ensemble de leurs produits :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "649e32902ec1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "56acc9c72d39",
+            "_type": "span",
+            "marks": [],
+            "text": "Téléchargement des SDK"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f01fcbe03e55",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d29b134ef955",
+            "_type": "span",
+            "marks": [],
+            "text": "Création de leurs applications avec gestion de leurs licences"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "af2b4df76e40",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e2afa0e24a38",
+            "_type": "span",
+            "marks": [],
+            "text": "Génération de signaux ultrasonores pour activer des détections"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "82695d9d87ff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a8699771654e",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion de notifications"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0c422ebd4fea",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "13abef973016",
+            "_type": "span",
+            "marks": [],
+            "text": "Paiement en ligne"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8f03a980373d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "df01540509ef",
+            "_type": "span",
+            "marks": [],
+            "text": "Invitation d'utilisateurs sur une application pour gérer les contenus associés"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ff15ffd0e65c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d18b9a778f64",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion d'événements"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "af9214334057",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "86adf0eb02d5",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion des appareils UMIT (mesure d'épaisseur)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fb3c9d9ca3a0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "099296118c24",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette plateforme remplace la version précédente qui n'était plus adaptée et qui manquait de fonctionnalités"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cef13832362b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1751013beb65",
+            "_type": "span",
+            "marks": [],
+            "text": "Le développement de cette plateforme a été réalisé avec les technologies suivantes :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6480cd1a163d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "066d9e58ad5f",
+            "_type": "span",
+            "marks": [],
+            "text": "Keystone 6 pour la gestion des contenus"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5d5289c01a31",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c91d8ef2ad71",
+            "_type": "span",
+            "marks": [],
+            "text": "Next JS pour le front office"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Plateforme UcheckIn",
+    "roles": [
+      {
+        "_key": "4edd0a477a71",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      },
+      {
+        "_key": "203262a70500",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "plateforme-ucheckin",
+    "startDate": "2021-12-20",
+    "technos": [
+      {
+        "_key": "a11fddb66068",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "e18207c75c89",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "f4e6b9fecd82",
+        "_ref": "eefbd7ef-4744-4330-b70c-8c664a86c622",
+        "_type": "reference"
+      },
+      {
+        "_key": "d560772b56bb",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:51:14Z",
+    "_id": "a268168f-f536-4328-8907-4e4cfee47f0a",
+    "_rev": "J1fXxapZplmHpfqoaK6pNj",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:51:14Z",
+    "brief": "A self-help site for the inhabitants of Valmondois during the first containment period.",
+    "categories": [
+      {
+        "_key": "cf577849664b",
+        "_ref": "095a97dd-5d8a-43c6-b6ae-55a169f30950",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "e205807e-b68a-4630-a980-e79cabc0a292",
+    "client._type": "reference",
+    "endDate": "2020-07-01",
+    "heroImage._sanityAsset": "image@file://./images/2f1ee3d2a3fcd4d52516ec9a5eb35fe78838262c-600x400.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "a screen copy of the main page",
+    "heroImage.caption": "the website main page",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "db3dc9e03bfe",
+        "_type": "link",
+        "title": "The github of the project",
+        "url": "https://github.com/Skrnz/annonce-valmondois"
+      },
+      {
+        "_key": "1b7fb7e828c0",
+        "_type": "link",
+        "title": "Valmondois website",
+        "url": "http://valmondois.fr"
+      }
+    ],
+    "main": [
+      {
+        "_key": "b95d30453f1b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "46f3c7758f05",
+            "_type": "span",
+            "marks": [],
+            "text": "Developed in 2 days on the occasion of the containment related to "
+          },
+          {
+            "_key": "3f211defb0e2",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "COVID-19"
+          },
+          {
+            "_key": "c48e90892aae",
+            "_type": "span",
+            "marks": [],
+            "text": ", this site allows the inhabitants of the municipality to propose offers of service or express requests for help."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "caf38ceb5ef3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dc7aacff37e20",
+            "_type": "span",
+            "marks": [],
+            "text": "Very quickly adopted by the inhabitants of the small town (1250 inhabitants) of which I am a municipal councilor."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "33aa3cb87c26",
+        "_type": "block",
+        "children": [
+          { "_key": "e7d1f6c09c2f0", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Entr'aide Valmondois",
+    "roles": [
+      {
+        "_key": "b983a341b9ec",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      },
+      {
+        "_key": "b524fce107e6",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "entr-aide-valmondois-en",
+    "startDate": "2020-04-01"
+  },
+  {
+    "_createdAt": "2021-05-20T15:19:00Z",
+    "_id": "45d18994-c4d7-417a-a0e4-f661b97e0ec7",
+    "_rev": "AhXPG6kUryXSHEGRZ6sSlt",
+    "_type": "projet",
+    "_updatedAt": "2023-01-19T15:36:19Z",
+    "brief": "Jeu d'accompagnement pour les enfants qui suivent la série \"Les petits philosophes\"",
+    "categories": [
+      {
+        "_key": "5b1de02b76b5",
+        "_ref": "85ce0444-9b80-4bcd-9491-e534d3e237e0",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "7c39818d-e09c-475f-b680-3a6dfbd2c884",
+    "client._type": "reference",
+    "endDate": "2022-06-30",
+    "heroImage._sanityAsset": "image@file://./images/1583ddc23708bf75cd51ae79740abceca67f72e1-2194x1146.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Image de raoul tenant un ballon dans lequel les enfants glissent des yeux et une bouche pour composer une expression",
+    "heroImage.caption": "Jeu interactif \"drag & drop\"",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "74faeb54dcc5",
+        "_type": "link",
+        "title": "Application Bayam",
+        "url": "https://app.bayam.tv/"
+      }
+    ],
+    "main": [
+      {
+        "_key": "638bd867490e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f83fced51fad",
+            "_type": "span",
+            "marks": [],
+            "text": "La saison 2 de la série \""
+          },
+          {
+            "_key": "a962b6edf5a1",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "Les petits philosophes"
+          },
+          {
+            "_key": "fbcb81897e45",
+            "_type": "span",
+            "marks": [],
+            "text": "\" s'accompagne de jeux interactifs pour les enfants."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7689cc848d6a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fd8cbad8c93e",
+            "_type": "span",
+            "marks": [],
+            "text": "Il m'a donc été demandé de développer ces jeux qui sont pour la plupart basés sur des actions de type \"drag & drop\"."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3d744517ff40",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1355b0c61e22",
+            "_type": "span",
+            "marks": [],
+            "text": "Il s'agit d'un jeu WEB qui prend place dans l'application mère \"BAYAM\". Elle a été développé en React js."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "333be168d627",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9302d9047562",
+            "_type": "span",
+            "marks": [],
+            "text": "Il est prévu de faire un jeu par épisode de la série."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Les petits philosophes",
+    "roles": [
+      {
+        "_key": "2e1d46ef28e3",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "les-petits-philosophes",
+    "startDate": "2021-05-20",
+    "technos": [
+      {
+        "_key": "f47fb2fc3d41",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "5f551c2a16ef",
+        "_ref": "497dda34-021d-42f7-b1c2-a32268c6effb",
+        "_type": "reference"
+      },
+      {
+        "_key": "6dab89b5f6a6",
+        "_ref": "156dddc0-e91f-4a35-9ad9-7cf4fa950b47",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-16T18:13:01Z",
+    "_id": "5d661e0f-6f98-4eaf-8b1a-e400976a8c78",
+    "_rev": "hUv61ySKHDfI0qVcQuL2Qw",
+    "_type": "projet",
+    "_updatedAt": "2022-05-07T11:06:01Z",
+    "brief": "Fond d'investissement des ingénieurs de l'EFREI",
+    "categories": [
+      {
+        "_key": "74257b05280d",
+        "_ref": "b0feb74e-789c-4709-9832-9779b9783df6",
+        "_type": "reference"
+      }
+    ],
+    "heroImage._sanityAsset": "image@file://./images/99041bacb52f874734a5558381c1a1dea6ed7c04-1280x694.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Logo Cedre participations et France Angels",
+    "heroImage.caption": "CP et France Angels",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "15958ecfc3b7",
+        "_type": "link",
+        "title": "Cedre Participations",
+        "url": "https://www.euroquity.com/fr/entity/C%C3%A8dre-Participations-7a2662a7-b617-4c08-b958-ea5a5c61b256/"
+      }
+    ],
+    "main": [
+      {
+        "_key": "ca17c173b708",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "aa322464a81a",
+            "_type": "span",
+            "marks": [],
+            "text": "Création du premier fond d'investissement rattaché à l'école EFREI Paris."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3994cdca7b79",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8087b9b560d2",
+            "_type": "span",
+            "marks": [],
+            "text": "C'était à ce moment là un des tout premier fond d'école d'ingénieur, géré par des anciens et sous forme de SIBA"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d2252e116996",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "41df7055ffb3",
+            "_type": "span",
+            "marks": [],
+            "text": "Nous avons pendant 8 ans investi dans une vingtaine de projets, certains sont sortis très positivement ou positivement, d'autres négativement. Il en reste moins de 5 maintenant dont on sort petit à petit."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a656e3922d72",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "21b95b2a199e",
+            "_type": "span",
+            "marks": [],
+            "text": "Un second fond Cedre Venture a été monté en remplacement de celui-ci en 2018"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Cedre Participations",
+    "roles": [
+      {
+        "_key": "327a2a640dda",
+        "_ref": "2f2176de-890c-4da3-bc06-efa7d81f4b22",
+        "_type": "reference"
+      },
+      {
+        "_key": "474037ae9af1",
+        "_ref": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "cedre-participations",
+    "startDate": "2010-12-01"
+  },
+  {
+    "_createdAt": "2020-12-23T10:35:16Z",
+    "_id": "cda10ce6-6d52-4a61-bbbb-2f761caaf257",
+    "_rev": "J1fXxapZplmHpfqoaK3i0X",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:35:16Z",
+    "brief": "Various websites for companies or associations",
+    "categories": [
+      {
+        "_key": "7cb6073a5b9c",
+        "_ref": "095a97dd-5d8a-43c6-b6ae-55a169f30950",
+        "_type": "reference"
+      }
+    ],
+    "heroImage._sanityAsset": "image@file://./images/b4eb67dcc1effa8fe6b5fa8ed4967ac7887993f8-1280x719.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "computers and phones with a responsive website",
+    "heroImage.caption": "website example",
+    "langue": "en",
+    "main": [
+      {
+        "_key": "c808606a76fc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "39386a59a724",
+            "_type": "span",
+            "marks": [],
+            "text": "Some examples:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "41da89c99806",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1bc18b27f13f",
+            "_type": "span",
+            "marks": ["0ffc9275fbf3"],
+            "text": "WSConseil"
+          },
+          {
+            "_key": "126672117b20",
+            "_type": "span",
+            "marks": [],
+            "text": " (on course)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "0ffc9275fbf3",
+            "_type": "link",
+            "href": "http://wsconseil.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "964412c79f40",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "cc337b92f3c6",
+            "_type": "span",
+            "marks": ["bb5a6c475b4a"],
+            "text": "Igloospirit"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "bb5a6c475b4a",
+            "_type": "link",
+            "href": "http://igloospir.it/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "4db9ad5fe88f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "bd054519661b",
+            "_type": "span",
+            "marks": ["5cafb5849860"],
+            "text": "Stimshop/Wi-Us"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "5cafb5849860",
+            "_type": "link",
+            "href": "http://wi-us.eu/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "7b0a349ca003",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "017a5a78de11",
+            "_type": "span",
+            "marks": ["88d53c4f94bd"],
+            "text": "Sans-elle"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "88d53c4f94bd",
+            "_type": "link",
+            "href": "http://sans-elle.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "8faaafe11293",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c697d5c70cf5",
+            "_type": "span",
+            "marks": ["f0be501055d2"],
+            "text": "Aexdo"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "f0be501055d2",
+            "_type": "link",
+            "href": "http://aexdo.com/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "eba58b4c983e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "30059365027e",
+            "_type": "span",
+            "marks": ["6884b9622f5d"],
+            "text": "Lapstick"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "6884b9622f5d",
+            "_type": "link",
+            "href": "http://lapstick.io/"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "814d679d6610",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "964029f06d5c",
+            "_type": "span",
+            "marks": ["203b6d3e34cd"],
+            "text": "Circolab"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "203b6d3e34cd",
+            "_type": "link",
+            "href": "https://circolab.eu"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "e6f014da7587",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4b0aa69f26c9",
+            "_type": "span",
+            "marks": ["2e8518373a72"],
+            "text": "CTO.paris"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [
+          {
+            "_key": "2e8518373a72",
+            "_type": "link",
+            "href": "http://cto.paris"
+          }
+        ],
+        "style": "normal"
+      }
+    ],
+    "name": "Website development",
+    "roles": [
+      {
+        "_key": "cda4bb235adb",
+        "_ref": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
+        "_type": "reference"
+      },
+      {
+        "_key": "610822d8a52e",
+        "_ref": "fd4fd2de-0364-44be-8476-1d662c94982a",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "website-development",
+    "startDate": "2016-06-01"
+  },
+  {
+    "_createdAt": "2020-12-15T19:27:52Z",
+    "_id": "76441c40-a569-4437-ad01-d913f412e317",
+    "_rev": "OP6xZYg8Pg7NfIW62AAZlS",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:22:28Z",
+    "brief": "Flexilims est un logiciel Saas de gestion de laboratoire",
+    "categories": [
+      {
+        "_key": "5ebad0e20845",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "46acc201-abbe-447c-9771-7c760ce73a2f",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/28a494f294267347a14b8411084f896881c19656-1280x673.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "homme avec des icons virtuelles",
+    "heroImage.caption": "Flexilims",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "13fa2b0f32c0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58e79a418854",
+            "_type": "span",
+            "marks": [],
+            "text": "La gestion de laboratoire est quelque chose de complexe, tous ont un fonctionnement différent en fonction de ce qui est testé."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "97cb95812eff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "17fca486a05f",
+            "_type": "span",
+            "marks": [],
+            "text": "Les tests s'appuient sur des normes, la traçabilité est primordiale, les allocations de machines ou de techniciens ayant les compétences requises sont toujours complexes."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a2d56f339cdf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7b48084c3c16",
+            "_type": "span",
+            "marks": [],
+            "text": "L'idée de cette application est de proposer quelque chose d'entièrement nouveau basé sur des capacités de configurations infinies tout en restant simple à utiliser"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "da1bb07c8b3a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "93b76eaba4d5",
+            "_type": "span",
+            "marks": [],
+            "text": "Je suis intervenu très en amont sur ce projet pour mettre en place toute l'architecture, définir les outils et la manière dont tout allait s'interconnecter"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "a2012cd6fd9f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d30bfaab90a6",
+            "_type": "span",
+            "marks": [],
+            "text": "C'est un projet très international, puisque mes partenaires sont ici saoudiens, indiens et indonésiens"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "FlexiLIMS",
+    "order": 80,
+    "roles": [
+      {
+        "_key": "8718080e05af",
+        "_ref": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+        "_type": "reference"
+      },
+      {
+        "_key": "f4c20319bdf6",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "flexilims",
+    "startDate": "2017-08-01",
+    "technos": [
+      {
+        "_key": "eddc6fefdb9b",
+        "_ref": "411989a5-88dd-4044-a329-c191ec714d42",
+        "_type": "reference"
+      },
+      {
+        "_key": "af6821cdb753",
+        "_ref": "9b565a61-f606-4ed2-82f1-dd48e9a86a5d",
+        "_type": "reference"
+      },
+      {
+        "_key": "bbc1e10b6aaa",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "09727f53e39d",
+        "_ref": "fb7d040a-cee9-442a-a710-bffec943bed6",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-11-09T09:36:13Z",
+    "_id": "2c438e80-469c-4b27-8541-ffbeb1e08976",
+    "_rev": "ci2ZRbwi00FFSJDJgEhHUA",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:24:58Z",
+    "brief": "Un site d'entre-aide pour les habitants de Valmondois pendant le premier confinement",
+    "categories": [
+      {
+        "_key": "c2ca1e909e9b",
+        "_ref": "76335112-2ca2-4e76-937b-8f74d9062a75",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "e205807e-b68a-4630-a980-e79cabc0a292",
+    "client._type": "reference",
+    "endDate": "2020-07-01",
+    "heroImage._sanityAsset": "image@file://./images/2f1ee3d2a3fcd4d52516ec9a5eb35fe78838262c-600x400.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Copie d'écran du site",
+    "heroImage.caption": "Image du site",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "77175c5174b9",
+        "_type": "link",
+        "title": "Le projet sur Github",
+        "url": "https://github.com/Skrnz/annonce-valmondois"
+      },
+      {
+        "_key": "88c440385279",
+        "_type": "link",
+        "title": "Le site de Valmondois",
+        "url": "http://valmondois.fr"
+      }
+    ],
+    "main": [
+      {
+        "_key": "a7991565f265",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0f9b3db30483",
+            "_type": "span",
+            "marks": [],
+            "text": "Développé en 2 jours à l'occasion du confinement lié au "
+          },
+          {
+            "_key": "e775d222ca67",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "COVID-19"
+          },
+          {
+            "_key": "927ae0306c00",
+            "_type": "span",
+            "marks": [],
+            "text": ", ce site permet aux habitants de la commune de proposer des offres de service ou exprimer des demandes d'aide."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "d074603583b4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "98719d259e100",
+            "_type": "span",
+            "marks": [],
+            "text": "Très rapidement adopté par les habitants de la petite commune (1250 habitants) dont je suis conseiller municipal."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Entr'Aide Valmondois",
+    "order": 20,
+    "roles": [
+      {
+        "_key": "c8b9c84b7449",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      },
+      {
+        "_key": "9d6b2bbe1101",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "entr-aide-valmondois",
+    "startDate": "2020-04-01",
+    "technos": [
+      {
+        "_key": "a6ba2e52da5b",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      },
+      {
+        "_key": "88e026752d6d",
+        "_ref": "da92b0a0-7641-4b34-91de-ea01d22a68fb",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:43:31Z",
+    "_id": "df1306a5-641d-44b4-9ea9-7e820ac1f062",
+    "_rev": "GvctuvIXYTB4bUgp3jg0Gv",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:43:31Z",
+    "brief": "Investment fund of EFREI's engineers",
+    "categories": [
+      {
+        "_key": "f295717c7763",
+        "_ref": "ff9c94da-9476-4917-8c10-e985cd85f948",
+        "_type": "reference"
+      }
+    ],
+    "heroImage._sanityAsset": "image@file://./images/99041bacb52f874734a5558381c1a1dea6ed7c04-1280x694.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Cedre participations and France Angels logos",
+    "heroImage.caption": "Cedre participations, member de France Angels",
+    "langue": "en",
+    "links": [
+      {
+        "_key": "f5f176801a3d",
+        "_type": "link",
+        "title": "The fund's participations",
+        "url": "https://www.cedreventures.tech/cedre-participations"
+      },
+      {
+        "_key": "ab0ce519ed84",
+        "_type": "link",
+        "title": "Cedre Ventures",
+        "url": "https://www.cedreventures.tech/"
+      }
+    ],
+    "main": [
+      {
+        "_key": "4cf4d190347e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1a46f0081b7d",
+            "_type": "span",
+            "marks": [],
+            "text": "Creation of the first investment fund attached to the EFREI Paris school."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9e81826efa82",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "acc6fa1c97190",
+            "_type": "span",
+            "marks": [],
+            "text": "It was at that time one of the very first engineering school funds, managed by alumni and in the form of SIBA."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "62aa2da098ff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b24415d5d3110",
+            "_type": "span",
+            "marks": [],
+            "text": "For 8 years, we have invested in about 20 projects, some of which have come out very positively or positively, others negatively. There are less than 5 left now, from which we are slowly coming out."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f55176e7907c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "330a6b7068df0",
+            "_type": "span",
+            "marks": [],
+            "text": "A second Cedre Venture fund has been set up to replace this one in 2018."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Cedre Participations",
+    "roles": [
+      {
+        "_key": "8e013cd33808",
+        "_ref": "32ba11ce-6cff-46ea-88ca-898c6e025cdb",
+        "_type": "reference"
+      },
+      {
+        "_key": "c81728a9e2a8",
+        "_ref": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "cedre-participations-en",
+    "startDate": "2010-12-01"
+  },
+  {
+    "_createdAt": "2021-12-31T17:12:15Z",
+    "_id": "drafts.5afae649-effd-4936-9a86-702168f740e1",
+    "_rev": "bv4xdm-lej-md5-4w1-86o5pkhk2",
+    "_type": "projet",
+    "_updatedAt": "2022-08-26T10:05:31Z",
+    "brief": "Développement d'une plateforme de gestion pour Stimshop",
+    "categories": [
+      {
+        "_key": "9198e0c470c9",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/706d0f3798cb127e62995c42ddae30082dc3b027-2165x1338.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Ucheck.in dashboard",
+    "heroImage.caption": "Ucheck.in dashboard",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "bbbe6fce4c48",
+        "_type": "link",
+        "title": "Accès à la plateforme",
+        "url": "https://ucheck.in"
+      }
+    ],
+    "main": [
+      {
+        "_key": "ddb774288316",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7500c26045d8",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette plateforme permet aux clients qui s'y connectent de gérer l'ensemble de leurs produits :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "649e32902ec1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "56acc9c72d39",
+            "_type": "span",
+            "marks": [],
+            "text": "Téléchargement des SDK"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "f01fcbe03e55",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d29b134ef955",
+            "_type": "span",
+            "marks": [],
+            "text": "Création de leurs applications avec gestion de leurs licences"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "af2b4df76e40",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "e2afa0e24a38",
+            "_type": "span",
+            "marks": [],
+            "text": "Génération de signaux ultrasonores pour activer des détections"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "82695d9d87ff",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "a8699771654e",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion de notifications"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "0c422ebd4fea",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "13abef973016",
+            "_type": "span",
+            "marks": [],
+            "text": "Paiement en ligne"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8f03a980373d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "df01540509ef",
+            "_type": "span",
+            "marks": [],
+            "text": "Invitation d'utilisateurs sur une application pour gérer les contenus associés"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "ff15ffd0e65c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d18b9a778f64",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion d'événements"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "af9214334057",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "86adf0eb02d5",
+            "_type": "span",
+            "marks": [],
+            "text": "Gestion des appareils UMIT (mesure d'épaisseur)"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "fb3c9d9ca3a0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "099296118c24",
+            "_type": "span",
+            "marks": [],
+            "text": "Cette plateforme remplace la version précédente qui n'était plus adaptée et qui manquait de fonctionnalités"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cef13832362b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1751013beb65",
+            "_type": "span",
+            "marks": [],
+            "text": "Le développement de cette plateforme a été réalisé avec les technologies suivantes :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6480cd1a163d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "066d9e58ad5f",
+            "_type": "span",
+            "marks": [],
+            "text": "Keystone 6 pour la gestion des contenus"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5d5289c01a31",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c91d8ef2ad71",
+            "_type": "span",
+            "marks": [],
+            "text": "Next JS pour le front office"
+          }
+        ],
+        "level": 1,
+        "listItem": "bullet",
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Plateforme UcheckIn",
+    "roles": [
+      {
+        "_key": "4edd0a477a71",
+        "_ref": "78669f8b-1584-4a35-a1ae-ac364856304b",
+        "_type": "reference"
+      },
+      {
+        "_key": "203262a70500",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "plateforme-ucheckin",
+    "startDate": "2021-12-20",
+    "technos": [
+      {
+        "_key": "a11fddb66068",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "e18207c75c89",
+        "_ref": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+        "_type": "reference"
+      },
+      {
+        "_key": "f4e6b9fecd82",
+        "_ref": "eefbd7ef-4744-4330-b70c-8c664a86c622",
+        "_type": "reference"
+      },
+      {
+        "_key": "d560772b56bb",
+        "_ref": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+        "_type": "reference"
+      },
+      {
+        "_key": "be63036ebf09",
+        "_ref": "82e8bd7f-9c0a-45b9-a414-2300320669eb",
+        "_strengthenOnPublish": {
+          "template": { "id": "techno" },
+          "type": "techno"
+        },
+        "_type": "reference",
+        "_weak": true
+      },
+      {
+        "_key": "d12095353c19",
+        "_ref": "a710c4c0-57b7-4f99-ab47-c9de53401178",
+        "_strengthenOnPublish": {
+          "template": { "id": "techno" },
+          "type": "techno"
+        },
+        "_type": "reference",
+        "_weak": true
+      }
+    ]
+  },
+  {
+    "_createdAt": "2020-12-23T10:36:04Z",
+    "_id": "09c69867-f69b-48ca-9c88-58c1dcdb2aff",
+    "_rev": "GvctuvIXYTB4bUgp3jfWD3",
+    "_type": "projet",
+    "_updatedAt": "2020-12-23T10:39:37Z",
+    "brief": "Interactive applications for television with HbbTV",
+    "categories": [
+      {
+        "_key": "0a570d859370",
+        "_ref": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
+        "_type": "reference"
+      }
+    ],
+    "endDate": "2016-10-01",
+    "heroImage._sanityAsset": "image@file://./images/40576a36836caf9bf90b81564bb8642982d06edf-841x800.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "A communication poster from gamific.tv",
+    "heroImage.caption": "gamific tv communication poster",
+    "langue": "en",
+    "main": [
+      {
+        "_key": "6c1fefd5422d",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d1353fb1f86d",
+            "_type": "span",
+            "marks": [],
+            "text": "Startup project proposing interactive games on television."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b8f66dfb93a5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4b83f79dded00",
+            "_type": "span",
+            "marks": [],
+            "text": "The technology used was "
+          },
+          {
+            "_key": "6366fa37632a",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "HbbTV"
+          },
+          {
+            "_key": "bf907f9d54ea",
+            "_type": "span",
+            "marks": [],
+            "text": ", a standard for displaying personalized content on TV screens. The idea was to couple this to mobile applications to use your smartphone as a gamepad or as a terminal to control what happens on the screen."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c0ca43765f11",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "25d4d2678c2f0",
+            "_type": "span",
+            "marks": [],
+            "text": "The application was embedded with the TV program, and therefore driven by the channel."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "cfeaaa68b413",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1bb92264182b0",
+            "_type": "span",
+            "marks": [],
+            "text": "The complexity of adoption had been underestimated, and even if TV channels were interested, the deployment of solutions was far too complex."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4bc7c63a3f26",
+        "_type": "block",
+        "children": [
+          { "_key": "3d99076848520", "_type": "span", "marks": [], "text": "" }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Gamific.tvtv",
+    "roles": [
+      {
+        "_key": "eb00a344f642",
+        "_ref": "c585f3d3-c487-4137-9adb-c88eb54671d3",
+        "_type": "reference"
+      },
+      {
+        "_key": "efc9e85f9e30",
+        "_ref": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "gamific-tv-en",
+    "startDate": "2012-03-01"
+  },
+  {
+    "_createdAt": "2020-12-15T14:43:27Z",
+    "_id": "112f214e-9b89-45f7-9386-aa6111fdce96",
+    "_rev": "J1fXxapZplmHpfqoaI5dQv",
+    "_type": "projet",
+    "_updatedAt": "2020-12-22T17:25:16Z",
+    "brief": "Skrnz est un projet de gestion d'interactivité dans les salles de cinéma",
+    "categories": [
+      {
+        "_key": "7bed0a4cd16a",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "03de97ea-01f7-4e5a-94d3-05545da3f53c",
+    "client._type": "reference",
+    "endDate": "2018-12-31",
+    "heroImage._sanityAsset": "image@file://./images/a4d5b89881f758bbf2f73c5dad3035ab65b708f7-1205x800.jpg",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Salle de cinéma",
+    "heroImage.caption": "Salle de cinéma",
+    "langue": "fr",
+    "main": [
+      {
+        "_key": "b294eef04943",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f08c8b4b3d39",
+            "_type": "span",
+            "marks": [],
+            "text": "Projet destiné à créer des jeux interactifs dans les cinémas"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "b19984dbe626",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9ebc5344e225",
+            "_type": "span",
+            "marks": [],
+            "text": "Après défection d'un des fondateurs, le projet a été abandonné."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Skrnz",
+    "order": 70,
+    "roles": [
+      {
+        "_key": "98a8fffe02d8",
+        "_ref": "613b8da0-fd20-4b5a-8e7d-5592ee97dade",
+        "_type": "reference"
+      },
+      {
+        "_key": "ef5f104ea821",
+        "_ref": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+        "_type": "reference"
+      }
+    ],
+    "running": false,
+    "slug._type": "slug",
+    "slug.current": "skrnz",
+    "startDate": "2017-08-01"
+  },
+  {
+    "_createdAt": "2024-01-29T17:45:13Z",
+    "_id": "952f8904-f952-42bd-bb1a-7c15604d0f35",
+    "_rev": "luEANJZad4qtHcoz7VktgE",
+    "_type": "projet",
+    "_updatedAt": "2024-07-26T15:41:16Z",
+    "brief": "Développement et améliorations du site eCommerce d'Intermarché",
+    "categories": [
+      {
+        "_key": "a50b952d976a",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      },
+      {
+        "_key": "dca7bf23ffd6",
+        "_ref": "76335112-2ca2-4e76-937b-8f74d9062a75",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "b9030851-d95a-4a0d-bfbb-600fb8910af5",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/b4a46b7cf13367c1c0e948446190a46f40fe2d70-1672x1168.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Site intermaché, sélection de produits",
+    "heroImage.caption": "Site intermarché",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "b214bcd9826d",
+        "_type": "link",
+        "title": "Site intermaché",
+        "url": "https://www.intermarche.com"
+      }
+    ],
+    "main": [
+      {
+        "_key": "bc3f1f8104c2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d8709b5e3fb5",
+            "_type": "span",
+            "marks": [],
+            "text": "Lead développeur de la squad Client pour le développement Web du site eCommerce d'intermarché"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "79d0d01cfd23",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "56343fed0a38",
+            "_type": "span",
+            "marks": [],
+            "text": "Mes missions concernent essentiellement toute la partie enrolement des clients, les pages des différents magasins et la fidélité"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "181c7bba87cf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2e94c8bb54e2",
+            "_type": "span",
+            "marks": [],
+            "text": "Le site utilise le framework NextJS ainsi que le cache Varnish"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Application eCommerce Intermarché",
+    "roles": [
+      {
+        "_key": "415bd5719311",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "application-ecommerce-intermarche",
+    "startDate": "2023-03-20",
+    "technos": [
+      {
+        "_key": "5293d0a9b934",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "7b08599335b3",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "7e1f68d46473",
+        "_ref": "5afaf72e-e8dd-4642-93dc-9150f0b5d451",
+        "_type": "reference"
+      },
+      {
+        "_key": "626466929577",
+        "_ref": "74d9a8e7-6033-45b4-940b-3de0effee68b",
+        "_type": "reference"
+      },
+      {
+        "_key": "8507a8ddaef8",
+        "_ref": "a2505f42-a8a9-44d3-83d7-d4878d36b030",
+        "_type": "reference"
+      }
+    ]
+  },
+  {
+    "_createdAt": "2024-01-29T17:45:13Z",
+    "_id": "drafts.952f8904-f952-42bd-bb1a-7c15604d0f35",
+    "_rev": "jeml57-l1f-s6a-w7d-50imyfh3h",
+    "_type": "projet",
+    "_updatedAt": "2024-12-05T14:56:48Z",
+    "brief": "Développement et améliorations du site eCommerce d'Intermarché",
+    "categories": [
+      {
+        "_key": "a50b952d976a",
+        "_ref": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+        "_type": "reference"
+      },
+      {
+        "_key": "dca7bf23ffd6",
+        "_ref": "76335112-2ca2-4e76-937b-8f74d9062a75",
+        "_type": "reference"
+      }
+    ],
+    "client._ref": "b9030851-d95a-4a0d-bfbb-600fb8910af5",
+    "client._type": "reference",
+    "heroImage._sanityAsset": "image@file://./images/b4a46b7cf13367c1c0e948446190a46f40fe2d70-1672x1168.png",
+    "heroImage._type": "mainImage",
+    "heroImage.alt": "Site intermaché, sélection de produits",
+    "heroImage.caption": "Site intermarché",
+    "langue": "fr",
+    "links": [
+      {
+        "_key": "b214bcd9826d",
+        "_type": "link",
+        "title": "Site intermaché",
+        "url": "https://www.intermarche.com"
+      }
+    ],
+    "main": [
+      {
+        "_key": "bc3f1f8104c2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d8709b5e3fb5",
+            "_type": "span",
+            "marks": [],
+            "text": "Lead développeur de la squad Client pour le développement Web du site eCommerce d'intermarché"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "79d0d01cfd23",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "56343fed0a38",
+            "_type": "span",
+            "marks": [],
+            "text": "Mes missions concernent essentiellement toute la partie enrolement des clients, les pages des différents magasins et la fidélité"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "181c7bba87cf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2e94c8bb54e2",
+            "_type": "span",
+            "marks": [],
+            "text": "Le site utilise le framework NextJS ainsi que le cache Varnish"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "name": "Application eCommerce Intermarché",
+    "roles": [
+      {
+        "_key": "415bd5719311",
+        "_ref": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+        "_type": "reference"
+      }
+    ],
+    "running": true,
+    "slug._type": "slug",
+    "slug.current": "application-ecommerce-intermarche",
+    "startDate": "2023-03-20",
+    "technos": [
+      {
+        "_key": "5293d0a9b934",
+        "_ref": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+        "_type": "reference"
+      },
+      {
+        "_key": "7b08599335b3",
+        "_ref": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+        "_type": "reference"
+      },
+      {
+        "_key": "7e1f68d46473",
+        "_ref": "5afaf72e-e8dd-4642-93dc-9150f0b5d451",
+        "_type": "reference"
+      },
+      {
+        "_key": "626466929577",
+        "_ref": "74d9a8e7-6033-45b4-940b-3de0effee68b",
+        "_type": "reference"
+      },
+      {
+        "_key": "8507a8ddaef8",
+        "_ref": "a2505f42-a8a9-44d3-83d7-d4878d36b030",
+        "_type": "reference"
+      }
+    ]
+  }
+]

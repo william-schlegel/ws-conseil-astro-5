@@ -1,0 +1,292 @@
+[
+  {
+    "_createdAt": "2022-08-26T10:17:24Z",
+    "_id": "fb7d040a-cee9-442a-a710-bffec943bed6",
+    "_rev": "LMfHF3A13K4P70GUEm3bdw",
+    "_type": "techno",
+    "_updatedAt": "2022-09-30T14:52:15Z",
+    "image": "/images/49c2be6f2607b5c12dd27f8ecc8521723447975d-1000x966.svg",
+    "image._type": "image",
+    "name": "Nest JS"
+  },
+  {
+    "_createdAt": "2022-08-26T10:24:56Z",
+    "_id": "da92b0a0-7641-4b34-91de-ea01d22a68fb",
+    "_rev": "LMfHF3A13K4P70GUEmBWuW",
+    "_type": "techno",
+    "_updatedAt": "2022-09-30T15:39:03Z",
+    "image": "/images/7bb7ad740f45c9e893f26e5a22f851147c23c8db-512x408.png",
+    "image._type": "image",
+    "name": "Bootstrap"
+  },
+  {
+    "_createdAt": "2022-08-26T09:58:45Z",
+    "_id": "6a6f4ecc-7131-4cc2-b35d-85877a623411",
+    "_rev": "dDz4n5esWDyatH9sWhhtIF",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T09:58:45Z",
+    "image": "/images/37ae5c7e00f0a14cb7e3f7fb1a82d0b5ec5de27a-2560x1534.png",
+    "image._type": "image",
+    "name": "Next JS"
+  },
+  {
+    "_createdAt": "2023-01-19T15:33:22Z",
+    "_id": "56e5853d-dd06-4038-9574-10033398da4b",
+    "_rev": "SdIKFWCKzFt1VOHcyqNaco",
+    "_type": "techno",
+    "_updatedAt": "2023-01-19T15:33:22Z",
+    "image": "/images/8c1b41fbc8e1939c5638112847a814da5875c124-249x80.png",
+    "image._type": "image",
+    "name": "Prisma"
+  },
+  {
+    "_createdAt": "2022-08-26T09:58:03Z",
+    "_id": "09ee6ad9-1e7b-45d6-8306-c3c6505df81d",
+    "_rev": "xj3PwrXoiuIDdPlPjLL3Ou",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T09:58:03Z",
+    "image": "/images/f2f277e68240755464a83e9e7ab0b6062beeffb6-1000x1000.png",
+    "image._type": "image",
+    "name": "React"
+  },
+  {
+    "_createdAt": "2022-09-30T14:27:48Z",
+    "_id": "1a97b648-88ad-4ff9-87d1-2c0235cc6d4b",
+    "_rev": "LMfHF3A13K4P70GUEly2xc",
+    "_type": "techno",
+    "_updatedAt": "2022-09-30T14:27:48Z",
+    "image": "/images/7f3eb4576d937e140b29e2d05cfe0055be2d2037-83x83.png",
+    "image._type": "image",
+    "name": "Sanity"
+  },
+  {
+    "_createdAt": "2022-08-26T10:09:14Z",
+    "_id": "d36adfe8-0dd2-4941-9299-8dbbe693ba5c",
+    "_rev": "dDz4n5esWDyatH9sWhkYo1",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:09:14Z",
+    "image": "/images/13bc3dee51cab97fbd6c8a4ff250b410fc04103b-1280x606.png",
+    "image._type": "image",
+    "name": "SQLite"
+  },
+  {
+    "_createdAt": "2022-08-26T10:00:52Z",
+    "_id": "c6d9c96a-8e8d-4fce-aa9c-5c7ecbb3ba4f",
+    "_rev": "layYkZx02ZwvvFp3iymRcn",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:00:52Z",
+    "image": "/images/4ef54756ea0d6ec176e0f5d01d7037703ff3e2dd-291x300.png",
+    "image._type": "image",
+    "name": "Astro"
+  },
+  {
+    "_createdAt": "2022-08-26T10:06:57Z",
+    "_id": "d3ed42a6-aec4-437f-a9e9-9d528b1a9a97",
+    "_rev": "layYkZx02ZwvvFp3iyovEf",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:06:57Z",
+    "image": "/images/701629a36b306aa16b7bc4ea482c2ced74c24b0c-1280x766.png",
+    "image._type": "image",
+    "name": "AWS"
+  },
+  {
+    "_createdAt": "2022-08-26T10:23:49Z",
+    "_id": "5afaf72e-e8dd-4642-93dc-9150f0b5d451",
+    "_rev": "LMfHF3A13K4P70GUEmBZTs",
+    "_type": "techno",
+    "_updatedAt": "2022-09-30T15:39:12Z",
+    "image": "/images/1f7fec3c52322ac2151841e7d7cf52db4fccb63c-2560x1920.png",
+    "image._type": "image",
+    "name": "Sass"
+  },
+  {
+    "_createdAt": "2024-01-29T17:45:04Z",
+    "_id": "74d9a8e7-6033-45b4-940b-3de0effee68b",
+    "_rev": "ibuBlxR0pE9BfomHnOQLvg",
+    "_type": "techno",
+    "_updatedAt": "2024-01-29T17:45:04Z",
+    "image": "/images/0e55661609406f991d269878924df81d416512f5-219x330.png",
+    "image._type": "image",
+    "name": "Varnish cache"
+  },
+  {
+    "_createdAt": "2022-08-26T10:00:41Z",
+    "_id": "d34bd184-f5f5-4299-a1ec-934d97ce5fbd",
+    "_rev": "dDz4n5esWDyatH9sWhiNPY",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:00:41Z",
+    "image": "/images/674d368475311b60be6403d4ac1a2b36e42ff8bb-1052x1052.png",
+    "image._type": "image",
+    "name": "Javascript"
+  },
+  {
+    "_createdAt": "2023-01-19T15:31:14Z",
+    "_id": "acaafe97-50ad-4236-b0f6-6754848bf234",
+    "_rev": "SdIKFWCKzFt1VOHcyqNepq",
+    "_type": "techno",
+    "_updatedAt": "2023-01-19T15:33:31Z",
+    "image": "/images/17c6ac6f7cf1556e5fa8ed68cb408b3cc3aba513-512x512.png",
+    "image._type": "image",
+    "name": "tRPC"
+  },
+  {
+    "_createdAt": "2022-08-26T10:01:56Z",
+    "_id": "83d24e7d-8862-44cd-9bad-3de13660c8ad",
+    "_rev": "dDz4n5esWDyatH9sWhifmg",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:01:56Z",
+    "image": "/images/9fad8f99909150672f0db5ef5aba4caef9a8af9a-512x512.png",
+    "image._type": "image",
+    "name": "Preact"
+  },
+  {
+    "_createdAt": "2022-08-26T10:18:00Z",
+    "_id": "9b565a61-f606-4ed2-82f1-dd48e9a86a5d",
+    "_rev": "CpdWPhQozFwTcwW2Z3VEit",
+    "_type": "techno",
+    "_updatedAt": "2022-09-30T15:38:53Z",
+    "image": "/images/71bf6fcf6da9e5aa1786f6a01a479937db0acd3e-1200x627.jpg",
+    "image._type": "image",
+    "name": "Form io"
+  },
+  {
+    "_createdAt": "2023-02-15T09:48:13Z",
+    "_id": "5bb33913-7343-4cb8-bd47-c47251c261ec",
+    "_rev": "Z7ZPq6a8dEAeMSZb7vOgrV",
+    "_type": "techno",
+    "_updatedAt": "2023-02-15T09:48:13Z",
+    "image": "/images/6abab2872fdc3fac3a1629a629086a7ff6697c06-256x256.png",
+    "image._type": "image",
+    "name": "TurboRepo / mono repo"
+  },
+  {
+    "_createdAt": "2022-08-26T10:08:25Z",
+    "_id": "a06c4c2e-0f37-4585-a97f-8272afcfae0b",
+    "_rev": "layYkZx02ZwvvFp3iypY13",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:08:25Z",
+    "image": "/images/598b685075bec4fa3520383753095038252e7cce-522x343.png",
+    "image._type": "image",
+    "name": "React Native"
+  },
+  {
+    "_createdAt": "2022-08-26T10:07:40Z",
+    "_id": "8d9ea994-8e92-4c59-a0f3-0a7d6772500e",
+    "_rev": "dDz4n5esWDyatH9sWhkByW",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:07:40Z",
+    "image": "/images/904bd28c13dd7751758c68a0c73934bdd21085f8-1200x1212.png",
+    "image._type": "image",
+    "name": "Couch DB"
+  },
+  {
+    "_createdAt": "2022-08-26T10:27:27Z",
+    "_id": "87e4b452-0174-44b9-bbaf-edc51b1ba9c5",
+    "_rev": "ci2ZRbwi00FFSJDJgEhsTi",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:27:27Z",
+    "image": "/images/2e22e83c6c09aa34bdbb47a694f2fea20b9db4ab-1200x291.png",
+    "image._type": "image",
+    "name": "Scaleway"
+  },
+  {
+    "_createdAt": "2022-08-26T10:06:08Z",
+    "_id": "a710c4c0-57b7-4f99-ab47-c9de53401178",
+    "_rev": "layYkZx02ZwvvFp3iyobif",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:06:08Z",
+    "image": "/images/c6aae7d87bf86ad4d67d51651731c33002d9962a-490x544.png",
+    "image._type": "image",
+    "name": "Postgres"
+  },
+  {
+    "_createdAt": "2022-08-26T10:18:54Z",
+    "_id": "411989a5-88dd-4044-a329-c191ec714d42",
+    "_rev": "layYkZx02ZwvvFp3iytTqF",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:18:54Z",
+    "image": "/images/becf07f36ac7b64a59eb48afd946e85173d2f7c5-1200x600.png",
+    "image._type": "image",
+    "name": "Camunda"
+  },
+  {
+    "_createdAt": "2022-08-26T10:12:02Z",
+    "_id": "497dda34-021d-42f7-b1c2-a32268c6effb",
+    "_rev": "dDz4n5esWDyatH9sWhlGKq",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:12:02Z",
+    "image": "/images/b56d265ed00f8a9a334b7068b2a0fe0797dd16eb-640x640.png",
+    "image._type": "image",
+    "name": "HTML"
+  },
+  {
+    "_createdAt": "2022-08-26T09:59:51Z",
+    "_id": "eefbd7ef-4744-4330-b70c-8c664a86c622",
+    "_rev": "dDz4n5esWDyatH9sWhiAhI",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T09:59:51Z",
+    "image": "/images/e3fb670c73cf147bc538dc44e01b2ec4f0b693c9-1024x1024.png",
+    "image._type": "image",
+    "name": "Typescript"
+  },
+  {
+    "_createdAt": "2022-08-26T10:05:23Z",
+    "_id": "82e8bd7f-9c0a-45b9-a414-2300320669eb",
+    "_rev": "layYkZx02ZwvvFp3iyoMXz",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:05:23Z",
+    "image": "/images/4fdb3ff9546aed4d0522c41c9ac93ca3001b1837-400x250.png",
+    "image._type": "image",
+    "name": "Heroku"
+  },
+  {
+    "_createdAt": "2022-08-26T10:20:20Z",
+    "_id": "160afaee-e897-404c-9341-ff11889cb34c",
+    "_rev": "ci2ZRbwi00FFSJDJgEgGB0",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:20:20Z",
+    "image": "/images/d46abf8394ced5e35a4cdb5c2db39228ebd473cc-2500x2500.svg",
+    "image._type": "image",
+    "name": "Pug"
+  },
+  {
+    "_createdAt": "2022-08-26T10:10:35Z",
+    "_id": "03ff92c2-88d4-4737-a6fe-1441cd65da86",
+    "_rev": "dDz4n5esWDyatH9sWhkxZg",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:10:35Z",
+    "image": "/images/9eca58b650ffe1b43e60e04650c4f8bb341079cc-800x400.png",
+    "image._type": "image",
+    "name": "Watermelon DB"
+  },
+  {
+    "_createdAt": "2022-08-26T10:29:07Z",
+    "_id": "a2505f42-a8a9-44d3-83d7-d4878d36b030",
+    "_rev": "oq0ajFiyoV6xcd6WlXf2pi",
+    "_type": "techno",
+    "_updatedAt": "2022-08-29T07:00:21Z",
+    "image": "/images/e285efaab9a759d07eaa1b6155ac36d72d45f4ab-1200x1200.jpg",
+    "image._type": "image",
+    "name": "Tailwind CSS"
+  },
+  {
+    "_createdAt": "2022-08-26T10:04:32Z",
+    "_id": "521f269a-9634-4d60-9707-b2f10ebf6b87",
+    "_rev": "dDz4n5esWDyatH9sWhjKzJ",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:04:32Z",
+    "image": "/images/c3777ba052d3c4b7e702fca17e425a52178d5706-504x512.png",
+    "image._type": "image",
+    "name": "Keystone JS"
+  },
+  {
+    "_createdAt": "2022-08-26T10:12:24Z",
+    "_id": "156dddc0-e91f-4a35-9ad9-7cf4fa950b47",
+    "_rev": "layYkZx02ZwvvFp3iyr1vl",
+    "_type": "techno",
+    "_updatedAt": "2022-08-26T10:12:24Z",
+    "image": "/images/129dfa5ff35b3dac11522b7707cb030391c7f9ae-1452x2048.png",
+    "image._type": "image",
+    "name": "CSS"
+  }
+]

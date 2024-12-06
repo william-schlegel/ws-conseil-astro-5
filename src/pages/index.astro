@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import { getEntry } from "astro:content";
+import Role from "../components/Role.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const projets = await getCollection("projetCollection");
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home" description="WS Conseil CTO as a Service" logo="">
+  <main>
+    <section>
+      <h1>Hello</h1>
+    </section>
+    <section>
+      <h2>Mes derniers projets</h2>
+      {
+        projets.map((projet) => (
+          <>
+            <div>{projet.data.name}</div>
+            {projet.data.roles.map((role) => (
+              <Role id={role.id} />
+            ))}
+          </>
+        ))
+      }
+    </section>
+  </main>
 </Layout>
