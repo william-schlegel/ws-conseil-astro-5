@@ -1,27 +1,25 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import { getEntry } from "astro:content";
 import Role from "../components/Role.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 
 const projets = await getCollection("projetCollection");
 ---
 
 <Layout title="Home" description="WS Conseil CTO as a Service" logo="">
   <main>
-    <section>
-      <h1>Hello</h1>
+    <section class="pt-[calc(60px+3vh)] pb-[3vh]">
+      <h1>
+        Passez à la vitesse supérieure avec un CTO/Lead dev expérimenté à la
+        demande
+      </h1>
     </section>
     <section>
-      <h2>Mes derniers projets</h2>
+      <h2 class="ligne" style="--delay-ligne: 0.5s">Mes derniers projets</h2>
       {
-        projets.map((projet) => (
-          <>
-            <div>{projet.data.name}</div>
-            {projet.data.roles.map((role) => (
-              <Role id={role.id} />
-            ))}
-          </>
+        projets.map((projet, index) => (
+          <ProjectCard project={projet.data} index={index} />
         ))
       }
     </section>

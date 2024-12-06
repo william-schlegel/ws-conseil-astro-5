@@ -11,9 +11,12 @@ export default {
         secondary: "#2cdd9b",
         "secondary-dark": "#1dc8cd",
         lightgrey: "#8d97ad",
-        bgwhite: "white",
-        bgdark: "#343a40",
-        bglight: "#f5f7fa",
+        bg: {
+          white: "white",
+          dark: "#343a40",
+          light: "#f5f7fa",
+          white01: "rgba(255, 255, 255, 0.1)",
+        },
       },
       fontFamily: {
         titres: ['"Philosopher"', ...defaultTheme.fontFamily.sans],

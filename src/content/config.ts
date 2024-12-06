@@ -45,6 +45,7 @@ const projetCollection = defineCollection({
     running: z.boolean().optional().default(false),
     slug: z.string(),
     startDate: z.string(),
+    endDate: z.string().optional(),
     roles: z.array(reference("roleCollection")),
     categories: z.array(reference("categoryCollection")),
   }),

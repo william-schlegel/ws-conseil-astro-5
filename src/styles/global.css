@@ -9,7 +9,7 @@
   body {
     @apply min-h-screen grid grid-rows-[auto_1fr_auto] bg-primary text-white font-textes;
   }
-  main {
+  section {
     @apply container px-4 mx-auto mb-8;
   }
 
@@ -19,16 +19,16 @@
   h4,
   h5,
   h6 {
-    @apply mb-1 leading-5 font-titres;
+    @apply font-titres text-balance;
   }
   h1 {
-    @apply text-5xl;
+    @apply text-[clamp(24px,7vw,80px)] leading-[5rem] text-white font-[400];
   }
   h2 {
-    @apply text-4xl;
+    @apply px-[10vmin] text-[30px] text-white text-center font-[400];
   }
   h3 {
-    @apply text-3xl;
+    @apply px-[8vmin] text-[24px] text-white text-center;
   }
   h4 {
     @apply text-2xl;
@@ -36,4 +36,21 @@
   h5 {
     @apply text-xl;
   }
+}
+@keyframes ligne {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.ligne::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: white;
+  animation: ligne 2s var(--delay-ligne, 0s) ease-out;
+  margin-block-start: 1rem;
 }
