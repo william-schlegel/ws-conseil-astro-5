@@ -4,7 +4,6 @@ client: "2bc66de3-167e-4fd1-a689-d5c8f014186e"
 heroImage: "/images/cb2d8d227838129ce8c440b7a5637be0c5588966-5000x3333.jpg"
 heroImageAlt: "Logo IglooSpirit"
 name: "IglooSpirit"
-order: 20
 running: true
 slug: "igloospirit"
 startDate: "2017-03-13"

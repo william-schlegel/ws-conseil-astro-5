@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import Role from "../components/Role.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
 const projets = await getCollection("projetCollection");
@@ -9,18 +8,24 @@ const projets = await getCollection("projetCollection");
 
 <Layout title="Home" description="WS Conseil CTO as a Service" logo="">
   <main>
-    <section class="pt-[calc(60px+3vh)] pb-[3vh]">
+    <section class="pt-20 pb-6">
       <h1>
         Passez à la vitesse supérieure avec un CTO/Lead dev expérimenté à la
         demande
       </h1>
     </section>
-    <section>
-      <h2 class="ligne" style="--delay-ligne: 0.5s">Mes derniers projets</h2>
+    <h2 class="ligne mb-4" style="--delay-ligne: 0.5s">Mes derniers projets</h2>
+    <section
+      class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto"
+    >
       {
-        projets.map((projet, index) => (
-          <ProjectCard project={projet.data} index={index} />
-        ))
+        projets
+          .sort((p1, p2) =>
+            new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1
+          )
+          .map((projet, index) => (
+            <ProjectCard project={projet.data} index={index} />
+          ))
       }
     </section>
   </main>

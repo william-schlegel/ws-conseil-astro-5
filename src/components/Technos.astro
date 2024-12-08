@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  technos: Array<CollectionEntry<"technoCollection">>;
+  containerClass: string;
+  itemClass: string;
+  title?: string;
+  withName?: boolean;
+}
+
+const { technos, containerClass, itemClass, title, withName } = Astro.props;
+---
+
+<div>
+  {title && <h4 class="text-secondary">{title}</h4>}
+  {
+    Array.isArray(technos) ? (
+      <ul
+        class:list={["flex flex-wrap gap-2 mb-2 items-center", containerClass]}
+      >
+        {technos.map((tech) => (
+          <li title={tech.data.name} class={itemClass}>
+            <img
+              src={tech.data.image}
+              title={tech.data.name}
+              width={30}
+              height={30}
+              alt=""
+              class="h-full w-auto"
+            />
+            {withName && <span>{tech.data.name}</span>}
+          </li>
+        ))}
+      </ul>
+    ) : null
+  }
+</div>

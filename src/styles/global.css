@@ -36,6 +36,9 @@
   h5 {
     @apply text-xl;
   }
+  p {
+    @apply py-4 text-pretty;
+  }
 }
 @keyframes ligne {
   from {

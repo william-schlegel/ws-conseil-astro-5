@@ -2,6 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 import { displayDate } from "../lib/utils";
 import { getEntry } from "astro:content";
+import { getEntries } from "astro:content";
+import Technos from "./Technos.astro";
 
 interface Props {
   project: CollectionEntry<"projetCollection">["data"];
@@ -9,16 +11,20 @@ interface Props {
 }
 
 const { project, index } = Astro.props;
-const client = await getEntry("clientCollection", project.client.id);
+const client = project.client
+  ? await getEntry("clientCollection", project.client.id)
+  : null;
+const technos = project.technos ? await getEntries(project.technos) : [];
+const categories = await getEntries(project.categories);
 ---
 
 <a
   href={`/project/${project.slug}`}
-  class="flex flex-col bg-bg-white01 rounded-md p-4 w-[clamp(200px,100%,600px)] transition-[outline] ease-in-out duration-200 hover:outline-4 hover:outline-primary"
+  class="flex flex-col bg-bg-white01 rounded-md p-4 transition-[outline] ease-in-out duration-200 hover:outline-4 hover:outline-primary"
   style={`animation: project-appearance 0.8s
   var(--animation-power) ${index * 0.8}s;`}
 >
-  <div class="grid grid-cols-[80px_1fr] items-center gap-8">
+  <div class="grid grid-cols-[80px_auto] items-center gap-8">
     <div
       class="h-[80px] aspect-square rounded-full bg-white grid place-items-center"
     >
@@ -41,33 +47,37 @@ const client = await getEntry("clientCollection", project.client.id);
         )
       }
     </div>
-    <h3>{project.name}</h3>
+    <h3 class="text-4xl text-secondary p-0 text-start">
+      {project.name}
+    </h3>
   </div>
-  <p class="date">
+  <p class="text-sm text-lightgrey">
     {displayDate(project.startDate, project.endDate, project.running)}
   </p>
   {
     project.heroImage && (
       <img
-        class="image-principale"
+        class="aspect-[4/3] object-cover"
         src={project.heroImage}
-        width={600}
-        height={400}
         alt="Image principale du projet"
       />
     )
   }
-  <p class="brief">{project.brief}</p>
-  {/*(<Technos technos={project.technos} styleName="projects" />)*/}
+  <p>{project.brief}</p>
+  <Technos
+    technos={technos}
+    containerClass="justify-end"
+    itemClass="m-0 p-1 bg-white h-8"
+  />
   {
-    /* 
-    Array.isArray(project.categories) && (
-      <ul class="categories">
-        {project.categories.map((cat) => (
-          <li>{cat.title}</li>
+    Array.isArray(categories) && (
+      <ul class="flex flex-wrap gap-4">
+        {categories.map((cat) => (
+          <li class="bg-secondary text-primary px-4 py-2 rounded-full">
+            {cat.data.title}
+          </li>
         ))}
       </ul>
     )
-  */
   }
 </a>
