@@ -15,8 +15,6 @@ categories:
   - "0d4f51b3-d1d2-4d07-89e2-be53d533b21b"
 ---
 
-# Skrnz
-
 Projet destiné à créer des jeux interactifs dans les cinémas
 
 Après défection d'un des fondateurs, le projet a été abandonné.

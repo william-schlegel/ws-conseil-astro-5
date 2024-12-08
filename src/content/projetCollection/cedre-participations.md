@@ -17,8 +17,6 @@ technos:
   - "03ff92c2-88d4-4737-a6fe-1441cd65da86"
 ---
 
-# Cedre Participations
-
 Création du premier fond d'investissement rattaché à l'école EFREI Paris.
 
 C'était à ce moment là un des tout premier fond d'école d'ingénieur, géré par des anciens et sous forme de SIBA

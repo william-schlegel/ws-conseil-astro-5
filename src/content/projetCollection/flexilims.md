@@ -18,8 +18,6 @@ technos:
   - "fb7d040a-cee9-442a-a710-bffec943bed6"
 ---
 
-# FlexiLIMS
-
 La gestion de laboratoire est quelque chose de complexe, tous ont un fonctionnement différent en fonction de ce qui est testé.
 
 Les tests s'appuient sur des normes, la traçabilité est primordiale, les allocations de machines ou de techniciens ayant les compétences requises sont toujours complexes.

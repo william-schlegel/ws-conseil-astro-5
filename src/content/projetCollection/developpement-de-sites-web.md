@@ -24,8 +24,6 @@ technos:
   - "1a97b648-88ad-4ff9-87d1-2c0235cc6d4b"
 ---
 
-# Application UMIT
-
 Quelques exemples :
 
 - [WSConseil](https://wsconseil.com/) (bien sûr)

@@ -20,8 +20,6 @@ links:
   - "159d31e2079f"
 ---
 
-# Stimshop - Wi-Us
-
 Je suis entré chez Stimshop fin 2015 comme investisseur business angel. J'y ai rapidement pris un rôle opérationnel en tant que CTO.
 
 J'ai accompagné puis redéfinis et pris en main le développement de la gamme de produits (logiciel et matériel) pour accompagner le pivot stratégique.

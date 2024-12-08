@@ -21,8 +21,6 @@ technos:
   - "87e4b452-0174-44b9-bbaf-edc51b1ba9c5"
 ---
 
-# Application UMIT
-
 De plus en plus de bâtiments sont construits en milieu urbain, sur des terrains anciennement utilisés par des activités industrielles
 
 La règlementation impose des études environnementales poussées qui produisent des rapports très volumineux et souvent complexes, difficiles à lire et exploiter

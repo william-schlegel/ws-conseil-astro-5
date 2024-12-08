@@ -61,11 +61,47 @@ const projetCollection = defineCollection({
   }),
 });
 
+const skillCollection = defineCollection({
+  loader: file("src/content/skills.json"),
+  schema: z.object({
+    id: z.string(),
+    image: z.string(),
+    name: z.string(),
+    order: z.number().optional().default(0),
+    animation: z.string().optional(),
+    svg: z.string().optional(),
+  }),
+});
+
 const linkCollection = defineCollection({
   loader: file("src/content/links.json"),
   schema: z.object({
     title: z.string(),
     url: z.string().url(),
+  }),
+});
+
+const experienceCollection = defineCollection({
+  loader: file("src/content/experiences.json"),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    image: z.string().optional(),
+    startDate: z.string(),
+    endDate: z.string().optional(),
+    description: z.string(),
+    role: z.string(),
+    category: reference("categoryCollection"),
+  }),
+});
+
+const photoCollection = defineCollection({
+  loader: glob({ pattern: "*.jpg", base: "src/content/photos" }),
+  schema: z.object({
+    id: z.string(),
+    name: z.string(),
+    image: z.string(),
+    alt: z.string().optional(),
   }),
 });
 
@@ -76,4 +112,7 @@ export const collections = {
   projetCollection,
   technoCollection,
   linkCollection,
+  skillCollection,
+  experienceCollection,
+  photoCollection,
 };

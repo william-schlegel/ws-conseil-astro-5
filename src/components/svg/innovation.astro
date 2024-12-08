@@ -130,3 +130,62 @@
     </clipPath>
   </defs>
 </svg>
+<style>
+  #bulb {
+    animation: inno-bulb 3s alternate infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  #fond,
+  #douille_1,
+  #douille_2 {
+    animation: inno-bulb-fond 3s alternate infinite ease-in-out;
+  }
+  #verre {
+    animation: inno-verre 3s alternate infinite ease-in-out;
+  }
+  #light {
+    animation: fade-in 3s alternate infinite ease-in-out;
+  }
+  #man-head {
+    animation: inno-man-head 4s alternate infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+
+  @keyframes inno-bulb {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes inno-bulb-fond {
+    from {
+      fill: #00467c;
+    }
+    to {
+      fill: #2cdd9b;
+    }
+  }
+
+  @keyframes inno-verre {
+    from {
+      fill: #00213a;
+    }
+    to {
+      fill: white;
+    }
+  }
+
+  @keyframes inno-man-head {
+    from {
+      transform: rotateZ(-5deg);
+    }
+    to {
+      transform: rotateZ(10deg);
+    }
+  }
+</style>

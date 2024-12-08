@@ -22,13 +22,13 @@
     @apply font-titres text-balance;
   }
   h1 {
-    @apply text-[clamp(24px,7vw,80px)] leading-[5rem] text-white font-[400];
+    @apply text-[clamp(24px,7vw,80px)] leading-[5rem] font-[400];
   }
   h2 {
-    @apply px-[10vmin] text-[30px] text-white text-center font-[400];
+    @apply text-[30px] font-[400];
   }
   h3 {
-    @apply px-[8vmin] text-[24px] text-white text-center;
+    @apply text-[24px];
   }
   h4 {
     @apply text-2xl;
@@ -56,4 +56,53 @@
   background: white;
   animation: ligne 2s var(--delay-ligne, 0s) ease-out;
   margin-block-start: 1rem;
+}
+
+@keyframes client-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes elastic {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.header-title {
+  animation: elastic 3s ease-in-out;
+}
+
+@keyframes title-animation {
+  from {
+    opacity: 0;
+    line-height: 4;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 1.2;
+  }
 }

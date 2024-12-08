@@ -15,8 +15,6 @@ categories:
   - "a38f323b-370b-4694-be5a-28e652685f16"
 ---
 
-# Le projet de ce studio est le suivant
-
 - Créez une expérience unique avec notre concept de film élastique qui s’adaptent au comportement de votre public.
 - Découvrez une nouvelle façon de raconter des histoires
 - Immergez -vous au centre de point d’intérêts

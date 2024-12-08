@@ -1,12 +1,17 @@
 ---
-import SocialLinks from "./SocialLinks.astro";
+import FooterLink from "./FooterLink.astro";
 
 const today = new Date();
 ---
 
 <footer
-  class="p-8 mt-auto bg-primary border-t border-accent flex items-center justify-between"
+  class="hidden fixed bottom-0 left-0 w-full h-10 items-center justify-between px-8 text-white bg-primary-dark md:flex"
 >
-  <p>&copy; {today.getFullYear()} Ironeec. All rights reserved.</p>
-  <SocialLinks />
+  <p>
+    Designed and developped by me - &copy;{today.getFullYear()}
+  </p>
+  <div class="flex gap-4">
+    <FooterLink href="/mentions">Mentions</FooterLink>
+    <FooterLink href="/credits">Crédits</FooterLink>
+  </div>
 </footer>

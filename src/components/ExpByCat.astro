@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+import { displayDate } from "../lib/utils";
+
+interface Props {
+  catId: string;
+  experiences: CollectionEntry<"experienceCollection">[];
+}
+
+const { catId, experiences } = Astro.props;
+const category = await getEntry("categoryCollection", catId);
+---
+
+<div>
+  <h2 class="text-start ligne my-4">{category?.data.title}</h2>
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-4">
+    {
+      experiences.map((exp) => (
+        <div class="bg-bg-white01 rounded p-4 items-center w-full mt-[calc(30px+2rem)] md:mt-0">
+          <div class="grid md:grid-cols-[120px,1fr] gap-4 items-center h-full">
+            <div class="bg-white rounded-full aspect-square p-2 grid place-items-center w-[120px] mx-auto -mt-[calc(60px+1rem)] md:m-0">
+              <img src={exp.data.image} />
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="text-secondary">{exp.data.name}</h2>
+              <span class="text-xl">{exp.data.role}</span>
+              <p class="text-secondary-dark">
+                {displayDate(exp.data.startDate, exp.data.endDate)}
+              </p>
+              <div>{exp.data.description}</div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

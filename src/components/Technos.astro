@@ -5,15 +5,17 @@ interface Props {
   technos: Array<CollectionEntry<"technoCollection">>;
   containerClass: string;
   itemClass: string;
+  imgClass?: string;
   title?: string;
   withName?: boolean;
 }
 
-const { technos, containerClass, itemClass, title, withName } = Astro.props;
+const { technos, containerClass, itemClass, title, withName, imgClass } =
+  Astro.props;
 ---
 
 <div>
-  {title && <h4 class="text-secondary">{title}</h4>}
+  {title && <h4 class="text-secondary py-4">{title}</h4>}
   {
     Array.isArray(technos) ? (
       <ul
@@ -27,7 +29,7 @@ const { technos, containerClass, itemClass, title, withName } = Astro.props;
               width={30}
               height={30}
               alt=""
-              class="h-full w-auto"
+              class:list={["h-full w-auto", imgClass]}
             />
             {withName && <span>{tech.data.name}</span>}
           </li>

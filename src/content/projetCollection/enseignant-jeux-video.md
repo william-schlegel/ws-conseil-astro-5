@@ -14,8 +14,6 @@ categories:
   - "a08dec6d-a236-4a28-827c-eb3ed849ef25"
 ---
 
-# Cours sur les jeux video
-
 ai pu donner des cours à des étudiants de M1 et M2 sur le game design et l'élaboration de jeux vidéos.
 
 Je garde toujours un lien assez fort avec mon école dans laquelle j'interviens régulièrement sur des sujets d'entrepreneuriat.

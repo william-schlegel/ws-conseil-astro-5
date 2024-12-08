@@ -1,0 +1,87 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Saas from "../components/svg/saas.astro";
+import Ar from "../components/svg/ar.astro";
+import Innovation from "../components/svg/innovation.astro";
+import Direction from "../components/svg/direction.astro";
+import Technos from "../components/Technos.astro";
+
+const skills = await getCollection("skillCollection");
+const technos = await getCollection("technoCollection");
+---
+
+<Layout title="Compétences" description="Mes domaines de compétence" logo="">
+  <main>
+    <section class="pt-20 pb-6 flex justify-center">
+      <img
+        src="/site/skills.svg"
+        alt="Mes compétences"
+        width={300}
+        class="header-title"
+      />
+    </section>
+    <section
+      class="grid grid-cols-[repeat(auto-fit,minmax(450px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto"
+    >
+      {
+        skills
+          .filter((skill) => skill.data.svg)
+          .sort((s1, s2) => (s1.data.order > s2.data.order ? 1 : -1))
+          .map((skill) => (
+            <div class="flex flex-col ">
+              <div class="grid grid-cols-[50px_1fr] items-center gap-8">
+                <img
+                  class="rounded-full bg-white grid place-items-center"
+                  src={skill.data.image ?? "/site/logo-picto.png"}
+                  alt=""
+                  width={50}
+                  height={50}
+                />
+                <h3 class="ligne text-secondary px-0 text-start">
+                  {skill.data.name}
+                </h3>
+              </div>
+              <div class="max-h-[30vh] my-8">
+                {skill.data.svg === "saas" && <Saas />}
+                {skill.data.svg === "ar" && <Ar />}
+                {skill.data.svg === "innovation" && <Innovation />}
+                {skill.data.svg === "direction" && <Direction />}
+              </div>
+            </div>
+          ))
+      }
+    </section>
+    <h2 class="mb-4 text-center text-secondary">Mais aussi</h2>
+    <section class="flex flex-wrap gap-3 justify-center">
+      {
+        skills
+          .filter((skill) => !skill.data.svg)
+          .sort((s1, s2) => (s1.data.order > s2.data.order ? 1 : -1))
+          .map((skill) => (
+            <div class="flex items-center px-4 py-2 text-primary bg-bg-white06 rounded transition-[rotate] hover:-rotate-2">
+              <img
+                class="inline-block mr-4"
+                src={skill.data.image ?? "/site/logo-picto.png"}
+                alt=""
+                width={50}
+                height={50}
+              />
+              <span>{skill.data.name}</span>
+            </div>
+          ))
+      }
+    </section>
+    <h2 class="mb-4 text-center text-secondary">
+      Technos utilisées dans mes projets
+    </h2>
+    <section class="mb-14">
+      <Technos
+        technos={technos}
+        containerClass="content-center"
+        itemClass="p-2 h-10 flex gap-2 items-center bg-bg-white06 rounded text-primary"
+        withName
+      />
+    </section>
+  </main>
+</Layout>

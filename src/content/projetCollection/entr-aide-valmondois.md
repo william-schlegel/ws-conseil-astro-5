@@ -18,8 +18,6 @@ technos:
   - "da92b0a0-7641-4b34-91de-ea01d22a68fb"
 ---
 
-# Entr'Aide Valmondois
-
 Développé en 2 jours à l'occasion du confinement lié au COVID-19, ce site permet aux habitants de la commune de proposer des offres de service ou exprimer des demandes d'aide.
 
 Très rapidement adopté par les habitants de la petite commune (1250 habitants) dont je suis conseiller municipal.

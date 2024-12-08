@@ -18,9 +18,9 @@ technos:
   - "5afaf72e-e8dd-4642-93dc-9150f0b5d451"
   - "74d9a8e7-6033-45b4-940b-3de0effee68b"
   - "a2505f42-a8a9-44d3-83d7-d4878d36b030"
+links:
+  - "b214bcd9826d"
 ---
-
-# Application eCommerce Intermarché
 
 Lead développeur de la squad Client pour le développement Web du site eCommerce d'intermarché
 

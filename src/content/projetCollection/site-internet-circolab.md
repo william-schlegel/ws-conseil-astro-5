@@ -21,8 +21,6 @@ links:
   - "df25061419c6"
 ---
 
-# Circolab
-
 Circolab est une association dont le but est de promouvoir l'économie circulaire.
 
 Ils sont en particulier actifs sur la réemployabilité des matériaux de construction.

@@ -6,15 +6,12 @@ export function formatBlogPostDate(date: string) {
   return `${formattedDateString}`;
 }
 
-export const displayDate = (
-  dtDeb: string,
-  dtEnd: string | undefined,
-  running: boolean
-) => {
+export const displayDate = (dtDeb: string, dtEnd: string | undefined) => {
   const formater = new Intl.DateTimeFormat("fr", {
     month: "long",
     year: "numeric",
   });
+  const running = !dtEnd;
   const strDeb = formater.format(new Date(dtDeb));
   const strFin = dtEnd ? `jusqu'à ${formater.format(new Date(dtEnd))}` : "";
   const strRunning = running ? "et toujours en cours" : "";

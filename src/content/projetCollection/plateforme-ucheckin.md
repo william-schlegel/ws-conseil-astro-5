@@ -19,8 +19,6 @@ technos:
   - "521f269a-9634-4d60-9707-b2f10ebf6b87"
 ---
 
-# Plateforme UcheckIn
-
 Cette plateforme permet aux clients qui s'y connectent de gérer l'ensemble de leurs produits :
 
 - Téléchargement des SDK

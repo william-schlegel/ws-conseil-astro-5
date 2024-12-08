@@ -16,6 +16,7 @@ export default {
           dark: "#343a40",
           light: "#f5f7fa",
           white01: "rgba(255, 255, 255, 0.1)",
+          white06: "rgba(255, 255, 255, 0.6)",
         },
       },
       fontFamily: {

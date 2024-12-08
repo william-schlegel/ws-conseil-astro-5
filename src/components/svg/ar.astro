@@ -239,3 +239,69 @@
     </g>
   </g>
 </svg>
+
+<style>
+  #ar-feuilles {
+    animation: ar-feuilles 1s alternate infinite ease-in-out;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  #ar-man {
+    animation: ar-man 1s alternate infinite ease-in-out;
+  }
+  #ar-doc1 {
+    animation: ar-doc1 3s infinite linear;
+  }
+  #ar-doc2 {
+    animation: ar-doc2 3s infinite linear;
+  }
+
+  #ar-lignes {
+    animation: fade-out 2s alternate infinite ease-in-out;
+  }
+
+  @keyframes ar-feuilles {
+    from {
+      transform: rotateZ(-3deg);
+    }
+    to {
+      transform: rotateZ(6deg);
+    }
+  }
+
+  @keyframes ar-man {
+    from {
+      transform: translateY(-5px);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+
+  @keyframes ar-doc1 {
+    0% {
+      transform: translateX(-300px);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes ar-doc2 {
+    0% {
+      transform: translateX(300px);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+</style>

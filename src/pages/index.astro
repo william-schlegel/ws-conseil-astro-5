@@ -6,15 +6,17 @@ import ProjectCard from "../components/ProjectCard.astro";
 const projets = await getCollection("projetCollection");
 ---
 
-<Layout title="Home" description="WS Conseil CTO as a Service" logo="">
+<Layout title="Home" description="WS Conseil CTO as a Service">
   <main>
     <section class="pt-20 pb-6">
-      <h1>
+      <h1 class="my-12">
         Passez à la vitesse supérieure avec un CTO/Lead dev expérimenté à la
         demande
       </h1>
     </section>
-    <h2 class="ligne mb-4" style="--delay-ligne: 0.5s">Mes derniers projets</h2>
+    <h2 class="ligne mb-4 text-center" style="--delay-ligne: 0.5s">
+      Mes derniers projets
+    </h2>
     <section
       class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto"
     >
@@ -23,6 +25,7 @@ const projets = await getCollection("projetCollection");
           .sort((p1, p2) =>
             new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1
           )
+          .slice(0, 4)
           .map((projet, index) => (
             <ProjectCard project={projet.data} index={index} />
           ))

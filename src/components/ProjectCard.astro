@@ -20,7 +20,7 @@ const categories = await getEntries(project.categories);
 
 <a
   href={`/project/${project.slug}`}
-  class="flex flex-col bg-bg-white01 rounded-md p-4 transition-[outline] ease-in-out duration-200 hover:outline-4 hover:outline-primary"
+  class="flex flex-col bg-bg-white01 rounded-md p-4 transition-[outline] ease-in-out duration-200 hover:outline hover:outline-4 hover:outline-primary"
   style={`animation: project-appearance 0.8s
   var(--animation-power) ${index * 0.8}s;`}
 >
@@ -52,7 +52,7 @@ const categories = await getEntries(project.categories);
     </h3>
   </div>
   <p class="text-sm text-lightgrey">
-    {displayDate(project.startDate, project.endDate, project.running)}
+    {displayDate(project.startDate, project.endDate)}
   </p>
   {
     project.heroImage && (

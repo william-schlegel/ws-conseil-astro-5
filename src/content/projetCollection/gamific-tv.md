@@ -14,8 +14,6 @@ categories:
   - "0d4f51b3-d1d2-4d07-89e2-be53d533b21b"
 ---
 
-# Gamific.tv
-
 Projet de startup proposant des jeux interactifs sur la télévision.
 
 La technologie utilisée était HbbTV, un standard permettant d'afficher sur les écrans de télévision des contenus personnalisés. L'idée était de coupler cela à des applications mobiles pour utiliser son smartphone comme manette de jeu ou comme terminal pour piloter ce qui se passe à l'écran.

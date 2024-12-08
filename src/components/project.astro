@@ -1,0 +1,115 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getEntries } from "astro:content";
+import { getEntry } from "astro:content";
+import { displayDate } from "../lib/utils";
+import Technos from "./Technos.astro";
+import { render } from "astro:content";
+
+interface Props {
+  project: CollectionEntry<"projetCollection">;
+}
+
+const { project } = Astro.props;
+const client = project.data.client ? await getEntry(project.data.client) : null;
+const technos = project.data.technos
+  ? await getEntries(project.data.technos)
+  : null;
+const categories = project.data.categories
+  ? await getEntries(project.data.categories)
+  : null;
+const links = project.data.links ? await getEntries(project.data.links) : null;
+const roles = project.data.roles ? await getEntries(project.data.roles) : null;
+const { Content } = await render(project);
+---
+
+<header class="container px-4 mx-auto mt-20">
+  <h1 class="ligne">{project.data.name}</h1>
+  <p>{project.data.brief}</p>
+  {
+    client ? (
+      <div class="flex items-center gap-4">
+        <div class="w-32 aspect-square rounded-full bg-white grid place-items-center p-2">
+          <img src={client.data.image} alt={client.data.name} />
+        </div>
+        <p class="text-4xl">{client.data.name}</p>
+      </div>
+    ) : null
+  }
+  <p class="text-sm text-secondary-dark">
+    {displayDate(project.data.startDate, project.data.endDate)}
+  </p>
+  {
+    technos ? (
+      <Technos
+        technos={technos}
+        containerClass="flex justify-start gap-2 flex-wrap"
+        itemClass="p-[2px] pr-2 h-[30px] flex items-center gap-2 bg-secondary rounded-full"
+        imgClass="bg-white border border-primary rounded-full min-w-[26px]"
+        title="Technos utilisées sur ce projet"
+        withName
+      />
+    ) : null
+  }
+  <div
+    class="relative w-full aspect-[4/3] bg-cover bg-center [background-image:var(--bg-image)] isolate"
+    style={{ "--bg-image": `url(${project.data.heroImage})` }}
+  >
+    <div
+      class="absolute inset-0 bg-[rgba(0_0_0/0.5)] transition-opacity z-10 hover:opacity-0"
+    >
+      {
+        categories ? (
+          <ul class="absolute left-4 top-4 z-20 flex flex-wrap gap-4">
+            {categories.map((cat) => (
+              <li class="bg-primary px-4 py-2 rounded-full">
+                {cat.data.title}
+              </li>
+            ))}
+          </ul>
+        ) : null
+      }
+      {
+        roles ? (
+          <ul class="absolute left-4 bottom-4 z-20 flex flex-wrap gap-4">
+            {roles.map((role) => (
+              <li class="bg-secondary text-primary p-[2px] pr-2 rounded-full flex items-center gap-2 font-bold">
+                <img
+                  src={role.data.image}
+                  alt={role.data.name}
+                  class="bg-white aspect-square border border-primary rounded-full"
+                  height="50"
+                  width="50"
+                />
+                <span>{role.data.name}</span>
+              </li>
+            ))}
+          </ul>
+        ) : null
+      }
+    </div>
+  </div>
+</header>
+<section class="mb-20">
+  <div class="prose-lg text-white">
+    <Content />
+  </div>
+  {
+    links ? (
+      <ul class="flex flex-wrap gap-4">
+        {links.map((link) => (
+          <li>
+            <a
+              href={link.data.url}
+              target="_blank"
+              rel="noreferrer"
+              class="bg-secondary text-primary px-4 py-2 rounded-full"
+            >
+              {link.data.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : null
+  }
+</section>

@@ -18,8 +18,6 @@ technos:
   - "156dddc0-e91f-4a35-9ad9-7cf4fa950b47"
 ---
 
-# Les petits philosophes
-
 La saison 2 de la série "Les petits philosophes" s'accompagne de jeux interactifs pour les enfants.
 
 Il m'a donc été demandé de développer ces jeux qui sont pour la plupart basés sur des actions de type "drag & drop".

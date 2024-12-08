@@ -540,3 +540,76 @@
     </clipPath>
   </defs>
 </svg>
+<style lang="scss">
+  $nb-lignes: 9;
+
+  #man-arm {
+    animation: pp-man-arm 2s alternate infinite ease-in-out;
+    transform-origin: left bottom;
+    transform-box: fill-box;
+  }
+  #woman-arm {
+    animation: pp-man-arm 2s alternate infinite ease-in-out;
+    transform-origin: right top;
+    transform-box: fill-box;
+  }
+  @for $l from 1 to $nb-lignes {
+    #line-#{$l} {
+      animation: pp-ligne-#{$l} 4s infinite ease-in-out;
+    }
+  }
+  #cloud-left {
+    animation: pp-cloud 3s alternate infinite ease-in-out;
+  }
+  #cloud-right {
+    animation: pp-cloud 4s alternate infinite ease-in-out;
+  }
+  #sun {
+    animation: pp-sun 3s alternate infinite ease-in-out;
+  }
+  @keyframes pp-sun {
+    from {
+      fill: #fd6584;
+      transform: translateY(6px);
+    }
+    from {
+      fill: #fda965;
+      transform: translateY(-3px);
+    }
+  }
+
+  @keyframes pp-man-arm {
+    from {
+      transform: rotateZ(-4deg);
+    }
+    to {
+      transform: rotateZ(8deg);
+    }
+  }
+
+  @keyframes pp-cloud {
+    from {
+      transform: translateX(-5px);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+
+  @for $l from 1 to $nb-lignes {
+    @keyframes pp-ligne-#{$l} {
+      0% {
+        opacity: 0;
+      }
+      #{$l * 10%} {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+</style>
