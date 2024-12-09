@@ -54,6 +54,7 @@ const { Content } = await render(project);
   <div
     class="relative w-full aspect-[4/3] bg-cover bg-center [background-image:var(--bg-image)] isolate mx-auto max-w-[800px] my-8"
     style={{ "--bg-image": `url(${project.data.heroImage})` }}
+    transition:name="hero"
   >
     <div
       class="absolute inset-0 bg-[rgba(0_0_0/0.5)] transition-opacity z-10 hover:opacity-0"

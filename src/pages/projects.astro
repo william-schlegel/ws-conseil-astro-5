@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import { slide } from "astro:transitions";
 
 const projetsCol = await getCollection("projetCollection");
 const projets = projetsCol.sort((p1, p2) =>
@@ -41,6 +42,8 @@ const clients = clientsCol.sort((c1, c2) =>
                 alt="Logo du client"
                 class="animate-[client-animation] duration-500 delay-[var(--animation-delay)] h-[min(75px,7vw)] w-auto"
                 style={`--animation-delay: ${index * 0.1}s`}
+                transition:name="hero"
+                transition:animate={slide({ duration: "0.5s" })}
               />
             ) : (
               <span>{client.data.name}</span>
