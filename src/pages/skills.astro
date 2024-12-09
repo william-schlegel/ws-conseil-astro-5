@@ -13,7 +13,7 @@ const technos = await getCollection("technoCollection");
 
 <Layout title="Compétences" description="Mes domaines de compétence" logo="">
   <main>
-    <section class="pt-20 pb-6 flex justify-center">
+    <section class="mb-6 flex justify-center">
       <img
         src="/site/skills.svg"
         alt="Mes compétences"
@@ -75,7 +75,7 @@ const technos = await getCollection("technoCollection");
     <h2 class="mb-4 text-center text-secondary">
       Technos utilisées dans mes projets
     </h2>
-    <section class="mb-14">
+    <section>
       <Technos
         technos={technos}
         containerClass="content-center"

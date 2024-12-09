@@ -23,7 +23,7 @@ const roles = project.data.roles ? await getEntries(project.data.roles) : null;
 const { Content } = await render(project);
 ---
 
-<section class="mt-20">
+<section>
   <h1 class="ligne mb-8">{project.data.name}</h1>
   <p class="py-4">{project.data.brief}</p>
   {
@@ -90,7 +90,7 @@ const { Content } = await render(project);
     </div>
   </div>
 </section>
-<section class="mb-20">
+<section>
   <div class="prose-lg text-white [&_img]:max-w-[800px] [&_img]:mx-auto">
     <Content />
   </div>

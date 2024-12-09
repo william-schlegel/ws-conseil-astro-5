@@ -18,9 +18,16 @@ import InnerMenu from "./InnerMenu.astro";
         alt={`logo du site ${SITE_TITLE} et retour à la home page`}
       /></a
     >
-    <div class="hidden items-center justify-center h-full md:flex">
-      <InnerMenu />
-    </div>
+    <InnerMenu
+      containerClass="hidden items-center justify-center h-full md:flex"
+      linkClass="flex items-center h-full border-b-8 border-transparent py-0 px-[3%] text-primary hover:border-primary"
+      activeClass="font-bold border-primary"
+      inactiveClass="border-transparent"
+    />
     <AboutButton moreClass="absolute right-1 top-[10px] h-[calc(100%-20px)]" />
   </nav>
 </header>
+<InnerMenu
+  containerClass="fixed bottom-0 left-0 w-full h-[80px] bg-primary-dark px-8 py-4 flex items-center justify-between z-20 md:hidden"
+  linkClass="text-white"
+/>
