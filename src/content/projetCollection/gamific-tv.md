@@ -8,10 +8,10 @@ slug: "gamific-tv"
 startDate: "2012-03-01"
 endDate: "2016-10-01"
 roles:
-  - "613b8da0-fd20-4b5a-8e7d-5592ee97dade"
-  - "61efffc6-842c-4d45-83a5-3559ecfde42d"
+  - "role-ceo"
+  - "role-founder"
 categories:
-  - "0d4f51b3-d1d2-4d07-89e2-be53d533b21b"
+  - "cat-saas"
 ---
 
 Projet de startup proposant des jeux interactifs sur la télévision.

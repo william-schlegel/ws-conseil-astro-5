@@ -10,7 +10,7 @@
     @apply min-h-screen grid grid-rows-[auto_1fr_auto] bg-primary text-white font-textes;
   }
   section {
-    @apply container px-4 mx-auto mb-8;
+    @apply container px-4 mx-auto mb-8 max-w-[1024px];
   }
 
   h1,
@@ -37,7 +37,7 @@
     @apply text-xl;
   }
   p {
-    @apply py-4 text-pretty;
+    @apply text-pretty;
   }
 }
 @keyframes ligne {

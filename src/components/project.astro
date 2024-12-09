@@ -23,12 +23,12 @@ const roles = project.data.roles ? await getEntries(project.data.roles) : null;
 const { Content } = await render(project);
 ---
 
-<header class="container px-4 mx-auto mt-20">
-  <h1 class="ligne">{project.data.name}</h1>
-  <p>{project.data.brief}</p>
+<section class="mt-20">
+  <h1 class="ligne mb-8">{project.data.name}</h1>
+  <p class="py-4">{project.data.brief}</p>
   {
     client ? (
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4 mb-8">
         <div class="w-32 aspect-square rounded-full bg-white grid place-items-center p-2">
           <img src={client.data.image} alt={client.data.name} />
         </div>
@@ -36,7 +36,7 @@ const { Content } = await render(project);
       </div>
     ) : null
   }
-  <p class="text-sm text-secondary-dark">
+  <p class="text-sm text-secondary-dark mb-8">
     {displayDate(project.data.startDate, project.data.endDate)}
   </p>
   {
@@ -44,7 +44,7 @@ const { Content } = await render(project);
       <Technos
         technos={technos}
         containerClass="flex justify-start gap-2 flex-wrap"
-        itemClass="p-[2px] pr-2 h-[30px] flex items-center gap-2 bg-secondary rounded-full"
+        itemClass="p-[2px] pr-4 h-[30px] flex items-center gap-2 bg-secondary rounded-full text-primary"
         imgClass="bg-white border border-primary rounded-full min-w-[26px]"
         title="Technos utilisées sur ce projet"
         withName
@@ -52,7 +52,7 @@ const { Content } = await render(project);
     ) : null
   }
   <div
-    class="relative w-full aspect-[4/3] bg-cover bg-center [background-image:var(--bg-image)] isolate"
+    class="relative w-full aspect-[4/3] bg-cover bg-center [background-image:var(--bg-image)] isolate mx-auto max-w-[800px] my-8"
     style={{ "--bg-image": `url(${project.data.heroImage})` }}
   >
     <div
@@ -73,7 +73,7 @@ const { Content } = await render(project);
         roles ? (
           <ul class="absolute left-4 bottom-4 z-20 flex flex-wrap gap-4">
             {roles.map((role) => (
-              <li class="bg-secondary text-primary p-[2px] pr-2 rounded-full flex items-center gap-2 font-bold">
+              <li class="bg-secondary text-primary p-[2px] pr-4 rounded-full flex items-center gap-2 font-bold">
                 <img
                   src={role.data.image}
                   alt={role.data.name}
@@ -89,14 +89,14 @@ const { Content } = await render(project);
       }
     </div>
   </div>
-</header>
+</section>
 <section class="mb-20">
-  <div class="prose-lg text-white">
+  <div class="prose-lg text-white [&_img]:max-w-[800px] [&_img]:mx-auto">
     <Content />
   </div>
   {
     links ? (
-      <ul class="flex flex-wrap gap-4">
+      <ul class="flex flex-wrap gap-4 mt-8">
         {links.map((link) => (
           <li>
             <a

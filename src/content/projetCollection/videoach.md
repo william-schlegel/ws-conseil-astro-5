@@ -7,17 +7,19 @@ running: true
 slug: "videoach"
 startDate: "2022-11-15"
 roles:
-  - "78669f8b-1584-4a35-a1ae-ac364856304b"
-  - "889fb461-59de-42a7-9e6a-68b033d0fc66"
+  - "role-moa"
+  - "role-moe"
 categories:
-  - "0d4f51b3-d1d2-4d07-89e2-be53d533b21b"
+  - "cat-saas"
 technos:
-  - "5bb33913-7343-4cb8-bd47-c47251c261ec"
-  - "6a6f4ecc-7131-4cc2-b35d-85877a623411"
-  - "eefbd7ef-4744-4330-b70c-8c664a86c622"
-  - "acaafe97-50ad-4236-b0f6-6754848bf234"
-  - "56e5853d-dd06-4038-9574-10033398da4b"
-  - "a2505f42-a8a9-44d3-83d7-d4878d36b030"
+  - "tech-turborepo"
+  - "tech-next"
+  - "tech-ts"
+  - "tech-trpc"
+  - "tech-prisma"
+  - "tech-tailwind"
+links:
+  - "lnk-videoach"
 ---
 
 Cette application permet de gérer tous les aspects d'un club de sport et surtout apporte de la valeur à tous les intervenants.

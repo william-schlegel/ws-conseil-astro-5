@@ -1,98 +1,42 @@
 [
   {
-    "id": "613b8da0-fd20-4b5a-8e7d-5592ee97dade",
+    "id": "role-ceo",
     "image": "/images/0e062f0d5db7114062d67ccd6972da8eb1e3c546-256x256.png",
-    "langue": "fr",
     "name": "CEO"
   },
   {
-    "id": "32ba11ce-6cff-46ea-88ca-898c6e025cdb",
-    "image": "/images/7a8c71ee7d055ceae7db6b31c0c0093589858724-256x256.png",
-    "langue": "en",
-    "name": "Investor"
-  },
-  {
-    "id": "fd4fd2de-0364-44be-8476-1d662c94982a",
-    "image": "/images/d391783bb62339567571e3806e12e923daa80851-256x256.png",
-    "langue": "en",
-    "name": "Project manager"
-  },
-  {
-    "id": "62f8c0a4-bca0-4ee6-b925-685a13f9ce64",
-    "image": "/images/7877202fc9b06d77683157587e9a24262f85c3fd-256x256.png",
-    "langue": "en",
-    "name": "CTO"
-  },
-  {
-    "id": "9a10a8c6-f953-4299-8bf6-9a3e728c6624",
-    "image": "/images/de6291c73867284b6f8e7d475a1447ad0cb88a65-256x256.png",
-    "langue": "en",
-    "name": "Lecturer"
-  },
-  {
-    "id": "4c918f55-ae25-40e8-a9e0-a1647dfa693a",
-    "image": "/images/2d044776d063394d137b0868b939ec6a433e54db-256x256.png",
-    "langue": "en",
-    "name": "Team manager"
-  },
-  {
-    "id": "61efffc6-842c-4d45-83a5-3559ecfde42d",
+    "id": "role-founder",
     "image": "/images/5fb30b9c9c2afc192a7d8ea2a1fb0a00664a0c60-256x256.png",
-    "langue": "fr",
     "name": "Fondateur"
   },
   {
-    "id": "2cee1388-a7ca-4cfc-9f01-cc9506655599",
-    "image": "/images/c4349b7f30e369b88a49733696c76656cf2a4e0b-256x256.png",
-    "langue": "en",
-    "name": "Development"
-  },
-  {
-    "id": "51384c56-32eb-4e54-bcc0-0e448c3c6c13",
+    "id": "role-manager",
     "image": "/images/2d044776d063394d137b0868b939ec6a433e54db-256x256.png",
-    "langue": "fr",
     "name": "Direction d'équipe"
   },
   {
-    "id": "2f2176de-890c-4da3-bc06-efa7d81f4b22",
+    "id": "role-invester",
     "image": "/images/7a8c71ee7d055ceae7db6b31c0c0093589858724-256x256.png",
-    "langue": "fr",
     "name": "Investisseur"
   },
   {
-    "id": "78669f8b-1584-4a35-a1ae-ac364856304b",
+    "id": "role-moa",
     "image": "/images/d391783bb62339567571e3806e12e923daa80851-256x256.png",
-    "langue": "fr",
     "name": "Matrise d'ouvrage"
   },
   {
-    "id": "fc209fd9-08c4-4d49-81c3-aafc1e5e9110",
-    "image": "/images/5fb30b9c9c2afc192a7d8ea2a1fb0a00664a0c60-256x256.png",
-    "langue": "en",
-    "name": "Founder"
-  },
-  {
-    "id": "ea058c9d-1aad-4901-a3a7-4389aabb3260",
+    "id": "role-lecturer",
     "image": "/images/de6291c73867284b6f8e7d475a1447ad0cb88a65-256x256.png",
-    "langue": "fr",
     "name": "Enseignant"
   },
   {
-    "id": "f7165ac9-c67f-4908-bfb5-433a6977e113",
+    "id": "role-cto",
     "image": "/images/7877202fc9b06d77683157587e9a24262f85c3fd-256x256.png",
-    "langue": "fr",
     "name": "CTO"
   },
   {
-    "id": "c585f3d3-c487-4137-9adb-c88eb54671d3",
-    "image": "/images/0e062f0d5db7114062d67ccd6972da8eb1e3c546-256x256.png",
-    "langue": "en",
-    "name": "CEO"
-  },
-  {
-    "id": "889fb461-59de-42a7-9e6a-68b033d0fc66",
+    "id": "role-moe",
     "image": "/images/c4349b7f30e369b88a49733696c76656cf2a4e0b-256x256.png",
-    "langue": "fr",
     "name": "Développement / Maîtrise d'oeuvre"
   }
 ]

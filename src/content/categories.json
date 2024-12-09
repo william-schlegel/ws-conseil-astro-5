@@ -1,120 +1,61 @@
 [
   {
-    "id": "9c828e68-a394-4483-a99e-f5b3c9917a81",
-    "description": "Development of virtual reality applications",
-    "langue": "en",
-    "title": "Virtual reality"
-  },
-  {
-    "id": "76335112-2ca2-4e76-937b-8f74d9062a75",
+    "id": "cat-website",
     "description": "Développement de site internet",
-    "langue": "fr",
     "title": "Site internet"
   },
+
   {
-    "id": "b387594e-1ab2-40af-b5a4-2e89702aec99",
-    "description": "Development of augmented reality applications",
-    "langue": "en",
-    "title": "Augmented reality"
-  },
-  {
-    "id": "10171d90-4f77-4a75-b1d9-eed847f9dc03",
-    "langue": "fr",
+    "id": "cat-citizen",
     "order": 20,
     "title": "Engagement citoyen"
   },
+
   {
-    "id": "ff9c94da-9476-4917-8c10-e985cd85f948",
-    "langue": "en",
-    "title": "Investment"
-  },
-  {
-    "id": "3842e8dd-83e0-4c53-8fd8-c570f22e8fc5",
-    "description": "Games development",
-    "langue": "en",
-    "title": "Games"
-  },
-  {
-    "id": "56fe6dc9-ece0-425d-af19-2c02565f4916",
-    "langue": "fr",
+    "id": "cat-mobile-app",
     "title": "Développement mobile"
   },
   {
-    "id": "0d4f51b3-d1d2-4d07-89e2-be53d533b21b",
+    "id": "cat-saas",
     "description": "Maîtrise d'ouvrage sur le développement d'une application SaaS",
-    "langue": "fr",
     "title": "Application SaaS"
   },
   {
-    "id": "a38f323b-370b-4694-be5a-28e652685f16",
+    "id": "cat-ar",
     "description": "Développement d'applications de réalité augmentée",
-    "langue": "fr",
     "title": "Réalité augmentée"
   },
   {
-    "id": "b0feb74e-789c-4709-9832-9779b9783df6",
+    "id": "cat-investment",
     "description": "Investissement dans des startups",
-    "langue": "fr",
     "title": "Investissement"
   },
   {
-    "id": "8b280da5-8b00-43a1-b2af-f951c56abe76",
+    "id": "cat-iot",
     "description": "Travail sur les objets connectés",
-    "langue": "fr",
     "title": "Objet connecté"
   },
   {
-    "id": "771155ba-cf57-49a2-8189-4d2dee2f137b",
+    "id": "cat-vr",
     "description": "Développement d'applications de réalité virtuelle",
-    "langue": "fr",
     "title": "Réalité virtuelle"
   },
   {
-    "id": "0918c0bc-7339-4aae-b650-048e6b2e6d13",
-    "langue": "fr",
+    "id": "cat-entreprenership",
     "order": 10,
     "title": "Entrepreneuriat"
   },
+
   {
-    "id": "d04217ac-8ffe-46cc-afc8-32f482b1b638",
-    "description": "Architecture and development of Saas applications",
-    "langue": "en",
-    "title": "Saas applications"
-  },
-  {
-    "id": "e026c83e-1ae0-4f20-848c-0b5a9bcc8bd8",
-    "description": "Working on connected objects",
-    "langue": "en",
-    "title": "IOT"
-  },
-  {
-    "id": "095a97dd-5d8a-43c6-b6ae-55a169f30950",
-    "description": "Development of web sites",
-    "langue": "en",
-    "title": "Web sites"
-  },
-  {
-    "id": "a08dec6d-a236-4a28-827c-eb3ed849ef25",
+    "id": "cat-lecture",
     "description": "Donner des cours en école d'ingénieur",
-    "langue": "fr",
     "order": 30,
     "title": "Enseignement"
   },
+
   {
-    "id": "3436422d-9ab9-426f-b16d-3f1a7a99422f",
-    "langue": "en",
-    "title": "Mobile application"
-  },
-  {
-    "id": "0afa54a4-33ee-47ca-9e7d-8407ff40556d",
-    "description": "Lecturer in Engineer School",
-    "langue": "en",
-    "title": "Lecture"
-  },
-  {
-    "id": "85ce0444-9b80-4bcd-9491-e534d3e237e0",
+    "id": "cat-game-dev",
     "description": "Développement de Jeux",
-    "langue": "fr",
     "title": "Jeux"
   }
 ]

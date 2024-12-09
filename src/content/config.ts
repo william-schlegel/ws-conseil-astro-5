@@ -6,7 +6,6 @@ const roleCollection = defineCollection({
   schema: z.object({
     id: z.string(),
     image: z.string(),
-    langue: z.enum(["fr", "en"]),
     name: z.string(),
   }),
 });
@@ -16,7 +15,6 @@ const categoryCollection = defineCollection({
   schema: z.object({
     id: z.string(),
     description: z.string().optional(),
-    langue: z.enum(["fr", "en"]),
     title: z.string(),
     order: z.number().optional().default(0),
   }),
@@ -39,25 +37,6 @@ const technoCollection = defineCollection({
     id: z.string(),
     image: z.string(),
     name: z.string(),
-  }),
-});
-
-const projetCollection = defineCollection({
-  loader: glob({ pattern: "*.md*", base: "src/content/projetCollection" }),
-  schema: z.object({
-    brief: z.string(),
-    client: reference("clientCollection").optional(),
-    heroImage: z.string(),
-    heroImageAlt: z.string(),
-    name: z.string(),
-    running: z.boolean().optional().default(false),
-    slug: z.string(),
-    startDate: z.string(),
-    endDate: z.string().optional(),
-    roles: z.array(reference("roleCollection")),
-    categories: z.array(reference("categoryCollection")),
-    technos: z.array(reference("technoCollection")).optional(),
-    links: z.array(reference("linkCollection")).optional(),
   }),
 });
 
@@ -105,14 +84,33 @@ const photoCollection = defineCollection({
   }),
 });
 
+const projetCollection = defineCollection({
+  loader: glob({ pattern: "*.md*", base: "src/content/projetCollection" }),
+  schema: z.object({
+    brief: z.string(),
+    client: reference("clientCollection").optional(),
+    heroImage: z.string(),
+    heroImageAlt: z.string(),
+    name: z.string(),
+    running: z.boolean().optional().default(false),
+    slug: z.string(),
+    startDate: z.string(),
+    endDate: z.string().optional(),
+    roles: z.array(reference("roleCollection")),
+    categories: z.array(reference("categoryCollection")),
+    technos: z.array(reference("technoCollection")).optional(),
+    links: z.array(reference("linkCollection")).optional(),
+  }),
+});
+
 export const collections = {
   roleCollection,
   categoryCollection,
   clientCollection,
-  projetCollection,
   technoCollection,
   linkCollection,
   skillCollection,
   experienceCollection,
   photoCollection,
+  projetCollection,
 };

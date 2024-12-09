@@ -1,6 +1,6 @@
 ---
 brief: "Application mobile développée pour Stimshop et son client Orano permettant de gérer les boitiers de mesure d'épaisseur UMIT"
-client: "0cb6d0c1-83ca-43b2-a62d-37ec98f4270e"
+client: "clt-stimshop"
 heroImage: "/images/72bbaa5afc4f5a1a243862f73719b84e13dc4601-1440x2960.jpg"
 heroImageAlt: "Copie d'écran du menu principal de l'application"
 name: "Application mobile UMIT"
@@ -9,16 +9,16 @@ slug: "umit"
 startDate: "2020-09-10"
 endDate: "2021-02-15"
 roles:
-  - "78669f8b-1584-4a35-a1ae-ac364856304b"
-  - "889fb461-59de-42a7-9e6a-68b033d0fc66"
-  - "f7165ac9-c67f-4908-bfb5-433a6977e113"
+  - "role-moa"
+  - "role-moe"
+  - "role-cto"
 categories:
-  - "8b280da5-8b00-43a1-b2af-f951c56abe76"
-  - "56fe6dc9-ece0-425d-af19-2c02565f4916"
+  - "cat-iot"
+  - "cat-mobile-app"
 technos:
-  - "a06c4c2e-0f37-4585-a97f-8272afcfae0b"
-  - "d36adfe8-0dd2-4941-9299-8dbbe693ba5c"
-  - "03ff92c2-88d4-4737-a6fe-1441cd65da86"
+  - "tech-react-native"
+  - "tech-sqlite"
+  - "tech-watermelon"
 ---
 
 Cette application a été développée en React Native et permet de se connecter à des boitiers de mesure d'épaisseur UMIT.

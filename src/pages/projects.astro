@@ -3,8 +3,14 @@ import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
-const projets = await getCollection("projetCollection");
-const clients = await getCollection("clientCollection");
+const projetsCol = await getCollection("projetCollection");
+const projets = projetsCol.sort((p1, p2) =>
+  new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1
+);
+const clientsCol = await getCollection("clientCollection");
+const clients = clientsCol.sort((c1, c2) =>
+  c1.data.order > c2.data.order ? 1 : -1
+);
 ---
 
 <Layout title="Projets" description="Tous mes projets" logo="">
@@ -22,27 +28,25 @@ const clients = await getCollection("clientCollection");
     </h2>
     <section class="mx-auto flex flex-wrap gap-y-4 gap-x-1 justify-evenly">
       {
-        clients
-          .sort((c1, c2) => (c1.data.order > c2.data.order ? 1 : -1))
-          .map((client, index) => (
-            <a
-              class="transition-[outline] ease-in-out hover:outline hover:outline-4 hover:outline-primary p-2"
-              href={client.data.url || "#"}
-            >
-              {client.data.image ? (
-                <img
-                  src={client.data.image}
-                  title={client.data.name}
-                  width={400}
-                  alt="Logo du client"
-                  class="animate-[client-animation] duration-500 delay-[var(--animation-delay)] h-[min(75px,7vw)] w-auto"
-                  style={`--animation-delay: ${index * 0.1}s`}
-                />
-              ) : (
-                <span>{client.data.name}</span>
-              )}
-            </a>
-          ))
+        clients.map((client, index) => (
+          <a
+            class="transition-[outline] ease-in-out hover:outline hover:outline-4 hover:outline-primary p-2"
+            href={client.data.url || "#"}
+          >
+            {client.data.image ? (
+              <img
+                src={client.data.image}
+                title={client.data.name}
+                width={400}
+                alt="Logo du client"
+                class="animate-[client-animation] duration-500 delay-[var(--animation-delay)] h-[min(75px,7vw)] w-auto"
+                style={`--animation-delay: ${index * 0.1}s`}
+              />
+            ) : (
+              <span>{client.data.name}</span>
+            )}
+          </a>
+        ))
       }
     </section>
     <h2 class="ligne mb-4 text-center" style="--delay-ligne: 0.5s">
@@ -50,16 +54,12 @@ const clients = await getCollection("clientCollection");
     </h2>
 
     <section
-      class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto"
+      class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto container"
     >
       {
-        projets
-          .sort((p1, p2) =>
-            new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1
-          )
-          .map((projet, index) => (
-            <ProjectCard project={projet.data} index={index} />
-          ))
+        projets.map((projet, index) => (
+          <ProjectCard project={projet.data} index={index} />
+        ))
       }
     </section>
   </main>
