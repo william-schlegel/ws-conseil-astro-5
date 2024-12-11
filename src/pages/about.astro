@@ -6,7 +6,7 @@ const experiences = await getCollection("experienceCollection");
 const photos = await getCollection("photoCollection");
 
 const categories = Array.from(
-  new Set(experiences.map((exp) => exp.data.category.id))
+  new Set(experiences.map((exp) => exp.data.category.id)),
 );
 
 const svgSize = "width: clamp(20px,5vw,40px); height: clamp(20px,5vw,40px); ";
@@ -131,7 +131,7 @@ const svgSize = "width: clamp(20px,5vw,40px); height: clamp(20px,5vw,40px); ";
           <ExpByCat
             catId={cat}
             experiences={experiences.filter(
-              (exp) => exp.data.category.id === cat
+              (exp) => exp.data.category.id === cat,
             )}
           />
         ))

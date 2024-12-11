@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 const projetsCol = await getCollection("projetCollection");
 const projets = projetsCol
   .sort((p1, p2) =>
-    new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1
+    new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1,
   )
   .slice(0, 4);
 ---

@@ -25,5 +25,8 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("prettier-plugin-tailwindcss"),
+  ],
 };
