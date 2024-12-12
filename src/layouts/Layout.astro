@@ -20,16 +20,16 @@ import { ClientRouter } from "astro:transitions";
 </html>
 
 <style lang="scss">
-  $sizes: 752, 887, 1044, 1185, 1295, 1397, 1491, 1581, 1668, 1751, 1825, 1894,
-    1968, 2036, 2098, 2161, 2224, 2236, 2240;
+  $sizes: 800,1024;
+  $opacity: 0.8;
 
   body {
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
+        rgba(0, 0, 0, $opacity),
+        rgba(0, 0, 0, $opacity)
       ),
-      url("/site/sage-friedman-TT2J5t1QaMw-unsplash_p0xcmt_c_scale,w_480.jpg");
+      url("/site/trail-bretagne-400.webp");
     background-size: auto, cover;
     background-origin: content-box;
     background-position: center center;
@@ -38,10 +38,10 @@ import { ClientRouter } from "astro:transitions";
       @media screen and (min-width: #{$size}px) {
         background-image: linear-gradient(
             0deg,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
+            rgba(0, 0, 0, $opacity),
+            rgba(0, 0, 0, $opacity)
           ),
-          url("/site/sage-friedman-TT2J5t1QaMw-unsplash_p0xcmt_c_scale,w_#{$size}.jpg");
+          url("/site/trail-bretagne-#{$size}.webp");
       }
     }
   }
