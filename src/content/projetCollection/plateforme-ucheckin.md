@@ -1,7 +1,7 @@
 ---
 brief: "Développement d'une plateforme de gestion pour Stimshop"
 client: "clt-stimshop"
-heroImage: "/images/706d0f3798cb127e62995c42ddae30082dc3b027-2165x1338.png"
+heroImage: "../../assets/images/ucheckin-hero.png"
 heroImageAlt: "Ucheck.in dashboard"
 name: "Plateforme UcheckIn"
 running: true

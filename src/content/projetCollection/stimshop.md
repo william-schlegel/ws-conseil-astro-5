@@ -1,7 +1,7 @@
 ---
 brief: "Stimshop développe une technologie de communication par ultrasons"
 client: "clt-stimshop"
-heroImage: "/images/2555552324189d5d10821875597966fc594ff69a-782x714.png"
+heroImage: "../../assets/images/stimshop-hero.png"
 heroImageAlt: "téléphone mobile en interaction dans un magasin"
 name: "Stimshop - Wi-Us"
 running: true

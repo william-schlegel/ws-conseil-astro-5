@@ -4,6 +4,8 @@ import { displayDate } from "../lib/utils";
 import { getEntry } from "astro:content";
 import { getEntries } from "astro:content";
 import Technos from "./Technos.astro";
+import { Image } from "astro:assets";
+import logoPicto from "../assets/site/logo-picto.png";
 
 interface Props {
   project: CollectionEntry<"projetCollection">["data"];
@@ -30,19 +32,19 @@ const categories = await getEntries(project.categories);
     >
       {
         client?.data.image ? (
-          <img
+          <Image
             src={client.data.image}
             alt=""
             width={60}
             class="bg-cover bg-center"
           />
         ) : (
-          <img
-            src="/site/logo-picto.png"
+          <Image
+            src={logoPicto}
             class="bg-cover bg-center"
             width={60}
             height={60}
-            alt=""
+            alt="WS Conseil - projet personnel"
           />
         )
       }
@@ -56,7 +58,7 @@ const categories = await getEntries(project.categories);
   </p>
   {
     project.heroImage && (
-      <img
+      <Image
         class="aspect-[4/3] object-cover"
         src={project.heroImage}
         alt="Image principale du projet"

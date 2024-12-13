@@ -1,7 +1,7 @@
 ---
 brief: "Analyse des données de pollution d'un terrain avec une représentation visuelle claire pour comprendre cette pollution et comment elle évolue en fonction de la profondeur"
 client: "clt-aexdo"
-heroImage: "/images/f8eab1216bc38bf2dfffb6a6597dbbe6adccc075-1359x1006.png"
+heroImage: "../../assets/images/aexdo-hero.png"
 heroImageAlt: "Diagramme de Voronoi représentant les analyses par filière d'élimination"
 name: "Analyse des données de pollution"
 running: true
@@ -29,10 +29,10 @@ La représentation est entièrement dynamique, en fonction de multiples critère
 - la lithologie du terrain
 - la présence et la concentration des polluants
 
-![visualisation Voronoi des parcelles polluées](/images/095ecf5da2a1e21f1ce80901c2fbb56730d2db34-1606x1229.jpg)
+![visualisation Voronoi des parcelles polluées](../../assets/images/aexdo-voronoi.jpg)
 
 Cette représentation est visible dans des graphiques ou dans des tables pour avoir des données précises
 
-![Graphiques des pollutions du sol](/images/0464890b09e2a0f63a985b5c08306c100cc6dab1-1619x1064.jpg)
+![Graphiques des pollutions du sol](../../assets/images/aexdo-graphiques.jpg)
 
-![Dispersion de la pollution](/images/099cdfb6ee3e8377b6ee551b4ee029e11ff7366a-1381x739.jpg)
+![Dispersion de la pollution](../../assets/images/aexdo-dispersion.jpg)

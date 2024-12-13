@@ -1,47 +1,47 @@
 [
   {
     "id": "clt-igloo",
-    "image": "/images/507ed04170184865447a2f767649a1964be289de-300x300.png",
+    "image": "../assets/images/umix-journal-mesures.png",
     "name": "Igloo Spirit",
     "order": 30
   },
   {
     "id": "clt-intermarche",
-    "image": "/images/09e674f6a18ebc02df4bff930c7c67e148470026-1544x398.webp",
+    "image": "../assets/images/clt-intermarche.webp",
     "name": "Intermarché",
     "order": 8,
     "url": "https://www.intermarche.com"
   },
   {
     "id": "clt-flexilims",
-    "image": "/images/e1e8ff2b9f17ed0707c5f8b1815207eb083ec69d-963x274.png",
+    "image": "../assets/images/clt-flexilims.png",
     "name": "FlexiLIMS",
     "order": 70
   },
   {
     "id": "clt-efrei",
-    "image": "/images/5f3f5cc41f0986a5be9114c0d26b75795609124b-1046x341.png",
+    "image": "../assets/images/clt-efrei.png",
     "name": "Efrei",
     "order": 60,
     "url": "https://www.efrei.fr/"
   },
   {
     "id": "clt-stimshop",
-    "image": "/images/e054052dfdcc913dfb1fcd7ce4a5e8173074b11b-1900x450.jpg",
+    "image": "../assets/images/clt-stimshop.jpg",
     "name": "Stimshop",
     "order": 50,
     "url": "http://wi-us.eu"
   },
   {
     "id": "clt-bayam",
-    "image": "/images/4e50bc751a3928ab609324e27c891ab64c4509dd-158x79.png",
+    "image": "../assets/images/clt-bayam.png",
     "name": "Bayam",
     "order": 9,
     "url": "https://bayam.tv/fr/"
   },
   {
     "id": "clt-valmondois",
-    "image": "/images/083fa801001e617fdb027bbae11dc4a24eea539c-500x500.png",
+    "image": "../assets/images/clt-valmondois.png",
     "name": "Valmondois",
     "order": 20,
     "url": "http://valmondois.fr"
@@ -49,21 +49,21 @@
   {
     "id": "clt-aexdo",
     "email": "mailto://contact@aexdo.com",
-    "image": "/images/ec90f928cb08922fdf5eac4f074807ddddc0c724-1703x897.png",
+    "image": "../assets/images/clt-aexdo.png",
     "name": "Aexdo",
     "order": 10,
     "url": "http://aexdo.com"
   },
   {
     "id": "clt-circolab",
-    "image": "/images/61d1a3a8fc2a6918e19e348ab5364ce89a1231e8-1772x1772.png",
+    "image": "../assets/images/clt-circolab.png",
     "name": "Circolab",
     "order": 40,
     "url": "https://circolab.eu"
   },
   {
     "id": "clt-skrnz",
-    "image": "/images/fed0f380c1b774001d2881a099213721ae30f4b5-2350x1000.png",
+    "image": "../assets/images/clt-skrnz.png",
     "name": "Skrnz",
     "order": 100
   }

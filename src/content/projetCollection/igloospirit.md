@@ -1,7 +1,7 @@
 ---
 brief: "IglooSpirit est un studio de développement VR et AR cofondé en 2017 avec Fabienne Giezendanner"
 client: "clt-igloo"
-heroImage: "/images/cb2d8d227838129ce8c440b7a5637be0c5588966-5000x3333.jpg"
+heroImage: "../../assets/images/igloo-hero.jpg"
 heroImageAlt: "Logo IglooSpirit"
 name: "IglooSpirit"
 running: true

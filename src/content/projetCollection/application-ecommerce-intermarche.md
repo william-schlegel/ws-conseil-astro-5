@@ -1,7 +1,7 @@
 ---
 brief: "Développement et améliorations du site eCommerce d'Intermarché"
 client: "clt-intermarche"
-heroImage: "/images/b4a46b7cf13367c1c0e948446190a46f40fe2d70-1672x1168.png"
+heroImage: "../../assets/images/intermarche-hero.png"
 heroImageAlt: "Site intermaché, sélection de produits"
 name: "Application eCommerce Intermarché"
 running: true

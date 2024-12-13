@@ -2,8 +2,10 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ExpByCat from "../components/ExpByCat.astro";
+import { Image } from "astro:assets";
 const experiences = await getCollection("experienceCollection");
 const photos = await getCollection("photoCollection");
+import me from "../assets/site/me.jpg";
 
 const categories = Array.from(
   new Set(experiences.map((exp) => exp.data.category.id)),
@@ -36,8 +38,8 @@ const svgSize = "width: clamp(20px,5vw,40px); height: clamp(20px,5vw,40px); ";
         </p>
       </div>
       <div>
-        <img
-          src={"/site/me.jpg"}
+        <Image
+          src={me}
           alt="William Schlegel"
           class="w-[clamp(50px,30vw,300px)] aspect-square rounded-full"
           width={300}

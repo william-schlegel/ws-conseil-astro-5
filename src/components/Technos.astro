@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -23,7 +24,7 @@ const { technos, containerClass, itemClass, title, withName, imgClass } =
       >
         {technos.map((tech) => (
           <li title={tech.data.name} class={itemClass}>
-            <img
+            <Image
               src={tech.data.image}
               title={tech.data.name}
               width={30}

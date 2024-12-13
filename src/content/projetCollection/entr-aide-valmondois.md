@@ -1,7 +1,7 @@
 ---
 brief: "Un site d'entre-aide pour les habitants de Valmondois pendant le premier confinement"
 client: "clt-valmondois"
-heroImage: "/./images/2f1ee3d2a3fcd4d52516ec9a5eb35fe78838262c-600x400.png"
+heroImage: "../../assets/images/valmondois-hero.png"
 heroImageAlt: "Copie d'écran du site"
 name: "Entr'Aide Valmondois"
 running: false

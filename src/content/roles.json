@@ -1,42 +1,42 @@
 [
   {
     "id": "role-ceo",
-    "image": "/images/0e062f0d5db7114062d67ccd6972da8eb1e3c546-256x256.png",
+    "image": "../assets/images/role-ceo.png",
     "name": "CEO"
   },
   {
     "id": "role-founder",
-    "image": "/images/5fb30b9c9c2afc192a7d8ea2a1fb0a00664a0c60-256x256.png",
+    "image": "../assets/images/role-founder.png",
     "name": "Fondateur"
   },
   {
     "id": "role-manager",
-    "image": "/images/2d044776d063394d137b0868b939ec6a433e54db-256x256.png",
+    "image": "../assets/images/role-manager.png",
     "name": "Direction d'équipe"
   },
   {
     "id": "role-invester",
-    "image": "/images/7a8c71ee7d055ceae7db6b31c0c0093589858724-256x256.png",
+    "image": "../assets/images/role-invester.png",
     "name": "Investisseur"
   },
   {
     "id": "role-moa",
-    "image": "/images/d391783bb62339567571e3806e12e923daa80851-256x256.png",
+    "image": "../assets/images/role-moa.png",
     "name": "Matrise d'ouvrage"
   },
   {
     "id": "role-lecturer",
-    "image": "/images/de6291c73867284b6f8e7d475a1447ad0cb88a65-256x256.png",
+    "image": "../assets/images/role-lecturer.png",
     "name": "Enseignant"
   },
   {
     "id": "role-cto",
-    "image": "/images/7877202fc9b06d77683157587e9a24262f85c3fd-256x256.png",
+    "image": "../assets/images/role-cto.png",
     "name": "CTO"
   },
   {
     "id": "role-moe",
-    "image": "/images/c4349b7f30e369b88a49733696c76656cf2a4e0b-256x256.png",
+    "image": "../assets/images/role-moe.png",
     "name": "Développement / Maîtrise d'oeuvre"
   }
 ]

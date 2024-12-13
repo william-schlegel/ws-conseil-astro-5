@@ -1,6 +1,6 @@
 ---
 brief: "Applications interactives pour la télévision avec HbbTV"
-heroImage: "/images/40576a36836caf9bf90b81564bb8642982d06edf-841x800.png"
+heroImage: "../../assets/images/gamific-hero.png"
 heroImageAlt: "poster de présentation gamific.tv"
 name: "Gamific.tv"
 running: false

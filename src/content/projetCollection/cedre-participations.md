@@ -1,6 +1,6 @@
 ---
 brief: "Fond d'investissement des ingénieurs de l'EFREI"
-heroImage: "/images/99041bacb52f874734a5558381c1a1dea6ed7c04-1280x694.png"
+heroImage: "../../assets/images/cedre-hero.png"
 heroImageAlt: "Logo Cedre participations et France Angels"
 name: "Cedre Participations"
 running: true

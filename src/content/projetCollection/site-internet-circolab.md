@@ -1,7 +1,7 @@
 ---
 brief: "Moteur de recherche dédié à l'économie circulaire et la réemployabilité des matériaux de construction"
 client: "clt-circolab"
-heroImage: "/images/2cab02bbcf4659b33b6afbd677bd980b2db9bc01-1698x842.png"
+heroImage: "../../assets/images/circolab-hero.png"
 heroImageAlt: "Schéma des acteurs de Circolab"
 name: "Site internet Circolab"
 running: true

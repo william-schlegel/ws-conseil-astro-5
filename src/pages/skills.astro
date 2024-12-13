@@ -6,6 +6,8 @@ import Ar from "../components/svg/ar.astro";
 import Innovation from "../components/svg/innovation.astro";
 import Direction from "../components/svg/direction.astro";
 import Technos from "../components/Technos.astro";
+import { Image } from "astro:assets";
+import titleImage from "../assets/site/skills.svg"
 
 const skills = await getCollection("skillCollection");
 const technos = await getCollection("technoCollection");
@@ -14,8 +16,8 @@ const technos = await getCollection("technoCollection");
 <Layout title="Compétences" description="Mes domaines de compétence" logo="">
   <main>
     <section class="mb-6 flex justify-center">
-      <img
-        src="/site/skills.svg"
+      <Image
+        src={titleImage}
         alt="Mes compétences"
         width={300}
         class="header-title"
@@ -31,7 +33,7 @@ const technos = await getCollection("technoCollection");
           .map((skill) => (
             <div class="flex flex-col ">
               <div class="grid grid-cols-[50px_1fr] items-center gap-8">
-                <img
+                <Image
                   class="rounded-full bg-white grid place-items-center"
                   src={skill.data.image ?? "/site/logo-picto.png"}
                   alt=""
@@ -60,7 +62,7 @@ const technos = await getCollection("technoCollection");
           .sort((s1, s2) => (s1.data.order > s2.data.order ? 1 : -1))
           .map((skill) => (
             <div class="flex items-center px-4 py-2 text-primary bg-bg-white06 rounded transition-[rotate] hover:-rotate-2">
-              <img
+              <Image
                 class="inline-block mr-4"
                 src={skill.data.image ?? "/site/logo-picto.png"}
                 alt=""

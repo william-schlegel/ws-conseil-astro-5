@@ -1,7 +1,7 @@
 ---
 brief: 'Intervenant sur le thème "Jeux vidéo et nouveaux média" pour les étudiants en M1 et M2'
 client: "clt-efrei"
-heroImage: "/images/ef0e036a333cab97278e313b1cbb6155e2e51b78-1280x710.jpg"
+heroImage: "../../assets/images/efrei-hero.jpg"
 heroImageAlt: "Une salle de cours avec des étudiants devant leurs ordinateurs"
 name: "Enseignant jeux vidéo"
 running: false

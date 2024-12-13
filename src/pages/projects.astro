@@ -2,7 +2,8 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
-import { slide } from "astro:transitions";
+import titleImage from "../assets/site/projects.svg";
+import { Image } from "astro:assets";
 
 const projetsCol = await getCollection("projetCollection");
 const projets = projetsCol.sort((p1, p2) =>
@@ -17,8 +18,8 @@ const clients = clientsCol.sort((c1, c2) =>
 <Layout title="Projets" description="Tous mes projets" logo="">
   <main>
     <section class="mb-6 flex justify-center">
-      <img
-        src="/site/projects.svg"
+      <Image
+        src={titleImage}
         alt="Tous mes projets"
         width={700}
         class="header-title"
@@ -35,15 +36,13 @@ const clients = clientsCol.sort((c1, c2) =>
             href={client.data.url || "#"}
           >
             {client.data.image ? (
-              <img
+              <Image
                 src={client.data.image}
                 title={client.data.name}
                 width={400}
                 alt="Logo du client"
                 class="animate-[client-animation] duration-500 delay-[var(--animation-delay)] h-[min(75px,7vw)] w-auto"
                 style={`--animation-delay: ${index * 0.1}s`}
-                transition:name="hero"
-                transition:animate={slide({ duration: "0.5s" })}
               />
             ) : (
               <span>{client.data.name}</span>

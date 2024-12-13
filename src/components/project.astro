@@ -5,6 +5,7 @@ import { getEntry } from "astro:content";
 import { displayDate } from "../lib/utils";
 import Technos from "./Technos.astro";
 import { render } from "astro:content";
+import { Image } from "astro:assets";
 
 interface Props {
   project: CollectionEntry<"projetCollection">;
@@ -30,7 +31,7 @@ const { Content } = await render(project);
     client ? (
       <div class="flex items-center gap-4 mb-8">
         <div class="w-32 aspect-square rounded-full bg-white grid place-items-center p-2">
-          <img src={client.data.image} alt={client.data.name} />
+          <Image src={client.data.image} alt={client.data.name} />
         </div>
         <p class="text-4xl">{client.data.name}</p>
       </div>
@@ -52,10 +53,14 @@ const { Content } = await render(project);
     ) : null
   }
   <div
-    class="relative w-full aspect-[4/3] bg-cover bg-center [background-image:var(--bg-image)] isolate mx-auto max-w-[800px] my-8"
-    style={{ "--bg-image": `url(${project.data.heroImage})` }}
-    transition:name="hero"
+    class="relative w-full aspect-[4/3] isolate mx-auto max-w-[800px] my-8"
   >
+  <div>
+    <Image
+      src={project.data.heroImage}
+      alt={project.data.name}
+      class="absolute inset-0 w-full h-full object-cover"/>
+  </div>
     <div
       class="absolute inset-0 bg-[rgba(0_0_0/0.5)] transition-opacity z-10 hover:opacity-0"
     >
@@ -75,7 +80,7 @@ const { Content } = await render(project);
           <ul class="absolute left-4 bottom-4 z-20 flex flex-wrap gap-4">
             {roles.map((role) => (
               <li class="bg-secondary text-primary p-[2px] pr-4 rounded-full flex items-center gap-2 font-bold">
-                <img
+                <Image
                   src={role.data.image}
                   alt={role.data.name}
                   class="bg-white aspect-square border border-primary rounded-full"

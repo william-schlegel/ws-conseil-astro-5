@@ -1,5 +1,10 @@
 ---
+import { Image } from "astro:assets";
+import me from "../assets/site/me.jpg"
+
 const { moreClass } = Astro.props;
+
+
 ---
 
 <a
@@ -10,8 +15,8 @@ const { moreClass } = Astro.props;
   ]}
 >
   <p class="text-primary">About Me</p>
-  <img
-    src="/site/me.jpg"
+  <Image
+    src={me}
     alt="me"
     width="30"
     height="30"

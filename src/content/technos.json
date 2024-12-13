@@ -1,147 +1,147 @@
 [
   {
     "id": "tech-nest",
-    "image": "/images/49c2be6f2607b5c12dd27f8ecc8521723447975d-1000x966.svg",
+    "image": "../assets/images/tech-nest.svg",
     "name": "Nest JS"
   },
   {
     "id": "tech-bootstrap",
-    "image": "/images/7bb7ad740f45c9e893f26e5a22f851147c23c8db-512x408.png",
+    "image": "../assets/images/tech-bootstrap.png",
     "name": "Bootstrap"
   },
   {
     "id": "tech-next",
-    "image": "/images/37ae5c7e00f0a14cb7e3f7fb1a82d0b5ec5de27a-2560x1534.png",
+    "image": "../assets/images/tech-next.png",
     "name": "Next JS"
   },
   {
     "id": "tech-prisma",
-    "image": "/images/8c1b41fbc8e1939c5638112847a814da5875c124-249x80.png",
+    "image": "../assets/images/tech-prisma.png",
     "name": "Prisma"
   },
   {
     "id": "tech-react",
-    "image": "/images/f2f277e68240755464a83e9e7ab0b6062beeffb6-1000x1000.png",
+    "image": "../assets/images/tech-react.png",
     "name": "React"
   },
   {
     "id": "tech-sanity",
-    "image": "/images/7f3eb4576d937e140b29e2d05cfe0055be2d2037-83x83.png",
+    "image": "../assets/images/tech-sanity.png",
     "name": "Sanity"
   },
   {
     "id": "tech-sqlite",
-    "image": "/images/13bc3dee51cab97fbd6c8a4ff250b410fc04103b-1280x606.png",
+    "image": "../assets/images/tech-sqlite.png",
     "name": "SQLite"
   },
   {
     "id": "tech-astro",
-    "image": "/images/4ef54756ea0d6ec176e0f5d01d7037703ff3e2dd-291x300.png",
+    "image": "../assets/images/tech-astro.png",
     "name": "Astro"
   },
   {
     "id": "tech-aws",
-    "image": "/images/701629a36b306aa16b7bc4ea482c2ced74c24b0c-1280x766.png",
+    "image": "../assets/images/tech-aws.png",
     "name": "AWS"
   },
   {
     "id": "tech-sass",
-    "image": "/images/1f7fec3c52322ac2151841e7d7cf52db4fccb63c-2560x1920.png",
+    "image": "../assets/images/tech-sass.png",
     "name": "Sass"
   },
   {
     "id": "tech-varnish",
-    "image": "/images/0e55661609406f991d269878924df81d416512f5-219x330.png",
+    "image": "../assets/images/tech-varnish.png",
     "name": "Varnish cache"
   },
   {
     "id": "tech-js",
-    "image": "/images/674d368475311b60be6403d4ac1a2b36e42ff8bb-1052x1052.png",
+    "image": "../assets/images/tech-js.png",
     "name": "Javascript"
   },
   {
     "id": "tech-trpc",
-    "image": "/images/17c6ac6f7cf1556e5fa8ed68cb408b3cc3aba513-512x512.png",
+    "image": "../assets/images/tech-trpc.png",
     "name": "tRPC"
   },
   {
     "id": "tech-preact",
-    "image": "/images/9fad8f99909150672f0db5ef5aba4caef9a8af9a-512x512.png",
+    "image": "../assets/images/tech-preact.png",
     "name": "Preact"
   },
   {
     "id": "tech-formio",
-    "image": "/images/71bf6fcf6da9e5aa1786f6a01a479937db0acd3e-1200x627.jpg",
+    "image": "../assets/images/tech-formio.jpg",
     "name": "Form io"
   },
   {
     "id": "tech-turborepo",
-    "image": "/images/6abab2872fdc3fac3a1629a629086a7ff6697c06-256x256.png",
+    "image": "../assets/images/tech-turborepo.png",
     "name": "TurboRepo / mono repo"
   },
   {
     "id": "tech-react-native",
-    "image": "/images/598b685075bec4fa3520383753095038252e7cce-522x343.png",
+    "image": "../assets/images/tech-react-native.png",
     "name": "React Native"
   },
   {
     "id": "tech-couchdb",
-    "image": "/images/904bd28c13dd7751758c68a0c73934bdd21085f8-1200x1212.png",
+    "image": "../assets/images/tech-couchdb.png",
     "name": "Couch DB"
   },
   {
     "id": "tech-scaleway",
-    "image": "/images/2e22e83c6c09aa34bdbb47a694f2fea20b9db4ab-1200x291.png",
+    "image": "../assets/images/tech-scaleway.png",
     "name": "Scaleway"
   },
   {
     "id": "tech-postgres",
-    "image": "/images/c6aae7d87bf86ad4d67d51651731c33002d9962a-490x544.png",
+    "image": "../assets/images/tech-postgres.png",
     "name": "Postgres"
   },
   {
     "id": "tech-camunda",
-    "image": "/images/becf07f36ac7b64a59eb48afd946e85173d2f7c5-1200x600.png",
+    "image": "../assets/images/tech-camunda.png",
     "name": "Camunda"
   },
   {
     "id": "tech-html",
-    "image": "/images/b56d265ed00f8a9a334b7068b2a0fe0797dd16eb-640x640.png",
+    "image": "../assets/images/tech-html.png",
     "name": "HTML"
   },
   {
     "id": "tech-ts",
-    "image": "/images/e3fb670c73cf147bc538dc44e01b2ec4f0b693c9-1024x1024.png",
+    "image": "../assets/images/tech-ts.png",
     "name": "Typescript"
   },
   {
     "id": "tech-heroku",
-    "image": "/images/4fdb3ff9546aed4d0522c41c9ac93ca3001b1837-400x250.png",
+    "image": "../assets/images/tech-heroku.png",
     "name": "Heroku"
   },
   {
     "id": "tech-pug",
-    "image": "/images/d46abf8394ced5e35a4cdb5c2db39228ebd473cc-2500x2500.svg",
+    "image": "../assets/images/tech-pug.svg",
     "name": "Pug"
   },
   {
     "id": "tech-watermelon",
-    "image": "/images/9eca58b650ffe1b43e60e04650c4f8bb341079cc-800x400.png",
+    "image": "../assets/images/tech-watermelon.png",
     "name": "Watermelon DB"
   },
   {
     "id": "tech-tailwind",
-    "image": "/images/e285efaab9a759d07eaa1b6155ac36d72d45f4ab-1200x1200.jpg",
+    "image": "../assets/images/tech-tailwind.jpg",
     "name": "Tailwind CSS"
   },
   {
     "id": "tech-keystone",
-    "image": "/images/c3777ba052d3c4b7e702fca17e425a52178d5706-504x512.png",
+    "image": "../assets/images/tech-keystone.png",
     "name": "Keystone JS"
   },
   {
     "id": "tech-css",
-    "image": "/images/129dfa5ff35b3dac11522b7707cb030391c7f9ae-1452x2048.png",
+    "image": "../assets/images/tech-css.png",
     "name": "CSS"
   }
 ]

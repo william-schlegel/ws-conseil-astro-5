@@ -2,94 +2,79 @@
   {
     "id": "6f3ecbfb-2737-4496-9f9c-4f9903ef28ca",
     "name": "micro",
-    "image": "/images/36e4611501c5aecc3d12167785adada2a4113752-357x408.png"
+    "image": "../assets/images/moi-micro.png"
   },
   {
     "id": "da06176d-a601-4b81-819a-7da722d8d7db",
     "name": "Cannes 2012",
-    "image": "/images/b1331963f7050c9289c8a1e503634eca16cd9502-420x408.png",
+    "image": "../assets/images/moi-cannes-2021.png",
     "alt": "Olivier"
   },
   {
     "id": "d9b7ed13-8409-4853-a726-546f00b5edd2",
     "name": "profile pull jaune",
-    "image": "/images/f3d9c3fbcc807783567cea7471407626f1c8ea8a-415x432.png"
+    "image": "../assets/images/moi-pull-jaune.png"
   },
   {
     "id": "0140e3cf-6222-4d34-86a3-f4c8f0ace2c2",
     "name": "face lunettes rouges",
-    "image": "/images/b36ade244c278ef1fdbe506238905ba5df678554-308x312.png"
+    "image": "../assets/images/moi-lunettes-rouges.png"
   },
   {
     "id": "f2b67a71-d1a6-4f74-bef4-71e9c3a9a050",
     "name": "lunettes",
-    "image": "/images/219b5998abef84d3b2d10a288dc1fc3810edb2af-455x464.png",
+    "image": "../assets/images/moi-lunettes.png",
     "alt": "Photo de William"
   },
-  {
-    "id": "e0f6be20-1d5d-407b-98b7-625d7ad2f0e0",
-    "name": "pull jaune",
-    "image": "/images/f3d9c3fbcc807783567cea7471407626f1c8ea8a-415x432.png",
-    "alt": "Photo de William"
-  },
+  
   {
     "id": "75bff0fb-27d1-455a-9802-fcc9a0d3fff4",
     "name": "A la barre",
-    "image": "/images/73e14d452d3e54be7846e4afb4dd381ba69d23f1-500x500.png",
+    "image": "../assets/images/moi-bateau.png",
     "alt": "A la barre d'un bateau"
   },
   {
     "id": "66f82d4c-c04c-4597-b599-3e084242afc2",
     "name": "casque VR",
-    "image": "/images/16f47afbbfc34459f6fac962c792affdba9158a0-433x409.png",
+    "image": "../assets/images/moi-vr.png",
     "alt": "Photo de William"
   },
   {
     "id": "7029778f-243c-4c11-b1f2-16815368c5da",
     "name": "chemise",
-    "image": "/images/d0ea98e0848f367828be3a82ad669f1be74b0395-387x467.png",
+    "image": "../assets/images/moi-chemise.png",
     "alt": "En chemise"
   },
   {
     "id": "3dd20990-d01d-4387-97a4-3445266534c8",
     "name": "Techrun",
-    "image": "/images/ed121ff4a958dabcc7512b880030e675a0b24fd4-493x507.png",
+    "image": "../assets/images/moi-techrun.png",
     "alt": "Photo de William"
   },
   {
     "id": "48f9caac-70f2-4d6d-ad02-0bcd3cf4a269",
     "name": "Trail",
-    "image": "/images/366868da20a5e4713f357a366c81210d063b08ec-458x423.png",
+    "image": "../assets/images/moi-trail.png",
     "alt": "Photo de william"
   },
   {
     "id": "13c73a2f-5eca-4f47-b01a-e83564a6b119",
     "name": "ventoux",
-    "image": "/images/1106b8f7499114cfb1d604374691612a207c8d84-268x326.png",
+    "image": "../assets/images/moi-ventoux.png",
     "alt": "Montée du ventoux"
   },
   {
     "id": "a4ae2045-6a50-4ae2-88f9-c0d521e65ac6",
     "name": "Esterel",
-    "image": "/images/0cf09c586381d9aae6b5dc3bbc6842133e9386a2-289x339.png",
+    "image": "../assets/images/moi-esterelle.png",
     "alt": "Dans le massif de l'Esterel"
   },
-  {
-    "id": "1ab58621-4080-40fe-b6bf-f09dc2cbab13",
-    "name": "cannes 2012",
-    "image": "/images/b1331963f7050c9289c8a1e503634eca16cd9502-420x408.png",
-    "alt": "Photo de William"
-  },
+  
   {
     "id": "87627cab-ee90-4205-9d45-d55ff8677b07",
     "name": "En bretagne",
-    "image": "/images/38472d74e269eed89bb214f7218460a830b66438-350x395.png",
-    "alt": "Photo de William"
-  },
-  {
-    "id": "49e973ea-27cc-496f-9ce0-34e5b653a6e6",
-    "name": "avec un micro",
-    "image": "/images/36e4611501c5aecc3d12167785adada2a4113752-357x408.png",
+    "image": "../assets/images/moi-bretagne.png",
     "alt": "Photo de William"
   }
+ 
 ]

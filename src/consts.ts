@@ -14,9 +14,6 @@ const sanityConfig = {
   lienLinkedin: "https://www.linkedin.com/in/williamschlegel",
   lienMalt: "https://www.malt.fr/profile/williamschlegel",
   lienTwitter: "https://twitter.com/wsc_ironeec",
-  "logo._sanityAsset":
-    "image@file://./images/e9b2d584cda79b170a8a5bff5d8dfbc5125555a3-2144x773.png",
-  "logo._type": "image",
   nom: "WS Conseil",
   paragrapheAbout: "CTO de transition, Lead developer",
   soustitreAbout: "(*CTO as a Service)",

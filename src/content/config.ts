@@ -3,9 +3,9 @@ import { defineCollection, reference, z } from "astro:content";
 
 const roleCollection = defineCollection({
   loader: file("src/content/roles.json"),
-  schema: z.object({
+  schema:({image})=> z.object({
     id: z.string(),
-    image: z.string(),
+    image: image(),
     name: z.string(),
   }),
 });
@@ -22,10 +22,10 @@ const categoryCollection = defineCollection({
 
 const clientCollection = defineCollection({
   loader: file("src/content/clients.json"),
-  schema: z.object({
+  schema: ({image})=>z.object({
     id: z.string(),
     name: z.string(),
-    image: z.string(),
+    image: image(),
     order: z.number().optional().default(0),
     url: z.string().url().optional(),
   }),
@@ -33,18 +33,18 @@ const clientCollection = defineCollection({
 
 const technoCollection = defineCollection({
   loader: file("src/content/technos.json"),
-  schema: z.object({
+  schema: ({image})=>z.object({
     id: z.string(),
-    image: z.string(),
+    image: image(),
     name: z.string(),
   }),
 });
 
 const skillCollection = defineCollection({
   loader: file("src/content/skills.json"),
-  schema: z.object({
+  schema: ({image})=>z.object({
     id: z.string(),
-    image: z.string(),
+    image: image(),
     name: z.string(),
     order: z.number().optional().default(0),
     animation: z.string().optional(),
@@ -62,10 +62,10 @@ const linkCollection = defineCollection({
 
 const experienceCollection = defineCollection({
   loader: file("src/content/experiences.json"),
-  schema: z.object({
+  schema:({image})=> z.object({
     id: z.string(),
     name: z.string(),
-    image: z.string().optional(),
+    image: image(),
     startDate: z.string(),
     endDate: z.string().optional(),
     description: z.string(),
@@ -76,20 +76,20 @@ const experienceCollection = defineCollection({
 
 const photoCollection = defineCollection({
   loader: glob({ pattern: "*.jpg", base: "src/content/photos" }),
-  schema: z.object({
+  schema: ({image})=>z.object({
     id: z.string(),
     name: z.string(),
-    image: z.string(),
+    image: image(),
     alt: z.string().optional(),
   }),
 });
 
 const projetCollection = defineCollection({
   loader: glob({ pattern: "*.md*", base: "src/content/projetCollection" }),
-  schema: z.object({
+  schema:({image})=> z.object({
     brief: z.string(),
     client: reference("clientCollection").optional(),
-    heroImage: z.string(),
+    heroImage: image(),
     heroImageAlt: z.string(),
     name: z.string(),
     running: z.boolean().optional().default(false),

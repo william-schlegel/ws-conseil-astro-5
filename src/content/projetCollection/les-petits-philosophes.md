@@ -1,7 +1,7 @@
 ---
 brief: 'Jeu d''accompagnement pour les enfants qui suivent la série "Les petits philosophes"'
 client: "clt-bayam"
-heroImage: "/images/1583ddc23708bf75cd51ae79740abceca67f72e1-2194x1146.png"
+heroImage: "../../assets/images/petits-philosophes-hero.png"
 heroImageAlt: "Image de raoul tenant un ballon dans lequel les enfants glissent des yeux et une bouche pour composer une expression"
 name: "Les petits philosophes"
 running: false

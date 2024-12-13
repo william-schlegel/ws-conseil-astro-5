@@ -1,7 +1,7 @@
 ---
 brief: "Flexilims est un logiciel Saas de gestion de laboratoire"
 client: "clt-flexilims"
-heroImage: "/images/28a494f294267347a14b8411084f896881c19656-1280x673.jpg"
+heroImage: "../../assets/images/flexilims-hero.jpg"
 heroImageAlt: "homme avec des icons virtuelles"
 name: "FlexiLIMS"
 slug: "flexilims"

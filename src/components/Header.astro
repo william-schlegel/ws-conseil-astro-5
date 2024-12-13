@@ -1,7 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import { SITE_TITLE } from "../consts";
 import AboutButton from "./AboutButton.astro";
 import InnerMenu from "./InnerMenu.astro";
+import logo from "../assets/site/logo-long.png"
 ---
 
 <header>
@@ -11,9 +13,9 @@ import InnerMenu from "./InnerMenu.astro";
     role="navigation"
   >
     <a href="/" class="absolute top-0 w-[150px] h-full"
-      ><img
+      ><Image
         class="h-[calc(100%-10px)] cursor-pointer"
-        src="/site/logo-long.png"
+        src={logo}
         width="150"
         alt={`logo du site ${SITE_TITLE} et retour à la home page`}
       /></a

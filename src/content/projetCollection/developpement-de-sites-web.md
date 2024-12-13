@@ -1,6 +1,6 @@
 ---
 brief: "Divers sites internet pour des entreprises ou des associations"
-heroImage: "/images/b4eb67dcc1effa8fe6b5fa8ed4967ac7887993f8-1280x719.jpg"
+heroImage: "../../assets/images/dev-site-web-hero.jpg"
 heroImageAlt: "écrans présentant des sites web"
 name: "Développement de sites web"
 running: true

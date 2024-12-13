@@ -1,7 +1,7 @@
 ---
 brief: "Æxdo est une plateforme SaaS pour la gestion de données de depollution sur les chantiers"
 client: "clt-aexdo"
-heroImage: "/images/c7fa58e675510c2e77fea47363d78db01770851b-1682x949.jpg"
+heroImage: "../../assets/images/depollution-hero.jpg"
 heroImageAlt: "image de terrain"
 name: "Æxdo"
 running: true
