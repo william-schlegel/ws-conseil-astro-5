@@ -42,6 +42,9 @@
   p {
     @apply text-pretty;
   }
+  iframe {
+    @apply max-w-full;
+  }
 }
 @keyframes ligne {
   from {
