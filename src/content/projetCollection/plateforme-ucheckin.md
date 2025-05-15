@@ -7,6 +7,7 @@ name: "Plateforme UcheckIn"
 running: true
 slug: "plateforme-ucheckin"
 startDate: "2021-12-20"
+endDate: "2024-10-31"
 roles:
   - "role-moa"
   - "role-moe"

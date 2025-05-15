@@ -7,6 +7,7 @@ name: "Stimshop - Wi-Us"
 running: true
 slug: "stimshop-wi-us"
 startDate: "2015-10-01"
+endDate: "2024-10-31"
 roles:
   - "role-invester"
   - "role-moe"

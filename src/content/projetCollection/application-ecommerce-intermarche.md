@@ -7,6 +7,7 @@ name: "Application eCommerce Intermarché"
 running: true
 slug: "application-ecommerce-intermarche"
 startDate: "2023-03-20"
+endDate: "2025-05-30"
 roles:
   - "role-moe"
 categories:
