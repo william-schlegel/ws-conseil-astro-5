@@ -1272,7 +1272,7 @@
     "_rev": "asw408LOtjAZyLrgvY5djJ",
     "_type": "projet",
     "_updatedAt": "2023-03-12T14:23:46Z",
-    "brief": "Videoach est une application de gestion de club de sport à destination des managers de salles, des coachs et des membres des clubs",
+    "brief": "fitlink est une application de gestion de club de sport à destination des managers de salles, des coachs et des membres des clubs",
     "categories": [
       {
         "_key": "45b2cd1662a8",
@@ -1282,15 +1282,15 @@
     ],
     "heroImage._sanityAsset": "image@file://./images/6043c4bc09b6f340080cf85d01808949afc5129a-1462x1280.png",
     "heroImage._type": "mainImage",
-    "heroImage.alt": "présentation de videoach, avec une image de club de sport",
-    "heroImage.caption": "videoach home page",
+    "heroImage.alt": "présentation de fitlink, avec une image de club de sport",
+    "heroImage.caption": "fitlink home page",
     "langue": "fr",
     "links": [
       {
         "_key": "33cdebed7a42",
         "_type": "link",
         "title": "Application (beta)",
-        "url": "https://turbo-videoach-nextjs.vercel.app/videoach"
+        "url": "https://turbo-fitlink-nextjs.vercel.app/fitlink"
       }
     ],
     "main": [
@@ -1555,7 +1555,7 @@
         "style": "normal"
       }
     ],
-    "name": "Videoach",
+    "name": "fitlink",
     "roles": [
       {
         "_key": "ddb37269bba7",
@@ -1570,7 +1570,7 @@
     ],
     "running": true,
     "slug._type": "slug",
-    "slug.current": "videoach",
+    "slug.current": "fitlink",
     "startDate": "2022-11-15",
     "technos": [
       {

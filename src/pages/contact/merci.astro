@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="Message envoyé — WS Conseil"
+  description="Merci pour votre message."
+>
+  <main>
+    <section class="mb-6 flex flex-col gap-6 max-w-xl">
+      <h1 class="ligne">Merci</h1>
+      <p class="text-secondary">
+        Votre message a bien été transmis. Je vous répondrai dans les meilleurs
+        délais.
+      </p>
+      <p class="flex flex-wrap gap-4">
+        <a href="/" class="text-secondary underline hover:text-white"
+          >Retour à l’accueil</a
+        >
+        <a href="/contact" class="text-secondary underline hover:text-white"
+          >Nouveau message</a
+        >
+      </p>
+    </section>
+  </main>
+</Layout>

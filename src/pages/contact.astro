@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contact — WS Conseil"
+  description="Envoyer un message à WS Conseil."
+>
+  <main>
+    <section class="mb-6 flex flex-col gap-6 max-w-xl">
+      <h1 class="ligne">Contact</h1>
+      <p class="text-secondary">
+        Écrivez-moi via ce formulaire. Je vous répondrai dès que possible.
+      </p>
+      <form
+        method="POST"
+        action="/api/contact"
+        class="relative flex flex-col gap-4"
+        accept-charset="UTF-8"
+        enctype="application/x-www-form-urlencoded"
+        data-astro-reload
+      >
+        <div class="flex flex-col gap-1">
+          <label for="contact-name" class="text-secondary">Nom</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            required
+            maxlength="200"
+            autocomplete="name"
+            class="rounded border border-white/30 bg-black/30 px-3 py-2 text-white placeholder:text-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="contact-email" class="text-secondary">E-mail</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            required
+            maxlength="254"
+            autocomplete="email"
+            class="rounded border border-white/30 bg-black/30 px-3 py-2 text-white placeholder:text-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label for="contact-message" class="text-secondary">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            required
+            maxlength="10000"
+            rows="8"
+            class="rounded border border-white/30 bg-black/30 px-3 py-2 text-white placeholder:text-white/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+          ></textarea>
+        </div>
+        <div class="sr-only" aria-hidden="true">
+          <label for="contact-company">Ne pas remplir ce champ</label>
+          <input
+            id="contact-company"
+            name="company"
+            type="text"
+            tabindex="-1"
+            autocomplete="off"
+            value=""
+          />
+        </div>
+        <button
+          type="submit"
+          class="self-start rounded bg-secondary px-6 py-2 font-titres text-primary transition hover:opacity-90"
+        >
+          Envoyer
+        </button>
+      </form>
+    </section>
+  </main>
+</Layout>

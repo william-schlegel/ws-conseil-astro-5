@@ -3,16 +3,33 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { ClientRouter, slide } from "astro:transitions";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+} = Astro.props;
+
+/** Menu / liens internes : ancienne page vers la gauche, nouvelle depuis la droite (navigation retour inversée). */
+const pageSlide = slide({ duration: "320ms" });
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:animate="none">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={title} description={description} />
+    <ClientRouter />
   </head>
   <body>
     <Header />
-    <slot />
+    <div transition:name="page-content" transition:animate={pageSlide}>
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>
