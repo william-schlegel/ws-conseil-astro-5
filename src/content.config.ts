@@ -28,7 +28,7 @@ const clientCollection = defineCollection({
     name: z.string(),
     image: image(),
     order: z.number().optional().default(0),
-    url: z.string().url().optional(),
+    url: z.url().optional(),
   }),
 });
 
@@ -57,7 +57,7 @@ const linkCollection = defineCollection({
   loader: file("src/content/links.json"),
   schema: z.object({
     title: z.string(),
-    url: z.string().url(),
+    url: z.url(),
   }),
 });
 
@@ -72,16 +72,6 @@ const experienceCollection = defineCollection({
     description: z.string(),
     role: z.string(),
     category: reference("categoryCollection"),
-  }),
-});
-
-const photoCollection = defineCollection({
-  loader: glob({ pattern: "*.jpg", base: "src/content/photos" }),
-  schema: ({image})=>z.object({
-    id: z.string(),
-    name: z.string(),
-    image: image(),
-    alt: z.string().optional(),
   }),
 });
 
@@ -112,6 +102,5 @@ export const collections = {
   linkCollection,
   skillCollection,
   experienceCollection,
-  photoCollection,
   projetCollection,
 };

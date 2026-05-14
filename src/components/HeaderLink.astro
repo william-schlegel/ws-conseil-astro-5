@@ -7,17 +7,18 @@ type Props = {
   inactiveClass?: string;
 } & HTMLAttributes<"a">;
 
-const { linkClass, activeClass, inactiveClass, ...props } = Astro.props;
+const { linkClass, activeClass, inactiveClass, class: className, href, ...rest } =
+  Astro.props;
 
 const { pathname } = Astro.url;
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = props.href === pathname || props.href === "/" + subpath?.[0];
+const isActive = href === pathname || href === "/" + subpath?.[0];
 ---
 
 <a
-  href={props.href}
-  class:list={[linkClass, isActive ? activeClass : inactiveClass, props.class]}
-  {...props}
+  href={href}
+  class:list={[linkClass, isActive ? activeClass : inactiveClass, className]}
+  {...rest}
 >
   <slot />
 </a>

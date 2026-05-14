@@ -9,11 +9,11 @@ const MAX_LEN = { name: 200, email: 254, message: 10_000 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-function textResponse(body: string, status: number) {
-  return new Response(body, {
-    status,
-    headers: { "Content-Type": "text/plain; charset=utf-8" },
-  });
+/** Redirection GET : évite de renvoyer du text/plain sur POST (le navigateur remplacerait tout le document et supprimerait le ClientRouter). */
+function redirectContact(request: Request, erreur: string) {
+  const url = new URL("/contact", request.url);
+  url.searchParams.set("erreur", erreur);
+  return Response.redirect(url.toString(), 303);
 }
 
 function redirectMerci(request: Request) {
@@ -31,7 +31,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     data = await request.formData();
   } catch {
-    return textResponse("Requête invalide.", 400);
+    return redirectContact(request, "req");
   }
 
   const company = String(data.get("company") ?? "").trim();
@@ -44,20 +44,17 @@ export const POST: APIRoute = async ({ request }) => {
   const message = String(data.get("message") ?? "").trim();
 
   if (!name || !email || !message) {
-    return textResponse(
-      "Tous les champs obligatoires doivent être renseignés.",
-      400,
-    );
+    return redirectContact(request, "champs");
   }
   if (
     name.length > MAX_LEN.name ||
     email.length > MAX_LEN.email ||
     message.length > MAX_LEN.message
   ) {
-    return textResponse("Un ou plusieurs champs sont trop longs.", 400);
+    return redirectContact(request, "longueur");
   }
   if (!EMAIL_RE.test(email)) {
-    return textResponse("Adresse e-mail invalide.", 400);
+    return redirectContact(request, "email");
   }
 
   const host = import.meta.env.SMTP_HOST as string | undefined;
@@ -69,7 +66,7 @@ export const POST: APIRoute = async ({ request }) => {
 
   if (!host || !user || !pass || !contactTo || !contactFrom) {
     console.error("contact: variables SMTP ou CONTACT_* manquantes");
-    return textResponse("Le service est momentanément indisponible.", 500);
+    return redirectContact(request, "config");
   }
 
   const port = Number(portStr ?? 587);
@@ -93,10 +90,7 @@ export const POST: APIRoute = async ({ request }) => {
     });
   } catch (e) {
     console.error("contact: sendMail", e);
-    return textResponse(
-      "L’envoi du message a échoué. Réessayez plus tard.",
-      500,
-    );
+    return redirectContact(request, "envoi");
   }
 
   return redirectMerci(request);

@@ -2,13 +2,18 @@
   "name": "ws-conseil",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro build && npx --yes serve@14 dist/client -l tcp://127.0.0.1:4321",
+    "check": "tsc --noEmit && astro check",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^5.0.6",
     "@astrojs/sitemap": "^3.7.2",
     "@astrojs/tailwind": "^6.0.2",
@@ -17,7 +22,8 @@
     "date-fns": "^4.1.0",
     "nodemailer": "^8.0.7",
     "sharp": "^0.33.5",
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.16",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",

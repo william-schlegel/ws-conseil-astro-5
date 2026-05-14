@@ -4,7 +4,6 @@ import Layout from "../layouts/Layout.astro";
 import ExpByCat from "../components/ExpByCat.astro";
 import { Image } from "astro:assets";
 const experiences = await getCollection("experienceCollection");
-const photos = await getCollection("photoCollection");
 import me from "../assets/site/me.jpg";
 
 const categories = Array.from(
@@ -14,7 +13,7 @@ const categories = Array.from(
 const svgSize = "width: clamp(20px,5vw,40px); height: clamp(20px,5vw,40px); ";
 ---
 
-<Layout title="Compétences" description="Mes domaines de compétence" logo="">
+<Layout title="Compétences" description="Mes domaines de compétence">
   <main>
     <section class="mb-6 grid grid-cols-[1fr_auto] gap-8 items-center">
       <div>

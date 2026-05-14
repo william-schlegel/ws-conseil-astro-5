@@ -1,5 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const code = Astro.url.searchParams.get("erreur");
+const erreurs: Record<string, string> = {
+  req: "Requête invalide. Réessayez depuis le formulaire.",
+  champs: "Tous les champs obligatoires doivent être renseignés.",
+  longueur: "Un ou plusieurs champs sont trop longs.",
+  email: "Adresse e-mail invalide.",
+  config: "Le service est momentanément indisponible.",
+  envoi: "L’envoi du message a échoué. Réessayez plus tard.",
+};
+const erreurMessage = code ? (erreurs[code] ?? "Une erreur est survenue.") : null;
 ---
 
 <Layout
@@ -12,6 +23,16 @@ import Layout from "../layouts/Layout.astro";
       <p class="text-secondary">
         Écrivez-moi via ce formulaire. Je vous répondrai dès que possible.
       </p>
+      {
+        erreurMessage && (
+          <p
+            role="alert"
+            class="rounded border border-amber-500/40 bg-amber-950/35 px-3 py-2 text-sm text-amber-100"
+          >
+            {erreurMessage}
+          </p>
+        )
+      }
       <form
         method="POST"
         action="/api/contact"
