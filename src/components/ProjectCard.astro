@@ -1,8 +1,14 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import {
+  type CollectionEntry,
+  getEntries,
+  getEntry,
+} from "astro:content";
+import {
+  projectBriefTransitionName,
+  projectTitleTransitionName,
+} from "../lib/projectTransitions";
 import { displayDate } from "../lib/utils";
-import { getEntry } from "astro:content";
-import { getEntries } from "astro:content";
 import Technos from "./Technos.astro";
 import { Image } from "astro:assets";
 import logoPicto from "../assets/site/logo-picto.png";
@@ -20,12 +26,17 @@ const technos = project.technos ? await getEntries(project.technos) : [];
 const categories = await getEntries(project.categories);
 ---
 
-<a
-  href={`/project/${project.slug}`}
-  class="flex flex-col bg-bg-white01 rounded-md p-4 transition-[outline] ease-in-out duration-200 hover:outline hover:outline-4 hover:outline-primary"
-  style={`animation: project-appearance 0.8s
-  var(--animation-power) ${index * 0.8}s;`}
->
+<article class="relative flex flex-col bg-bg-white01 rounded-md p-4">
+  <a
+    href={`/project/${project.slug}`}
+    class="absolute inset-0 z-0 rounded-md transition-[outline] ease-in-out duration-200 hover:outline hover:outline-4 hover:outline-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
+    aria-label={`Ouvrir le projet ${project.name}`}
+  />
+  <div
+    class="relative z-[1] flex flex-col flex-1 min-w-0 pointer-events-none"
+    style={`animation: project-appearance 0.8s
+  var(--animation-power) ${index * 0.8}s both;`}
+  >
   <div class="grid grid-cols-[80px_auto] items-center gap-8">
     <div
       class="h-[80px] aspect-square rounded-full bg-white grid place-items-center"
@@ -51,7 +62,7 @@ const categories = await getEntries(project.categories);
     </div>
     <h3
       class="text-4xl text-secondary p-0 text-start"
-      transition:name={`projet-${project.slug}-title`}
+      transition:name={projectTitleTransitionName(project.slug)}
       transition:animate="initial"
     >
       {project.name}
@@ -69,7 +80,10 @@ const categories = await getEntries(project.categories);
       />
     )
   }
-  <p transition:name={`projet-${project.slug}-brief`} transition:animate="initial">
+  <p
+    transition:name={projectBriefTransitionName(project.slug)}
+    transition:animate="initial"
+  >
     {project.brief}
   </p>
   <Technos
@@ -88,4 +102,5 @@ const categories = await getEntries(project.categories);
       </ul>
     )
   }
-</a>
+  </div>
+</article>

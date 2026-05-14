@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import { ClientRouter, slide } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -14,9 +14,6 @@ const {
   title = SITE_TITLE,
   description = SITE_DESCRIPTION,
 } = Astro.props;
-
-/** Menu / liens internes : ancienne page vers la gauche, nouvelle depuis la droite (navigation retour inversée). */
-const pageSlide = slide({ duration: "320ms" });
 ---
 
 <!doctype html>
@@ -27,7 +24,7 @@ const pageSlide = slide({ duration: "320ms" });
   </head>
   <body>
     <Header />
-    <div transition:name="page-content" transition:animate={pageSlide}>
+    <div>
       <slot />
     </div>
     <Footer />
@@ -48,7 +45,7 @@ const pageSlide = slide({ duration: "320ms" });
     background-size: auto, cover;
     background-origin: content-box;
     background-position: center center;
-    overflow-x: hidden;
+    overflow-x: clip;
     @each $size in $sizes {
       @media screen and (min-width: #{$size}px) {
         background-image: linear-gradient(

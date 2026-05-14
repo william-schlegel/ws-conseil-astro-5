@@ -20,8 +20,8 @@ const category = await getEntry("categoryCollection", catId);
       experiences.map((exp) => (
         <div class="bg-bg-white01 rounded p-4 items-center w-full mt-[calc(30px+2rem)] md:mt-0">
           <div class="grid md:grid-cols-[120px,1fr] gap-4 items-center h-full">
-            <div class="bg-white rounded-full aspect-square p-2 grid place-items-center w-[120px] mx-auto -mt-[calc(60px+1rem)] md:m-0">
-              <Image src={exp.data.image} width={120} height={120} alt={`logo ${exp.data.name}`} />
+            <div class="bg-white rounded-full aspect-square p-2 grid place-items-center w-[120px] mx-auto -mt-[calc(60px+1rem)] md:m-0 overflow-hidden">
+              <Image src={exp.data.image} alt={`logo ${exp.data.name}`} />
             </div>
             <div class="flex flex-col gap-2">
               <h2 class="text-secondary">{exp.data.name}</h2>
