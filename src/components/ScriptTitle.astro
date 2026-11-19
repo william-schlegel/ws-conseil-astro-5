@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+
+/**
+ * Titre manuscrit « tracé d'un seul trait » (projects / skills) : il se
+ * dessine de gauche à droite, comme une trace GPS entre deux balises.
+ */
+interface Props {
+  src: ImageMetadata;
+  alt?: string;
+  width: number;
+  class?: string;
+}
+
+const { src, alt = "", width, class: className } = Astro.props;
+---
+
+<span class:list={["script-title", className]} data-reveal="write">
+  <Image src={src} alt={alt} width={width} loading="eager" />
+</span>
+
+<style>
+  .script-title {
+    display: inline-block;
+    line-height: 0;
+    filter: drop-shadow(0 0 18px rgba(44, 221, 155, 0.45));
+  }
+
+  .script-title :global(img) {
+    width: 100%;
+    height: auto;
+  }
+
+  :global(html.js) .script-title[data-reveal="write"] {
+    opacity: 1;
+    translate: none;
+    clip-path: inset(-20% 100% -20% -5%);
+    transition: clip-path 1.9s var(--ease-inout) var(--d, 0.35s);
+  }
+
+  :global(html.js) .script-title[data-reveal="write"].is-in {
+    clip-path: inset(-20% -5% -20% -5%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(html.js) .script-title[data-reveal="write"] {
+      clip-path: none;
+    }
+  }
+</style>

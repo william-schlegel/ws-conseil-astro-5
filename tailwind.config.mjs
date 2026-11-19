@@ -11,6 +11,15 @@ export default {
         secondary: "#2cdd9b",
         "secondary-dark": "#1dc8cd",
         lightgrey: "#8d97ad",
+        abyss: "#020a13",
+        deep: "#061a2b",
+        navy: "#00213a",
+        brand: "#00467c",
+        mint: "#2cdd9b",
+        cyan: "#1dc8cd",
+        foam: "#eef6f7",
+        mist: "#9db0c2",
+        buoy: "#ff8a4c",
         bg: {
           white: "white",
           dark: "#343a40",
@@ -20,12 +29,11 @@ export default {
         },
       },
       fontFamily: {
-        titres: ['"Philosopher"', ...defaultTheme.fontFamily.sans],
-        textes: ['"Kumbh Sans"', ...defaultTheme.fontFamily.serif],
+        titres: ['"Fraunces Variable"', ...defaultTheme.fontFamily.serif],
+        textes: ['"Kumbh Sans Variable"', ...defaultTheme.fontFamily.sans],
+        mono: ['"Martian Mono Variable"', ...defaultTheme.fontFamily.mono],
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

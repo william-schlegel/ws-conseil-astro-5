@@ -1,13 +1,5 @@
 ---
-import {
-  type CollectionEntry,
-  getEntries,
-  getEntry,
-} from "astro:content";
-import {
-  projectBriefTransitionName,
-  projectTitleTransitionName,
-} from "../lib/projectTransitions";
+import { type CollectionEntry, getEntries, getEntry } from "astro:content";
 import { displayDate } from "../lib/utils";
 import Technos from "./Technos.astro";
 import { Image } from "astro:assets";
@@ -15,92 +7,296 @@ import logoPicto from "../assets/site/logo-picto.png";
 
 interface Props {
   project: CollectionEntry<"projetCollection">["data"];
-  index: number;
+  /** délai d'apparition en ms */
+  delay?: number;
 }
 
-const { project, index } = Astro.props;
+const { project, delay = 0 } = Astro.props;
 const client = project.client
   ? await getEntry("clientCollection", project.client.id)
   : null;
 const technos = project.technos ? await getEntries(project.technos) : [];
 const categories = await getEntries(project.categories);
+const running = !project.endDate;
 ---
 
-<article class="relative flex flex-col bg-bg-white01 rounded-md p-4">
-  <a
-    href={`/project/${project.slug}`}
-    class="absolute inset-0 z-0 rounded-md transition-[outline] ease-in-out duration-200 hover:outline hover:outline-4 hover:outline-primary focus-visible:outline focus-visible:outline-4 focus-visible:outline-primary"
-    aria-label={`Ouvrir le projet ${project.name}`}
-  />
-  <div
-    class="relative z-[1] flex flex-col flex-1 min-w-0 pointer-events-none"
-    style={`animation: project-appearance 0.8s
-  var(--animation-power) ${index * 0.8}s both;`}
-  >
-  <div class="grid grid-cols-[80px_auto] items-center gap-8">
-    <div
-      class="h-[80px] aspect-square rounded-full bg-white grid place-items-center"
-    >
+<!--
+  Les noms de view-transition (titre, résumé, image) sont posés à la volée par
+  scripts/transitions.ts sur la seule carte cliquée : voir data-vt.
+-->
+<article
+  class="pcard"
+  data-pcard={project.slug}
+  data-filter-item={project.slug}
+  data-cats={categories.map((cat) => cat.id).join(" ")}
+  data-reveal
+  style={`--d: ${delay}ms`}
+>
+  <div class="pcard-inner" data-tilt data-cursor="Ouvrir">
+    <a
+      href={`/project/${project.slug}`}
+      class="pcard-link"
+      aria-label={`Ouvrir le projet ${project.name}`}></a>
+
+    <div class="pcard-media">
       {
-        client?.data.image ? (
+        project.heroImage && (
           <Image
-            src={client.data.image}
-            alt=""
-            width={60}
-            class="bg-cover bg-center"
-          />
-        ) : (
-          <Image
-            src={logoPicto}
-            class="bg-cover bg-center"
-            width={60}
-            height={60}
-            alt="WS Conseil - projet personnel"
+            class="pcard-img"
+            data-vt="image"
+            src={project.heroImage}
+            alt="Image principale du projet"
+            widths={[480, 800, 1200]}
+            sizes="(min-width: 1024px) 42vw, 92vw"
           />
         )
       }
+      <span class="pcard-glare" aria-hidden="true"></span>
+      {
+        running && (
+          <span class="pcard-live chip chip--mint">
+            <span class="beacon" />
+            En cours
+          </span>
+        )
+      }
+      <span class="pcard-arrow" aria-hidden="true">↗</span>
     </div>
-    <h3
-      class="text-4xl text-secondary p-0 text-start"
-      transition:name={projectTitleTransitionName(project.slug)}
-      transition:animate="initial"
-    >
-      {project.name}
-    </h3>
-  </div>
-  <p class="text-sm text-lightgrey">
-    {displayDate(project.startDate, project.endDate)}
-  </p>
-  {
-    project.heroImage && (
-      <Image
-        class="aspect-[4/3] object-cover"
-        src={project.heroImage}
-        alt="Image principale du projet"
-      />
-    )
-  }
-  <p
-    transition:name={projectBriefTransitionName(project.slug)}
-    transition:animate="initial"
-  >
-    {project.brief}
-  </p>
-  <Technos
-    technos={technos}
-    containerClass="justify-end"
-    itemClass="m-0 p-1 bg-white h-8"
-  />
-  {
-    Array.isArray(categories) && (
-      <ul class="flex flex-wrap gap-4">
-        {categories.map((cat) => (
-          <li class="bg-secondary text-primary px-4 py-2 rounded-full">
-            {cat.data.title}
-          </li>
-        ))}
-      </ul>
-    )
-  }
+
+    <div class="pcard-body">
+      <div class="pcard-head">
+        <span class="disc pcard-logo">
+          {
+            client?.data.image ? (
+              <Image src={client.data.image} alt="" width={96} />
+            ) : (
+              <Image
+                src={logoPicto}
+                width={96}
+                height={96}
+                alt="WS Conseil - projet personnel"
+              />
+            )
+          }
+        </span>
+        <h3 data-vt="title">{project.name}</h3>
+      </div>
+      <p class="mono pcard-date">
+        {displayDate(project.startDate, project.endDate)}
+      </p>
+      <p class="pcard-brief" data-vt="brief">{project.brief}</p>
+      <div class="pcard-foot">
+        {
+          Array.isArray(categories) && (
+            <ul class="pcard-cats">
+              {categories.map((cat) => (
+                <li class="chip">{cat.data.title}</li>
+              ))}
+            </ul>
+          )
+        }
+        <Technos technos={technos} />
+      </div>
+    </div>
   </div>
 </article>
+
+<style>
+  .pcard {
+    position: relative;
+    min-width: 0;
+  }
+
+  .pcard[hidden] {
+    display: none;
+  }
+
+  .pcard-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: linear-gradient(
+      180deg,
+      rgba(7, 32, 52, 0.86),
+      rgba(3, 15, 27, 0.92)
+    );
+    overflow: hidden;
+    box-shadow: 0 30px 60px -40px rgba(0, 0, 0, 0.9);
+  }
+
+  .pcard-inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    pointer-events: none;
+    transition:
+      border-color 0.4s ease,
+      box-shadow 0.5s ease;
+  }
+
+  .pcard-inner:hover::after,
+  .pcard-inner:focus-within::after {
+    border-color: rgba(44, 221, 155, 0.75);
+    box-shadow: inset 0 0 40px -18px rgba(44, 221, 155, 0.5);
+  }
+
+  .pcard-link {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: inherit;
+  }
+
+  .pcard-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--navy);
+  }
+
+  .pcard-media::after {
+    content: "";
+    position: absolute;
+    inset: 40% 0 0 0;
+    background: linear-gradient(transparent, rgba(4, 19, 33, 0.92));
+    pointer-events: none;
+  }
+
+  .pcard-media :global(.pcard-img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    view-transition-class: vt-image;
+    transition: scale 1.4s var(--ease-out);
+  }
+
+  .pcard-inner:hover :global(.pcard-img) {
+    scale: 1.07;
+  }
+
+  .pcard-glare {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: radial-gradient(
+      26rem circle at var(--gx) var(--gy),
+      rgba(255, 255, 255, 0.2),
+      transparent 60%
+    );
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .pcard-inner:hover .pcard-glare {
+    opacity: 1;
+  }
+
+  .pcard-live {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 2;
+    background: rgba(2, 10, 19, 0.75);
+  }
+
+  .pcard-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--mint);
+    color: var(--navy);
+    font-size: 1.1rem;
+    opacity: 0;
+    scale: 0.5;
+    rotate: -45deg;
+    transition:
+      opacity 0.35s ease,
+      scale 0.5s var(--ease-spring),
+      rotate 0.5s var(--ease-out);
+  }
+
+  .pcard-inner:hover .pcard-arrow,
+  .pcard-inner:focus-within .pcard-arrow {
+    opacity: 1;
+    scale: 1;
+    rotate: 0deg;
+  }
+
+  .pcard-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.9rem;
+    padding: 1.25rem clamp(1.1rem, 2vw, 1.6rem) 1.4rem;
+  }
+
+  .pcard-head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -2.9rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .pcard-logo {
+    width: 4.25rem;
+    padding: 0.55rem;
+    border: 3px solid rgba(4, 19, 33, 0.92);
+  }
+
+  .pcard-logo :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .pcard-head h3 {
+    padding-top: 2.4rem;
+    color: var(--foam);
+    transition: color 0.35s ease;
+  }
+
+  .pcard-inner:hover .pcard-head h3 {
+    color: var(--mint);
+  }
+
+  .pcard-date {
+    color: var(--cyan);
+  }
+
+  .pcard-brief {
+    color: color-mix(in srgb, var(--foam) 80%, var(--mist));
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .pcard-foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+  }
+
+  .pcard-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+</style>

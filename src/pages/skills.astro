@@ -6,84 +6,507 @@ import Ar from "../components/svg/ar.astro";
 import Innovation from "../components/svg/innovation.astro";
 import Direction from "../components/svg/direction.astro";
 import Technos from "../components/Technos.astro";
+import ScriptTitle from "../components/ScriptTitle.astro";
 import { Image } from "astro:assets";
-import titleImage from "../assets/site/skills.svg"
+import titleImage from "../assets/site/skills.svg";
+import { spiralLayout, spiralPath, type SpiralOptions } from "../lib/spiral";
 
-const skills = await getCollection("skillCollection");
+const skills = (await getCollection("skillCollection")).sort((s1, s2) =>
+  s1.data.order > s2.data.order ? 1 : -1,
+);
+const featured = skills.filter((skill) => skill.data.svg);
+const others = skills.filter((skill) => !skill.data.svg);
+
 const technos = await getCollection("technoCollection");
+const projets = await getCollection("projetCollection");
+
+// Galaxie : les technos les plus utilisées au cœur de la spirale.
+const usage = (id: string) =>
+  projets.filter((p) => (p.data.technos ?? []).some((t) => t.id === id)).length;
+const ranked = technos
+  .map((tech) => ({ tech, count: usage(tech.id) }))
+  .sort(
+    (a, b) =>
+      b.count - a.count || a.tech.data.name.localeCompare(b.tech.data.name),
+  );
+const maxCount = Math.max(1, ...ranked.map((r) => r.count));
+
+const spiral: SpiralOptions = {
+  cx: 50,
+  cy: 50,
+  r0: 7,
+  r1: 45.5,
+  turns: 2.75,
+  start: -Math.PI / 2,
+};
+const points = spiralLayout(spiral, ranked.length, 0.3);
+const stars = ranked.map((entry, i) => ({ ...entry, ...points[i] }));
+const galaxyIdle = `${technos.length} technos`;
 ---
 
 <Layout title="Compétences" description="Mes domaines de compétence">
   <main>
-    <section class="mb-6 flex justify-center">
-      <Image
-        src={titleImage}
-        alt="Mes compétences"
-        width={300}
-        class="header-title"
-      />
+    <section class="wrap shead">
+      <p class="mono eyebrow" data-reveal>
+        {skills.length} compétences · {technos.length} technos
+      </p>
+      <div class="shead-title">
+        <h1 data-split style="--d: 0.1s">Mes <em>compétences</em></h1>
+        <ScriptTitle src={titleImage} width={500} class="shead-script" />
+      </div>
     </section>
-    <section
-      class="grid grid-cols-[repeat(auto-fit,minmax(450px,1fr))] content-center gap-4 mt-4 mb-20 mx-auto"
-    >
-      {
-        skills
-          .filter((skill) => skill.data.svg)
-          .sort((s1, s2) => (s1.data.order > s2.data.order ? 1 : -1))
-          .map((skill) => (
-            <div class="flex flex-col ">
-              <div class="grid grid-cols-[50px_1fr] items-center gap-8">
-                <Image
-                  class="rounded-full bg-white grid place-items-center"
-                  src={skill.data.image ?? "/site/logo-picto.png"}
-                  alt=""
-                  width={50}
-                  height={50}
-                />
-                <h3 class="ligne text-secondary px-0 text-start">
-                  {skill.data.name}
-                </h3>
-              </div>
-              <div class="max-h-[30vh] my-8">
+
+    <section class="wrap features">
+      <header class="section-head">
+        <p class="mono eyebrow" data-reveal>Expertises</p>
+        <h2 data-split>Mes domaines de compétence</h2>
+        <span class="rule" data-reveal="rule"></span>
+      </header>
+      <div class="features-grid">
+        {
+          featured.map((skill, index) => (
+            <article
+              class="feature"
+              data-reveal
+              style={`--d: ${(index % 2) * 140}ms`}
+            >
+              <header class="feature-head">
+                <span class="disc">
+                  <Image src={skill.data.image} alt="" width={96} height={96} />
+                </span>
+                <h3>{skill.data.name}</h3>
+                <span class="mono feature-num">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </header>
+              <div class="feature-art">
                 {skill.data.svg === "saas" && <Saas />}
                 {skill.data.svg === "ar" && <Ar />}
                 {skill.data.svg === "innovation" && <Innovation />}
                 {skill.data.svg === "direction" && <Direction />}
               </div>
-            </div>
+            </article>
           ))
-      }
+        }
+      </div>
     </section>
-    <h2 class="mb-4 text-center text-secondary">Mais aussi</h2>
-    <section class="flex flex-wrap gap-3 justify-center">
-      {
-        skills
-          .filter((skill) => !skill.data.svg)
-          .sort((s1, s2) => (s1.data.order > s2.data.order ? 1 : -1))
-          .map((skill) => (
-            <div class="flex items-center px-4 py-2 text-primary bg-bg-white06 rounded transition-[rotate] hover:-rotate-2">
-              <Image
-                class="inline-block mr-4"
-                src={skill.data.image ?? "/site/logo-picto.png"}
-                alt=""
-                width={50}
-                height={50}
-              />
-              <span>{skill.data.name}</span>
-            </div>
+
+    <section class="wrap also">
+      <header class="section-head">
+        <p class="mono eyebrow" data-reveal>Et encore</p>
+        <h2 data-split>Mais aussi</h2>
+        <span class="rule" data-reveal="rule"></span>
+      </header>
+      <ul class="also-list">
+        {
+          others.map((skill, index) => (
+            <li
+              data-reveal="scale"
+              style={`--d: ${index * 55}ms; --tilt: ${index % 2 ? 2 : -2}deg`}
+            >
+              <span class="also-chip">
+                <span class="disc">
+                  <Image src={skill.data.image} alt="" width={96} height={96} />
+                </span>
+                <span>{skill.data.name}</span>
+              </span>
+            </li>
           ))
-      }
+        }
+      </ul>
     </section>
-    <h2 class="mb-4 text-center text-secondary">
-      Technos utilisées dans mes projets
-    </h2>
-    <section>
-      <Technos
-        technos={technos}
-        containerClass="content-center"
-        itemClass="p-2 h-10 flex gap-2 items-center bg-bg-white06 rounded text-primary"
-        withName
-      />
+
+    <section class="wrap stack">
+      <header class="section-head">
+        <p class="mono eyebrow" data-reveal>Boîte à outils</p>
+        <h2 data-split>Technos utilisées dans mes projets</h2>
+        <span class="rule" data-reveal="rule"></span>
+      </header>
+
+      <div class="galaxy-wrap">
+        <div
+          class="galaxy"
+          data-galaxy
+          data-formation="ring"
+          data-formation-alpha="0.75"
+          data-reveal="fade"
+        >
+          <div class="galaxy-orbit">
+            <svg viewBox="0 0 100 100" class="galaxy-path" aria-hidden="true">
+              <path d={spiralPath(spiral)} pathLength="1"></path>
+            </svg>
+            <ul>
+              {
+                stars.map((star, i) => (
+                  <li
+                    style={`left: ${star.x.toFixed(2)}%; top: ${star.y.toFixed(2)}%; --k: ${(star.count / maxCount).toFixed(2)}; --d: ${300 + i * 45}ms`}
+                  >
+                    <button
+                      type="button"
+                      class="disc galaxy-star"
+                      data-galaxy-item={`${star.tech.data.name}${star.count > 0 ? ` · ${star.count} projet${star.count > 1 ? "s" : ""}` : ""}`}
+                      aria-label={star.tech.data.name}
+                    >
+                      <Image
+                        src={star.tech.data.image}
+                        alt=""
+                        width={96}
+                        height={96}
+                      />
+                    </button>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <p class="galaxy-core mono" data-galaxy-label>{galaxyIdle}</p>
+        </div>
+
+        <Technos technos={technos} variant="chips" class="stack-list" />
+      </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .shead {
+    margin-bottom: clamp(3.5rem, 9vw, 7rem);
+  }
+
+  .shead-title {
+    position: relative;
+    margin-top: 1.5rem;
+    display: grid;
+  }
+
+  .shead-title :global(.shead-script) {
+    justify-self: end;
+    width: min(46vw, 26rem);
+    margin-top: clamp(-3.5rem, -4vw, -1rem);
+    margin-right: clamp(0rem, 10vw, 14rem);
+    rotate: -6deg;
+  }
+
+  @media (max-width: 40rem) {
+    .shead-title :global(.shead-script) {
+      margin-top: 0.6rem;
+    }
+  }
+
+  /* ---------------------------------------------------------- expertises */
+  .features {
+    margin-bottom: clamp(4rem, 9vw, 8rem);
+  }
+
+  .features-grid {
+    display: grid;
+    gap: clamp(1.1rem, 2.4vw, 2rem);
+  }
+
+  @media (min-width: 56rem) {
+    .features-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .features-grid > :nth-child(even) {
+      margin-top: 4.5rem;
+      margin-bottom: -4.5rem;
+    }
+
+    .features {
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  .feature {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background:
+      radial-gradient(
+        120% 80% at 50% 115%,
+        rgba(44, 221, 155, 0.14),
+        transparent 60%
+      ),
+      linear-gradient(180deg, rgba(7, 32, 52, 0.86), rgba(3, 15, 27, 0.92));
+    overflow: hidden;
+  }
+
+  .feature::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(44, 221, 155, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .feature:hover::after {
+    opacity: 1;
+  }
+
+  .feature-head {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: clamp(1.1rem, 2vw, 1.6rem);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feature-head .disc {
+    width: 3.5rem;
+  }
+
+  .feature-head :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-num {
+    color: var(--mint);
+  }
+
+  .feature-art {
+    display: grid;
+    place-items: center;
+    height: clamp(15rem, 27vw, 24rem);
+    padding: clamp(1rem, 2.5vw, 2rem);
+    /* halo clair : détache les personnages sombres des illustrations */
+    background: radial-gradient(
+      60% 70% at 50% 55%,
+      rgba(170, 215, 235, 0.2),
+      transparent 72%
+    );
+  }
+
+  .feature-art :global(svg) {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ------------------------------------------------------------ mais aussi */
+  .also {
+    margin-bottom: clamp(4rem, 9vw, 8rem);
+  }
+
+  .also-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.6rem, 1.4vw, 1rem);
+  }
+
+  .also-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.4rem 1.4rem 0.4rem 0.4rem;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: rgba(2, 14, 26, 0.6);
+    font-family: var(--font-display);
+    font-size: clamp(1.05rem, 0.7vw + 0.9rem, 1.45rem);
+    line-height: 1.1;
+    transition:
+      rotate 0.5s var(--ease-spring),
+      border-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  .also-chip:hover {
+    rotate: var(--tilt);
+    border-color: var(--mint);
+    color: var(--mint);
+  }
+
+  .also-list .disc {
+    width: 3rem;
+  }
+
+  .also-list :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* --------------------------------------------------------------- galaxie */
+  .galaxy-wrap {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .galaxy {
+    position: relative;
+    width: min(100%, 46rem, 82svh);
+    aspect-ratio: 1;
+    container-type: inline-size;
+  }
+
+  .galaxy-orbit {
+    position: absolute;
+    inset: 0;
+    animation: galaxy-spin 160s linear infinite;
+  }
+
+  .galaxy:hover .galaxy-orbit,
+  .galaxy:hover .galaxy-star,
+  .galaxy:focus-within .galaxy-orbit,
+  .galaxy:focus-within .galaxy-star {
+    animation-play-state: paused;
+  }
+
+  @keyframes galaxy-spin {
+    to {
+      rotate: 1turn;
+    }
+  }
+
+  @keyframes galaxy-unspin {
+    to {
+      rotate: -1turn;
+    }
+  }
+
+  .galaxy-path {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .galaxy-path path {
+    fill: none;
+    stroke: var(--mint);
+    stroke-width: 0.22;
+    stroke-linecap: round;
+    opacity: 0.55;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    filter: drop-shadow(0 0 1.2px rgba(44, 221, 155, 0.9));
+  }
+
+  :global(html.js) .galaxy .galaxy-path path {
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 3.2s var(--ease-inout) 0.2s;
+  }
+
+  :global(html.js) .galaxy.is-in .galaxy-path path {
+    stroke-dashoffset: 0;
+  }
+
+  .galaxy li {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .galaxy-star {
+    --s: calc(5.2cqw + var(--k) * 3.4cqw);
+    position: absolute;
+    left: calc(var(--s) / -2);
+    top: calc(var(--s) / -2);
+    width: var(--s);
+    padding: calc(var(--s) * 0.17);
+    cursor: pointer;
+    animation: galaxy-unspin 160s linear infinite;
+    transition:
+      scale 0.5s var(--ease-spring),
+      box-shadow 0.35s ease,
+      opacity 0.7s ease;
+  }
+
+  :global(html.js) .galaxy .galaxy-star {
+    scale: 0;
+    opacity: 0;
+  }
+
+  :global(html.js) .galaxy.is-in .galaxy-star {
+    scale: 1;
+    opacity: 1;
+    transition:
+      scale 0.9s var(--ease-spring) var(--d),
+      opacity 0.6s ease var(--d),
+      box-shadow 0.35s ease;
+  }
+
+  :global(html.js) .galaxy.is-in .galaxy-star:hover,
+  :global(html.js) .galaxy.is-in .galaxy-star:focus-visible,
+  .galaxy-star:hover,
+  .galaxy-star:focus-visible {
+    scale: 1.45;
+    z-index: 2;
+    transition-delay: 0s;
+    box-shadow:
+      0 0 0 2px var(--mint),
+      0 0 34px rgba(44, 221, 155, 0.75);
+  }
+
+  .galaxy-star :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .galaxy-core {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    display: grid;
+    place-items: center;
+    width: 22cqw;
+    min-width: 5.5rem;
+    aspect-ratio: 1;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--line-strong);
+    background: rgba(2, 10, 19, 0.82);
+    color: var(--foam);
+    text-align: center;
+    font-size: clamp(0.55rem, 1.5cqw, 0.72rem);
+    transition:
+      border-color 0.3s ease,
+      color 0.3s ease,
+      box-shadow 0.4s ease;
+  }
+
+  .galaxy-core[data-active] {
+    border-color: var(--mint);
+    color: var(--mint);
+    box-shadow: 0 0 50px -8px rgba(44, 221, 155, 0.7);
+  }
+
+  /* Liste lisible sur petit écran ; sur grand écran la galaxie suffit. */
+  .galaxy-wrap :global(.stack-list) {
+    display: none;
+  }
+
+  @media (max-width: 47.99rem) {
+    .galaxy-wrap :global(.stack-list) {
+      display: block;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .galaxy-orbit,
+    .galaxy-star {
+      animation: none;
+    }
+
+    :global(html.js) .galaxy .galaxy-star {
+      scale: 1;
+      opacity: 1;
+    }
+
+    :global(html.js) .galaxy .galaxy-path path {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>

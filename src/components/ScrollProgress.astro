@@ -1,0 +1,84 @@
+---
+import { spiralPath } from "../lib/spiral";
+
+const d = spiralPath(
+  { cx: 24, cy: 24, r0: 2.5, r1: 20, turns: 2.75, start: -Math.PI / 2 },
+  160,
+);
+---
+
+<button
+  type="button"
+  class="progress"
+  data-progress
+  aria-label="Revenir en haut de la page"
+>
+  <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+    <path class="progress-track" d={d} pathLength="1"></path>
+    <path class="progress-fill" d={d} pathLength="1"></path>
+  </svg>
+</button>
+
+<style>
+  .progress {
+    --p: 0;
+    position: fixed;
+    right: clamp(0.75rem, 2vw, 1.75rem);
+    bottom: calc(clamp(0.75rem, 2vw, 1.75rem) + var(--dock-h) + env(safe-area-inset-bottom, 0px));
+    z-index: 30;
+    display: grid;
+    place-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--glass-strong);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    opacity: 0;
+    scale: 0.6;
+    pointer-events: none;
+    transition:
+      opacity 0.4s ease,
+      scale 0.5s var(--ease-spring),
+      border-color 0.3s ease;
+  }
+
+  .progress[data-visible] {
+    opacity: 1;
+    scale: 1;
+    pointer-events: auto;
+  }
+
+  .progress:hover {
+    border-color: var(--mint);
+  }
+
+  .progress svg {
+    width: 2.6rem;
+    height: 2.6rem;
+    transition: rotate 0.8s var(--ease-out);
+  }
+
+  .progress:hover svg {
+    rotate: -90deg;
+  }
+
+  .progress path {
+    fill: none;
+    stroke-linecap: round;
+    stroke-width: 2.2;
+  }
+
+  .progress-track {
+    stroke: rgba(160, 205, 225, 0.2);
+  }
+
+  .progress-fill {
+    stroke: var(--mint);
+    stroke-dasharray: 1;
+    stroke-dashoffset: calc(1 - var(--p));
+    filter: drop-shadow(0 0 4px rgba(44, 221, 155, 0.6));
+  }
+</style>

@@ -7,20 +7,69 @@ import Layout from "../../layouts/Layout.astro";
   description="Merci pour votre message."
 >
   <main>
-    <section class="mb-6 flex flex-col gap-6 max-w-xl">
-      <h1 class="ligne">Merci</h1>
-      <p class="text-secondary">
+    <section class="wrap merci">
+      <!-- Ancre de la formation : la spirale se reforme autour du mot -->
+      <div class="merci-spiral" data-formation="spiral" data-formation-alpha="0.6" aria-hidden="true"></div>
+      <p class="mono eyebrow" data-reveal>Message transmis</p>
+      <h1 data-split data-burst style="--d: 0.15s">Merci</h1>
+      <p class="lead" data-reveal style="--d: 0.55s">
         Votre message a bien été transmis. Je vous répondrai dans les meilleurs
         délais.
       </p>
-      <p class="flex flex-wrap gap-4">
-        <a href="/" class="text-secondary underline hover:text-white"
-          >Retour à l’accueil</a
-        >
-        <a href="/contact" class="text-secondary underline hover:text-white"
-          >Nouveau message</a
-        >
+      <p class="merci-actions" data-reveal style="--d: 0.7s">
+        <a href="/" class="btn btn--primary" data-magnetic="0.3">
+          Retour à l’accueil <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="/contact" class="btn" data-magnetic="0.3">Nouveau message</a>
       </p>
     </section>
   </main>
 </Layout>
+
+<style>
+  .merci {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+    min-height: calc(100svh - var(--header-h) - 12rem);
+    text-align: center;
+  }
+
+  .merci-spiral {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: min(92vw, 44rem, 80svh);
+    aspect-ratio: 1;
+    pointer-events: none;
+  }
+
+  .merci > :not(.merci-spiral) {
+    position: relative;
+  }
+
+  .merci h1 {
+    font-size: clamp(5rem, 19vw, 17rem);
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    color: var(--mint);
+    text-shadow: 0 0 80px rgba(44, 221, 155, 0.45);
+  }
+
+  .merci .lead {
+    max-width: 32rem;
+    text-shadow: 0 2px 30px rgba(2, 10, 19, 0.9);
+  }
+
+  .merci-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-top: 0.75rem;
+  }
+</style>
