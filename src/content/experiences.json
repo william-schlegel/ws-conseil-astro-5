@@ -19,7 +19,8 @@
     "order": 20,
     "role": "CTO & associé investisseur",
     "running": true,
-    "startDate": "2015-10-01"
+    "startDate": "2015-10-01",
+    "endDate": "2024-12-01"
   },
   {
     "id": "b3455ff9-d96d-4747-b37d-b6cd13786dfc",
@@ -52,7 +53,9 @@
     "order": 10,
     "role": "Conseiller municipal",
     "running": true,
-    "startDate": "2014-03-01"
+    "startDate": "2014-03-01",
+    "endDate": "2026-03-22"
+
   },
   {
     "id": "09499ccc-b254-4734-8ebd-e89913767f34",

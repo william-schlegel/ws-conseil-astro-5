@@ -29,8 +29,7 @@
     "id": "clt-stimshop",
     "image": "../assets/images/clt-stimshop.jpg",
     "name": "Stimshop",
-    "order": 50,
-    "url": "http://wi-us.eu"
+    "order": 50
   },
   {
     "id": "clt-bayam",

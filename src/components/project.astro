@@ -70,7 +70,6 @@ const running = !project.data.endDate;
     {
       client ? (
         <div class="fiche-row" data-reveal>
-          <p class="mono">Client</p>
           <div class="fiche-client">
             <span class="disc">
               <Image src={client.data.image} alt="" width={160} />
@@ -81,7 +80,6 @@ const running = !project.data.endDate;
       ) : null
     }
     <div class="fiche-row" data-reveal>
-      <p class="mono">Période</p>
       <p class="fiche-date">
         {running && <span class="beacon" />}
         {displayDate(project.data.startDate, project.data.endDate)}
@@ -90,7 +88,6 @@ const running = !project.data.endDate;
     {
       categories ? (
         <div class="fiche-row" data-reveal>
-          <p class="mono">Catégories</p>
           <ul class="fiche-chips">
             {categories.map((cat) => (
               <li class="chip chip--mint">{cat.data.title}</li>
@@ -102,7 +99,6 @@ const running = !project.data.endDate;
     {
       roles ? (
         <div class="fiche-row" data-reveal>
-          <p class="mono">Rôles</p>
           <ul class="fiche-roles">
             {roles.map((role) => (
               <li>
