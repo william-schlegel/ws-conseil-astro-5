@@ -1,5 +1,5 @@
 ---
-brief: "Fitlonk est une application de gestion de club de sport à destination des managers de salles, des coachs et des membres des clubs"
+brief: "Fitlink est une application de gestion de club de sport à destination des managers de salles, des coachs et des membres des clubs"
 heroImage: "../../assets/images/fitlink-hero.png"
 heroImageAlt: "présentation de fitlink, avec une image de club de sport"
 name: "Fitlink"

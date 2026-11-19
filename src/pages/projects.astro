@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import ScriptTitle from "../components/ScriptTitle.astro";
 import titleImage from "../assets/site/projects.svg";
 import { Image } from "astro:assets";
 
@@ -13,56 +14,289 @@ const clientsCol = await getCollection("clientCollection");
 const clients = clientsCol.sort((c1, c2) =>
   c1.data.order > c2.data.order ? 1 : -1,
 );
+
+// Filtres : uniquement les catégories réellement utilisées, les plus fournies d'abord.
+const categoriesCol = await getCollection("categoryCollection");
+const filters = categoriesCol
+  .map((cat) => ({
+    id: cat.id,
+    title: cat.data.title,
+    count: projets.filter((p) =>
+      p.data.categories.some((c) => c.id === cat.id),
+    ).length,
+  }))
+  .filter((f) => f.count > 0)
+  .sort((a, b) => b.count - a.count);
 ---
 
 <Layout title="Projets" description="Tous mes projets">
   <main>
-    <section class="mb-6 flex justify-center">
-      <Image
-        src={titleImage}
-        alt="Tous mes projets"
-        width={700}
-        class="header-title"
-      />
+    <section class="wrap phead">
+      <p class="mono eyebrow" data-reveal>
+        {projets.length} projets · {clients.length} clients
+      </p>
+      <div class="phead-title">
+        <h1 data-split style="--d: 0.1s">Tous mes <em>projets</em></h1>
+        <ScriptTitle src={titleImage} width={700} class="phead-script" />
+      </div>
     </section>
-    <h2 class="ligne mb-4 text-center" style="--delay-ligne: 0.5s">
-      Mes clients
-    </h2>
-    <section class="mx-auto flex flex-wrap gap-y-4 gap-x-1 justify-evenly">
-      {
-        clients.map((client, index) => (
-          <a
-            class="transition-[outline] ease-in-out hover:outline hover:outline-4 hover:outline-primary p-2"
-            href={client.data.url || "#"}
-          >
-            {client.data.image ? (
+
+    <section class="wrap clients">
+      <header class="section-head">
+        <p class="mono eyebrow" data-reveal>Références</p>
+        <h2 data-split>Mes clients</h2>
+        <span class="rule" data-reveal="rule"></span>
+      </header>
+      <ul class="clients-list">
+        {
+          clients.map((client, index) => {
+            const logo = client.data.image ? (
               <Image
                 src={client.data.image}
                 title={client.data.name}
                 width={400}
-                alt="Logo du client"
-                class="animate-[client-animation] duration-500 delay-[var(--animation-delay)] h-[min(75px,7vw)] w-auto"
-                style={`--animation-delay: ${index * 0.1}s`}
+                alt={`Logo du client ${client.data.name}`}
               />
             ) : (
               <span>{client.data.name}</span>
-            )}
-          </a>
-        ))
-      }
+            );
+            return (
+              <li
+                data-reveal="scale"
+                style={`--d: ${index * 70}ms; --bob: ${(index % 5) * -0.9}s`}
+              >
+                {client.data.url ? (
+                  <a
+                    class="client"
+                    href={client.data.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-cursor="Visiter"
+                  >
+                    {logo}
+                    <span class="client-name mono">{client.data.name} ↗</span>
+                  </a>
+                ) : (
+                  <span class="client">
+                    {logo}
+                    <span class="client-name mono">{client.data.name}</span>
+                  </span>
+                )}
+              </li>
+            );
+          })
+        }
+      </ul>
     </section>
-    <h2 class="ligne mb-4 text-center" style="--delay-ligne: 0.5s">
-      Mes projets
-    </h2>
 
-    <section
-      class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] content-center gap-4 mt-4 mx-auto container"
-    >
-      {
-        projets.map((projet, index) => (
-          <ProjectCard project={projet.data} index={index} />
-        ))
-      }
+    <section class="wrap">
+      <header class="section-head">
+        <p class="mono eyebrow" data-reveal>Réalisations</p>
+        <h2 data-split>Mes projets</h2>
+        <span class="rule" data-reveal="rule"></span>
+      </header>
+
+      <div class="filters" data-filter-group data-reveal>
+        <div class="filters-list" role="group" aria-label="Filtrer par catégorie">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true">
+            Tous <sup>{projets.length}</sup>
+          </button>
+          {
+            filters.map((f) => (
+              <button
+                type="button"
+                class="filter"
+                data-filter={f.id}
+                aria-pressed="false"
+              >
+                {f.title} <sup>{f.count}</sup>
+              </button>
+            ))
+          }
+        </div>
+        <p class="mono" data-filter-status aria-live="polite">
+          {projets.length} projets
+        </p>
+      </div>
+
+      <div class="pgrid">
+        {
+          projets.map((projet, index) => (
+            <ProjectCard
+              project={projet.data}
+              delay={(index % 3) * 110}
+            />
+          ))
+        }
+      </div>
     </section>
   </main>
 </Layout>
+
+<style>
+  .phead {
+    margin-bottom: clamp(3.5rem, 9vw, 7rem);
+  }
+
+  .phead-title {
+    position: relative;
+    margin-top: 1.5rem;
+    display: grid;
+  }
+
+  .phead-title :global(.phead-script) {
+    justify-self: end;
+    width: min(62vw, 36rem);
+    margin-top: clamp(-4.5rem, -5vw, -1.5rem);
+    margin-right: clamp(0rem, 6vw, 8rem);
+    rotate: -5deg;
+  }
+
+  @media (max-width: 40rem) {
+    .phead-title :global(.phead-script) {
+      margin-top: 0.6rem;
+    }
+  }
+
+  /* ------------------------------------------------------------- clients */
+  .clients {
+    margin-bottom: clamp(4rem, 9vw, 8rem);
+  }
+
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.75rem, 2vw, 1.5rem);
+  }
+
+  .client {
+    position: relative;
+    --h: clamp(4.25rem, 8vw, 6rem);
+    display: grid;
+    place-items: center;
+    height: var(--h);
+    padding: 0.8rem clamp(1rem, 2vw, 1.75rem);
+    border-radius: 1.1rem;
+    background: #fff;
+    color: var(--navy);
+    box-shadow:
+      0 0 0 1px rgba(255, 255, 255, 0.3),
+      0 20px 40px -22px rgba(0, 0, 0, 0.9);
+    animation: bob 5.5s ease-in-out var(--bob, 0s) infinite;
+    transition:
+      box-shadow 0.4s ease,
+      scale 0.5s var(--ease-spring);
+  }
+
+  @keyframes bob {
+    0%,
+    100% {
+      translate: 0 -5px;
+      rotate: -1deg;
+    }
+    50% {
+      translate: 0 5px;
+      rotate: 1deg;
+    }
+  }
+
+  .client :global(img) {
+    height: calc(var(--h) - 1.6rem);
+    width: auto;
+    max-width: 11rem;
+    object-fit: contain;
+  }
+
+  a.client:hover,
+  a.client:focus-visible {
+    scale: 1.08;
+    animation-play-state: paused;
+    box-shadow:
+      0 0 0 3px var(--mint),
+      0 0 50px -6px rgba(44, 221, 155, 0.7);
+  }
+
+  .client-name {
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.6rem);
+    translate: -50% -0.4rem;
+    white-space: nowrap;
+    color: var(--mint);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 0.3s ease,
+      translate 0.4s var(--ease-out);
+  }
+
+  .client:hover .client-name,
+  .client:focus-visible .client-name {
+    opacity: 1;
+    translate: -50% 0;
+  }
+
+  /* ------------------------------------------------------------- filtres */
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .filter {
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: rgba(2, 14, 26, 0.55);
+    color: var(--foam);
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background-color 0.35s var(--ease-out),
+      color 0.35s var(--ease-out),
+      border-color 0.35s var(--ease-out),
+      translate 0.4s var(--ease-spring);
+  }
+
+  .filter sup {
+    margin-left: 0.2rem;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--mint);
+    transition: color 0.35s ease;
+  }
+
+  .filter:hover {
+    border-color: var(--mint);
+    translate: 0 -2px;
+  }
+
+  .filter[aria-pressed="true"] {
+    background: var(--mint);
+    border-color: var(--mint);
+    color: var(--navy);
+    box-shadow: 0 0 30px -8px rgba(44, 221, 155, 0.8);
+  }
+
+  .filter[aria-pressed="true"] sup {
+    color: var(--navy);
+  }
+
+  .pgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22.5rem), 1fr));
+    gap: clamp(1.1rem, 2vw, 1.75rem);
+  }
+</style>

@@ -4,45 +4,79 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Crédits">
   <main>
-    <section class="flex gap-4 flex-col">
-      <h1 class="ligne">Credits</h1>
-      <h2 class="text-secondary">Photos</h2>
-     <p>Collection personnelle</p>
-      <h2 class="text-secondary">Dessins SVG</h2>
-      <p>
-        Les SVG de base proviennent du site
-        <a class="text-secondary" href="https://undraw.co/illustrations"
-          >unDraw</a
-        >
+    <section class="wrap-narrow legal">
+      <p class="mono eyebrow" data-reveal>Colophon</p>
+      <h1 data-split style="--d: 0.1s">Credits</h1>
+
+      <div class="legal-block" data-reveal>
+        <h2>Photos</h2>
+        <div>
+          <p>Collection personnelle</p>
+        </div>
+      </div>
+
+      <div class="legal-block" data-reveal>
+        <h2>Dessins SVG</h2>
+        <div>
+          <p>
+            Les SVG de base proviennent du site
+            <a href="https://undraw.co/illustrations" target="_blank" rel="noreferrer">unDraw</a>
+          </p>
+          <p>Les animations sont faites par moi même (custom css animation)</p>
+        </div>
+      </div>
+
+      <div class="legal-block" data-reveal>
+        <h2>Typographies</h2>
+        <div>
+          <p>
+            Fraunces, Kumbh Sans et Martian Mono — polices libres (SIL Open Font
+            License), auto-hébergées via
+            <a href="https://fontsource.org/" target="_blank" rel="noreferrer">Fontsource</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="legal-block" data-reveal>
+        <h2>Stack technique pour le développement de ce site</h2>
+        <div>
+          <p>
+            <a href="https://astro.build/" target="_blank" rel="noreferrer">Astro v6</a>
+          </p>
+          <p>
+            Fond animé en WebGL (carte de lignes de niveau et particules),
+            transitions de page avec l’API View Transitions
+          </p>
+        </div>
+      </div>
+
+      <div class="legal-block" data-reveal>
+        <h2>Anciennes versions du site encore en ligne</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://website-astro-cf232a970-william-schlegel.vercel.app/"
+              >Version développée avec Astro v3 et Sanity</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://wsconseil-gatsby-intl-pvjb52mik-william-schlegel.vercel.app/"
+              >Version développée avec Gatsby</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <p class="legal-more" data-reveal>
+        <a class="link-arrow" href="/mentions">
+          Mentions légales <span class="arrow" aria-hidden="true">→</span>
+        </a>
       </p>
-      <p>Les animations sont faites par moi même (custom css animation)</p>
-      <h2 class="text-secondary">
-        Stack technique pour le développement de ce site
-      </h2>
-      <p>
-        <a href="https://astro.build/">Astro v5</a>
-      </p>
-    </section>
-    <section>
-      <h2 class="text-secondary">Anciennes versions du site encore en ligne</h2>
-      <ul class="px-8 pt-4">
-        <li>
-          <a
-            class="text-secondary underline"
-            target="_blank"
-            href="https://website-astro-cf232a970-william-schlegel.vercel.app/"
-            >Version développée avec Astro v3 et Sanity</a
-          >
-        </li>
-        <li>
-          <a
-            class="text-secondary underline"
-            target="_blank"
-            href="https://wsconseil-gatsby-intl-pvjb52mik-william-schlegel.vercel.app/"
-            >Version développée avec Gatsby</a
-          >
-        </li>
-      </ul>
     </section>
   </main>
 </Layout>

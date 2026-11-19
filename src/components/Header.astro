@@ -2,33 +2,349 @@
 import { Image } from "astro:assets";
 import { SITE_TITLE } from "../consts";
 import AboutButton from "./AboutButton.astro";
-import InnerMenu from "./InnerMenu.astro";
-import logo from "../assets/site/logo-long.png"
+import logoPicto from "../assets/site/logo-picto.png";
+
+const first = "/" + (Astro.url.pathname.split("/").filter(Boolean)[0] ?? "");
+
+const links = [
+  {
+    href: "/projects",
+    label: "Tous mes projets",
+    short: "Projets",
+    match: ["/projects", "/project"],
+    icon: "M4 5h7v7H4zM13 5h7v4h-7zM13 11h7v8h-7zM4 14h7v5H4z",
+  },
+  {
+    href: "/skills",
+    label: "Mes compétences",
+    short: "Compétences",
+    match: ["/skills"],
+    icon: "M12 3l2.2 5.4L20 9l-4.4 3.9L17 19l-5-3.1L7 19l1.4-6.1L4 9l5.8-.6z",
+  },
+  {
+    href: "/contact",
+    label: "Contactez-moi",
+    short: "Contact",
+    match: ["/contact"],
+    icon: "M3.5 11.5L20 4l-5.5 16-3.2-6.3zM11.3 13.7L20 4",
+  },
+];
+const isActive = (match: string[]) => match.includes(first);
 ---
 
-<header>
-  <nav
-    class="fixed top-0 left-0 w-full bg-white px-5 h-16 z-10"
-    aria-label="Top menu"
-    role="navigation"
+<header class="site-header" data-header>
+  <a
+    href="/"
+    class="brand"
+    aria-label={`logo du site ${SITE_TITLE} et retour à la home page`}
   >
-    <a href="/" class="absolute top-0 w-[150px] h-full"
-      ><Image
-        class="h-[calc(100%-10px)] cursor-pointer"
-        src={logo}
-        width="150"
-        alt={`logo du site ${SITE_TITLE} et retour à la home page`}
-      /></a>
-    <InnerMenu
-      containerClass="hidden items-center justify-center h-full md:flex"
-      linkClass="flex items-center h-full border-b-8 border-transparent py-0 px-[3%] text-primary hover:border-primary"
-      activeClass="font-bold border-primary"
-      inactiveClass="border-transparent"
-    />
-    <AboutButton moreClass="absolute right-1 top-[10px] h-[calc(100%-20px)]" />
+    <span class="brand-disc">
+      <Image src={logoPicto} alt="" width={96} height={96} loading="eager" />
+    </span>
+    <span class="brand-text">
+      <span class="brand-name">WS Conseil</span>
+      <span class="brand-tag">CTOaaS</span>
+    </span>
+  </a>
+
+  <nav class="nav" aria-label="Top menu">
+    {
+      links.map((link) => (
+        <a
+          href={link.href}
+          class="nav-link"
+          aria-current={isActive(link.match) ? "page" : undefined}
+        >
+          {isActive(link.match) && <span class="nav-pill" />}
+          <span class="nav-label">{link.label}</span>
+        </a>
+      ))
+    }
   </nav>
+
+  <AboutButton active={first === "/about"} />
 </header>
-<InnerMenu
-  containerClass="fixed bottom-0 left-0 w-full h-[80px] bg-primary-dark px-8 py-4 flex items-center justify-between z-20 md:hidden"
-  linkClass="text-white"
-/>
+
+<nav class="dock" aria-label="menu">
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        class="dock-link"
+        aria-current={isActive(link.match) ? "page" : undefined}
+      >
+        {isActive(link.match) && <span class="dock-pill" />}
+        <span class="dock-label">
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d={link.icon} />
+          </svg>
+          <span>{link.short}</span>
+        </span>
+      </a>
+    ))
+  }
+  <a
+    href="/mentions"
+    class="dock-link"
+    aria-current={first === "/mentions" || first === "/credits"
+      ? "page"
+      : undefined}
+  >
+    {
+      (first === "/mentions" || first === "/credits") && (
+        <span class="dock-pill" />
+      )
+    }
+    <span class="dock-label">
+      <svg
+        viewBox="0 0 24 24"
+        width="20"
+        height="20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="9"></circle>
+        <line x1="12" y1="8" x2="12" y2="16"></line>
+        <line x1="8" y1="12" x2="16" y2="12"></line>
+      </svg>
+      <span>Mentions</span>
+    </span>
+  </a>
+</nav>
+
+<style>
+  .site-header {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 40;
+    height: var(--header-h);
+    padding-inline: var(--gutter);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    view-transition-name: site-header;
+  }
+
+  .site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 -2.5rem 0;
+    z-index: -1;
+    pointer-events: none;
+    /* Pas de backdrop-filter ici : un élément nommé pour les view
+       transitions est un « backdrop root », le flou ne verrait pas la page. */
+    background: linear-gradient(
+      rgba(2, 10, 19, 0.97) 0%,
+      rgba(2, 10, 19, 0.92) 48%,
+      rgba(2, 10, 19, 0.6) 76%,
+      transparent
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .site-header[data-scrolled]::before {
+    opacity: 1;
+  }
+
+  /* --- marque --- */
+  .brand {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--foam);
+  }
+
+  .brand-disc {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 1px rgba(160, 205, 225, 0.35),
+      0 0 26px -4px rgba(44, 221, 155, 0.45);
+    animation: brand-spin 38s linear infinite;
+  }
+
+  .brand-disc :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .brand:hover .brand-disc {
+    animation-duration: 3.5s;
+  }
+
+  @keyframes brand-spin {
+    to {
+      rotate: -360deg;
+    }
+  }
+
+  .brand-text {
+    display: grid;
+    line-height: 1;
+  }
+
+  .brand-name {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
+  .brand-tag {
+    margin-top: 0.3rem;
+    font-family: var(--font-mono);
+    font-stretch: 87.5%;
+    font-size: 0.58rem;
+    letter-spacing: 0.3em;
+    color: var(--mint);
+  }
+
+  /* --- menu --- */
+  .nav {
+    display: none;
+    align-items: center;
+    gap: 0.15rem;
+    padding: 0.3rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--glass);
+    -webkit-backdrop-filter: blur(14px) saturate(1.3);
+    backdrop-filter: blur(14px) saturate(1.3);
+  }
+
+  .nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.25rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--mist);
+    transition: color 0.35s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link[aria-current="page"] {
+    color: var(--foam);
+  }
+
+  .nav-link[aria-current="page"] {
+    color: var(--navy);
+  }
+
+  .nav-label {
+    position: relative;
+  }
+
+  /* Le libellé actif voyage avec la pastille pendant la transition de page. */
+  .nav-link[aria-current="page"] .nav-label {
+    view-transition-name: nav-label;
+  }
+
+  .nav-pill {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--mint);
+    box-shadow: 0 0 24px -4px rgba(44, 221, 155, 0.7);
+    view-transition-name: nav-pill;
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      display: inline-flex;
+    }
+  }
+
+  /* --- barre mobile --- */
+  .dock {
+    position: fixed;
+    inset: auto 0.75rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) 0.75rem;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.2rem;
+    padding: 0.3rem;
+    border-radius: 1.4rem;
+    border: 1px solid var(--line);
+    background: var(--glass-strong);
+    -webkit-backdrop-filter: blur(16px) saturate(1.3);
+    backdrop-filter: blur(16px) saturate(1.3);
+    view-transition-name: site-dock;
+  }
+
+  .dock-link {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 0.3rem;
+    padding: 0.55rem 0.2rem 0.5rem;
+    border-radius: 1.1rem;
+    font-family: var(--font-mono);
+    font-stretch: 80%;
+    font-size: 0.55rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--mist);
+  }
+
+  .dock-label {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 0.3rem;
+  }
+
+  .dock-link[aria-current="page"] .dock-label {
+    view-transition-name: dock-label;
+  }
+
+  .dock-link[aria-current="page"] {
+    color: var(--navy);
+  }
+
+  .dock-pill {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: var(--mint);
+    view-transition-name: dock-pill;
+  }
+
+  @media (min-width: 768px) {
+    .dock {
+      display: none;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .brand-name {
+      font-size: 1.1rem;
+    }
+  }
+</style>

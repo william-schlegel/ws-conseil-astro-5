@@ -1,27 +1,161 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import Project from "../../components/project.astro";
 
 export async function getStaticPaths() {
-  const projects = await getCollection("projetCollection");
+  const projects = (await getCollection("projetCollection")).sort((p1, p2) =>
+    new Date(p1.data.startDate) < new Date(p2.data.startDate) ? 1 : -1,
+  );
 
-  return projects.map((project) => {
+  return projects.map((project, index) => {
     return {
       params: { slug: project.data.slug },
-      props: { project },
+      props: {
+        project,
+        // navigation circulaire dans l'ordre de la liste (du plus récent au plus ancien)
+        previous: projects[(index - 1 + projects.length) % projects.length],
+        next: projects[(index + 1) % projects.length],
+      },
     };
   });
 }
 type Props = {
   project: CollectionEntry<"projetCollection">;
+  previous: CollectionEntry<"projetCollection">;
+  next: CollectionEntry<"projetCollection">;
 };
 
-const { project } = Astro.props;
+const { project, previous, next } = Astro.props;
+const siblings = [
+  { entry: previous, label: "Projet précédent", dir: "prev" },
+  { entry: next, label: "Projet suivant", dir: "next" },
+];
 ---
 
 <Layout title={project.data.name} description={project.data.brief}>
   <main>
     <Project project={project} />
+
+    <nav class="wrap siblings" aria-label="Autres projets">
+      {
+        siblings.map(({ entry, label, dir }) => (
+          <a
+            href={`/project/${entry.data.slug}`}
+            class:list={["sibling", `sibling--${dir}`]}
+            data-pcard={entry.data.slug}
+            data-cursor="Ouvrir"
+            data-reveal
+          >
+            <Image
+              class="sibling-img"
+              data-vt="image"
+              src={entry.data.heroImage}
+              alt=""
+              widths={[480, 800]}
+              sizes="(min-width: 768px) 46vw, 92vw"
+            />
+            <span class="sibling-text">
+              <span class="mono">
+                {dir === "prev" ? "← " : ""}
+                {label}
+                {dir === "next" ? " →" : ""}
+              </span>
+              <span class="sibling-name" data-vt="title">
+                {entry.data.name}
+              </span>
+            </span>
+          </a>
+        ))
+      }
+    </nav>
   </main>
 </Layout>
+
+<style>
+  .siblings {
+    display: grid;
+    gap: clamp(1rem, 2vw, 1.75rem);
+    margin-top: clamp(4rem, 9vw, 8rem);
+  }
+
+  @media (min-width: 48rem) {
+    .siblings {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .sibling {
+    position: relative;
+    display: grid;
+    align-items: end;
+    min-height: clamp(11rem, 22vw, 17rem);
+    padding: clamp(1.1rem, 2vw, 1.75rem);
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    background: var(--navy);
+    overflow: hidden;
+    isolation: isolate;
+  }
+
+  .sibling--next {
+    text-align: right;
+    justify-items: end;
+  }
+
+  .sibling :global(.sibling-img) {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.38;
+    scale: 1.08;
+    filter: saturate(0.6);
+    view-transition-class: vt-image;
+    transition:
+      opacity 0.6s var(--ease-out),
+      scale 1.4s var(--ease-out),
+      filter 0.6s ease;
+  }
+
+  .sibling::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(transparent 10%, rgba(2, 10, 19, 0.92));
+  }
+
+  .sibling:hover :global(.sibling-img),
+  .sibling:focus-visible :global(.sibling-img) {
+    opacity: 0.8;
+    scale: 1;
+    filter: saturate(1);
+  }
+
+  .sibling-text {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .sibling-text .mono {
+    color: var(--mint);
+  }
+
+  .sibling-name {
+    width: fit-content;
+    font-family: var(--font-display);
+    font-weight: 340;
+    font-size: clamp(1.6rem, 2.6vw + 0.6rem, 3rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  .sibling--next .sibling-name {
+    justify-self: end;
+  }
+</style>

@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ScrollProgress from "../components/ScrollProgress.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { ClientRouter } from "astro:transitions";
 
@@ -10,51 +11,70 @@ interface Props {
   description?: string;
 }
 
-const {
-  title = SITE_TITLE,
-  description = SITE_DESCRIPTION,
-} = Astro.props;
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" transition:animate="none">
+<html lang="fr">
   <head>
     <BaseHead title={title} description={description} />
+    <script is:inline>
+      // Active les états initiaux des animations ; filet de sécurité si le
+      // script principal ne démarre pas (le contenu redevient visible).
+      document.documentElement.classList.add("js");
+      setTimeout(function () {
+        if (!window.__wsc) document.documentElement.classList.remove("js");
+      }, 4000);
+    </script>
     <ClientRouter />
   </head>
   <body>
+    <!-- La carte : fond WebGL persistant entre les pages -->
+    <div id="chart" aria-hidden="true" transition:persist="chart">
+      <canvas></canvas>
+      <div class="grain"></div>
+    </div>
+
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
     <Header />
-    <div>
+    <div id="contenu" class="page">
       <slot />
     </div>
     <Footer />
+    <ScrollProgress />
+
+    <div id="cursor" aria-hidden="true" transition:persist="cursor">
+      <div class="cursor-ring"><span class="cursor-label"></span></div>
+    </div>
+
+    <script>
+      import "../scripts/app";
+    </script>
   </body>
 </html>
 
-<style lang="scss">
-  $sizes: 800,1024;
-  $opacity: 0.8;
+<style>
+  .page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
-  body {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, $opacity),
-        rgba(0, 0, 0, $opacity)
-      ),
-      url("../assets/site/trail-bretagne-800.webp");
-    background-size: auto, cover;
-    background-origin: content-box;
-    background-position: center center;
-    overflow-x: clip;
-    @each $size in $sizes {
-      @media screen and (min-width: #{$size}px) {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, $opacity),
-            rgba(0, 0, 0, $opacity)
-          ),
-          url("../assets/site/trail-bretagne-#{$size}.webp");
-      }
-    }
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 200;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    background: var(--mint);
+    color: var(--navy);
+    font-weight: 600;
+    translate: 0 -200%;
+    transition: translate 0.3s var(--ease-out);
+  }
+
+  .skip-link:focus-visible {
+    translate: 0 0;
   }
 </style>

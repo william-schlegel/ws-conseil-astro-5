@@ -7,33 +7,164 @@ import { Image } from "astro:assets";
 interface Props {
   catId: string;
   experiences: CollectionEntry<"experienceCollection">[];
+  /** numéro d'ordre affiché devant le titre */
+  index?: number;
 }
 
-const { catId, experiences } = Astro.props;
+const { catId, experiences, index = 0 } = Astro.props;
 const category = await getEntry("categoryCollection", catId);
 ---
 
-<div>
-  <h2 class="text-start ligne my-4">{category?.data.title}</h2>
-  <div class="grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-4">
+<div class="expcat" data-cat={catId}>
+  <header class="expcat-head">
+    <span class="expcat-dot" aria-hidden="true" data-reveal="scale"></span>
+    <h3 data-split>{category?.data.title}</h3>
+    <span class="rule" data-reveal="rule"></span>
+  </header>
+  <div class="expcat-grid">
     {
-      experiences.map((exp) => (
-        <div class="bg-bg-white01 rounded p-4 items-center w-full mt-[calc(30px+2rem)] md:mt-0">
-          <div class="grid md:grid-cols-[120px,1fr] gap-4 items-center h-full">
-            <div class="bg-white rounded-full aspect-square p-2 grid place-items-center w-[120px] mx-auto -mt-[calc(60px+1rem)] md:m-0 overflow-hidden">
-              <Image src={exp.data.image} alt={`logo ${exp.data.name}`} />
-            </div>
-            <div class="flex flex-col gap-2">
-              <h2 class="text-secondary">{exp.data.name}</h2>
-              <span class="text-xl">{exp.data.role}</span>
-              <p class="text-secondary-dark">
-                {displayDate(exp.data.startDate, exp.data.endDate)}
-              </p>
-              <div>{exp.data.description}</div>
-            </div>
+      experiences.map((exp, i) => (
+        <article
+          class="exp"
+          id={`exp-${exp.id}`}
+          data-reveal
+          style={`--d: ${(i % 2) * 120}ms`}
+        >
+          <span class="disc exp-logo">
+            <Image src={exp.data.image} alt={`logo ${exp.data.name}`} width={240} />
+          </span>
+          <div class="exp-body">
+            <h4>{exp.data.name}</h4>
+            <p class="exp-role">{exp.data.role}</p>
+            <p class="mono exp-date">
+              {!exp.data.endDate && <span class="beacon" />}
+              {displayDate(exp.data.startDate, exp.data.endDate)}
+            </p>
+            <p class="exp-desc">{exp.data.description}</p>
           </div>
-        </div>
+        </article>
       ))
     }
   </div>
 </div>
+
+<style>
+  .expcat {
+    --cat: var(--mint);
+    margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  }
+
+  .expcat[data-cat="cat-citizen"] {
+    --cat: var(--cyan);
+  }
+
+  .expcat[data-cat="cat-lecture"] {
+    --cat: var(--buoy);
+  }
+
+  .expcat-head {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    align-items: center;
+    gap: 0.5rem 1.1rem;
+    margin-bottom: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .expcat-dot {
+    width: 0.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--cat);
+    box-shadow: 0 0 18px var(--cat);
+  }
+
+  @media (max-width: 40rem) {
+    .expcat-head {
+      grid-template-columns: auto 1fr;
+    }
+
+    .expcat-head .mono,
+    .expcat-head .rule {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .expcat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+    gap: clamp(1rem, 2vw, 1.75rem);
+  }
+
+  .exp {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: clamp(1rem, 2.2vw, 1.75rem);
+    padding: clamp(1.1rem, 2.2vw, 1.75rem);
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    border-left: 2px solid var(--cat);
+    background: linear-gradient(
+      180deg,
+      rgba(7, 32, 52, 0.84),
+      rgba(3, 15, 27, 0.9)
+    );
+    scroll-margin-top: calc(var(--header-h) + 1.5rem);
+  }
+
+  .exp:target {
+    box-shadow:
+      0 0 0 1px var(--cat),
+      0 0 60px -14px var(--cat);
+  }
+
+  .exp-logo {
+    width: clamp(4.25rem, 9vw, 6.5rem);
+    padding: 0.7rem;
+  }
+
+  .exp-logo :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .exp-body {
+    display: grid;
+    gap: 0.45rem;
+    min-width: 0;
+  }
+
+  .exp h4 {
+    font-size: clamp(1.45rem, 1.2vw + 1.1rem, 2.1rem);
+    line-height: 1.1;
+    color: var(--cat);
+  }
+
+  .exp-role {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .exp-date {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--cyan);
+  }
+
+  .exp-desc {
+    margin-top: 0.35rem;
+    color: color-mix(in srgb, var(--foam) 82%, var(--mist));
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 30rem) {
+    .exp {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

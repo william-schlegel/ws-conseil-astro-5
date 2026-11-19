@@ -1,17 +1,210 @@
 ---
-import FooterLink from "./FooterLink.astro";
+import { Image } from "astro:assets";
+import logoPicto from "../assets/site/logo-picto.png";
 
 const today = new Date();
+
+const nav = [
+  { href: "/", label: "Accueil" },
+  { href: "/projects", label: "Tous mes projets" },
+  { href: "/skills", label: "Mes compétences" },
+  { href: "/about", label: "About Me" },
+  { href: "/contact", label: "Contactez-moi" },
+];
+const social = [
+  { href: "https://www.linkedin.com/in/williamschlegel", label: "LinkedIn" },
+  { href: "https://www.malt.fr/profile/williamschlegel", label: "Malt" },
+  { href: "https://twitter.com/wsc_ironeec", label: "Twitter" },
+  { href: "https://ironeec.com", label: "Blog" },
+];
 ---
 
-<footer
-  class="hidden fixed bottom-0 left-0 w-full h-10 items-center justify-between px-8 text-white bg-primary-dark md:flex"
->
-  <p>
-    Designed and developped by me - &copy;{today.getFullYear()}
-  </p>
-  <div class="flex gap-4">
-    <FooterLink href="/mentions">Mentions</FooterLink>
-    <FooterLink href="/credits">Crédits</FooterLink>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-main" data-stagger="80">
+      <a href="/" class="footer-brand" data-reveal aria-label="WS Conseil — accueil">
+        <Image
+          src={logoPicto}
+          alt=""
+          width={96}
+          height={96}
+          class="footer-spiral"
+        />
+        <span class="footer-name">WS Conseil</span>
+      </a>
+
+      <div class="footer-col footer-col--nav" data-reveal>
+        <p class="footer-title">Navigation</p>
+        <ul>
+          {
+            nav.map((item) => (
+              <li>
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="footer-col" data-reveal>
+        <p class="footer-title">Réseaux</p>
+        <ul>
+          {
+            social.map((item) => (
+              <li>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  {item.label}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="footer-col" data-reveal>
+        <p class="footer-title">Informations</p>
+        <ul>
+          <li><a href="/mentions">Mentions</a></li>
+          <li><a href="/credits">Crédits</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Designed and developed by me - &copy;{today.getFullYear()}</p>
+      <p>Valmondois (95) · 49°05′N 2°11′E</p>
+    </div>
   </div>
 </footer>
+
+<style>
+  .site-footer {
+    position: relative;
+    padding-top: clamp(2.5rem, 5vw, 3.5rem);
+    padding-bottom: calc(1.1rem + var(--dock-h) + env(safe-area-inset-bottom, 0px));
+    background: linear-gradient(transparent, rgba(2, 10, 19, 0.88) 45%);
+  }
+
+  .footer-main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (min-width: 48rem) {
+    .footer-main {
+      grid-template-columns: minmax(0, 1fr) repeat(3, auto);
+      gap: 1rem clamp(2.5rem, 6vw, 5.5rem);
+    }
+  }
+
+  /* --- marque : la spirale seule, sans cadre ni halo --- */
+  .footer-brand {
+    grid-column: 1 / -1;
+    justify-self: start;
+    align-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--foam);
+  }
+
+  @media (min-width: 48rem) {
+    .footer-brand {
+      grid-column: auto;
+    }
+  }
+
+  .footer-brand :global(.footer-spiral) {
+    flex: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    animation: footer-spin 60s linear infinite;
+  }
+
+  @keyframes footer-spin {
+    to {
+      rotate: -360deg;
+    }
+  }
+
+  .footer-name {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+  }
+
+  .footer-brand:hover .footer-name {
+    color: var(--mint);
+  }
+
+  /* --- colonnes --- */
+  .footer-title,
+  .footer-bottom {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  .footer-title {
+    color: var(--mint);
+  }
+
+  /* mobile : Navigation à gauche, Réseaux + Informations empilés à droite */
+  @media (max-width: 47.99rem) {
+    .footer-col--nav {
+      grid-row: span 2;
+    }
+  }
+
+  .footer-col ul {
+    margin-top: 0.55rem;
+    display: grid;
+    gap: 0.2rem;
+  }
+
+  .footer-col a {
+    display: inline-flex;
+    gap: 0.35rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--foam);
+    background: linear-gradient(var(--mint), var(--mint)) 0 100% / 0 1px
+      no-repeat;
+    transition:
+      background-size 0.45s var(--ease-out),
+      color 0.3s ease;
+  }
+
+  .footer-col a:hover {
+    color: var(--mint);
+    background-size: 100% 1px;
+  }
+
+  /* --- ligne du bas --- */
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 2rem;
+    padding-top: 0.9rem;
+    /* place pour le bouton « retour en haut » fixé en bas à droite */
+    padding-right: 4.5rem;
+    border-top: 1px solid var(--line);
+    font-weight: 500;
+    color: var(--mist);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .footer-brand :global(.footer-spiral) {
+      animation: none;
+    }
+  }
+</style>
